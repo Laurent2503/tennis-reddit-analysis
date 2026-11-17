@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -72,6 +107,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -308,7 +346,16 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#sources" id="toc-sources" class="nav-link active" data-scroll-target="#sources">Sources</a></li>
   <li><a href="#size" id="toc-size" class="nav-link" data-scroll-target="#size">Size</a></li>
-  <li><a href="#storage-and-processing" id="toc-storage-and-processing" class="nav-link" data-scroll-target="#storage-and-processing">Storage and processing</a></li>
+  <li><a href="#compute-environment" id="toc-compute-environment" class="nav-link" data-scroll-target="#compute-environment">Compute environment</a></li>
+  <li><a href="#pipeline" id="toc-pipeline" class="nav-link" data-scroll-target="#pipeline">Pipeline</a>
+  <ul class="collapse">
+  <li><a href="#step-1-download-01_download_corpus.py" id="toc-step-1-download-01_download_corpus.py" class="nav-link" data-scroll-target="#step-1-download-01_download_corpus.py">Step 1: Download (<code>01_download_corpus.py</code>)</a></li>
+  <li><a href="#step-2-convert-to-parquet-02_convert_to_parquet.py" id="toc-step-2-convert-to-parquet-02_convert_to_parquet.py" class="nav-link" data-scroll-target="#step-2-convert-to-parquet-02_convert_to_parquet.py">Step 2: Convert to parquet (<code>02_convert_to_parquet.py</code>)</a></li>
+  <li><a href="#step-3-match-data-03_get_match_data.sh" id="toc-step-3-match-data-03_get_match_data.sh" class="nav-link" data-scroll-target="#step-3-match-data-03_get_match_data.sh">Step 3: Match data (<code>03_get_match_data.sh</code>)</a></li>
+  <li><a href="#step-4-cleaning-and-eda-04_eda.ipynb" id="toc-step-4-cleaning-and-eda-04_eda.ipynb" class="nav-link" data-scroll-target="#step-4-cleaning-and-eda-04_eda.ipynb">Step 4: Cleaning and EDA (<code>04_eda.ipynb</code>)</a></li>
+  </ul></li>
+  <li><a href="#storage-layout-on-s3" id="toc-storage-layout-on-s3" class="nav-link" data-scroll-target="#storage-layout-on-s3">Storage layout on S3</a></li>
+  <li><a href="#reproducing-the-pipeline" id="toc-reproducing-the-pipeline" class="nav-link" data-scroll-target="#reproducing-the-pipeline">Reproducing the pipeline</a></li>
   </ul>
 </nav>
     </div>
@@ -365,23 +412,187 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td>ATP + WTA matches, 2011–2018</td>
-<td>45,884</td>
+<td>45,903</td>
 </tr>
 <tr class="even">
-<td>All data on S3 (parquet + match CSVs)</td>
+<td>Raw data on S3 (parquet + match CSVs)</td>
 <td>297 MB</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="storage-and-processing" class="level2">
-<h2 class="anchored" data-anchor-id="storage-and-processing">Storage and processing</h2>
+<section id="compute-environment" class="level2">
+<h2 class="anchored" data-anchor-id="compute-environment">Compute environment</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Machine</td>
+<td>One EC2 instance in an AWS Academy Learner Lab: 2 vCPUs, 7.6 GB RAM, 96 GB disk, Ubuntu</td>
+</tr>
+<tr class="even">
+<td>Storage</td>
+<td>One S3 bucket. The instance reaches it through the lab’s IAM role (<code>LabRole</code>), so no access keys are stored on the machine</td>
+</tr>
+<tr class="odd">
+<td>Spark</td>
+<td>PySpark 3.5 in local mode: <code>local[2]</code> (one worker thread per core), 5 GB driver memory, 16 shuffle partitions, UTC session time zone</td>
+</tr>
+<tr class="even">
+<td>Other tools</td>
+<td>ConvoKit (download), pandas and PyArrow (small tables), matplotlib (figures), Jupyter <code>nbconvert</code> (runs the EDA notebook without a browser)</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td>This GitHub repository, cloned on the instance. Jobs run inside <code>tmux</code>, so they survive a dropped SSH connection</td>
+</tr>
+</tbody>
+</table>
+<p>Milestone 1 runs on this single machine. The data (1.9 million posts and comments) fits comfortably, and local mode uses the same Spark DataFrame code that runs on a cluster. The cluster setup for milestone 2 is documented on its own page.</p>
+</section>
+<section id="pipeline" class="level2">
+<h2 class="anchored" data-anchor-id="pipeline">Pipeline</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+  A["ConvoKit&lt;br/&gt;subreddit-tennis&lt;br/&gt;(zipped JSON)"] --&gt; B["01 download&lt;br/&gt;EC2 disk"]
+  B --&gt; C["02 convert&lt;br/&gt;Spark: JSON to parquet"]
+  C --&gt; D[("S3&lt;br/&gt;comments / threads&lt;br/&gt;1% sample")]
+  E["Sackmann ATP + WTA&lt;br/&gt;match CSVs"] --&gt; F["03 match data"]
+  F --&gt; G[("S3&lt;br/&gt;raw/matches")]
+  D --&gt; H["04 EDA notebook&lt;br/&gt;Spark"]
+  G --&gt; H
+  H --&gt; I[("S3&lt;br/&gt;linked_threads&lt;br/&gt;match_attention")]
+  H --&gt; J["CSVs + figures&lt;br/&gt;for this website"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Each box is one script in <a href="https://github.com/Laurent2503/tennis-reddit-analysis/tree/main/code/eda"><code>code/eda/</code></a>.</p>
+<section id="step-1-download-01_download_corpus.py" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-download-01_download_corpus.py">Step 1: Download (<code>01_download_corpus.py</code>)</h3>
+<p><code>convokit.download()</code> fetches the r/tennis corpus (194 MB zipped) and unpacks it on the instance’s disk. A ConvoKit corpus is a folder of JSON files:</p>
+<ul>
+<li><code>utterances.jsonl</code>: one line per post or comment (1.9 million lines). This is the main table.</li>
+<li><code>conversations.json</code>: one entry per thread, with the post title and comment count.</li>
+<li><code>users.json</code>, <code>corpus.json</code>, <code>index.json</code>: user and corpus metadata (not used).</li>
+</ul>
+<p>The script also tries the three Big 3 fan subreddits; they turned out too small to use (see above).</p>
+</section>
+<section id="step-2-convert-to-parquet-02_convert_to_parquet.py" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-convert-to-parquet-02_convert_to_parquet.py">Step 2: Convert to parquet (<code>02_convert_to_parquet.py</code>)</h3>
+<p>The corpus is not loaded into ConvoKit’s own <code>Corpus</code> object, which holds everything in memory. Instead, Spark reads <code>utterances.jsonl</code> directly (<code>spark.read.json</code>, one JSON object per line), which works in parallel and does not depend on the machine’s memory.</p>
+<p>The conversion:</p>
 <ol type="1">
-<li>Corpus downloaded on EC2 with <code>convokit.download("subreddit-tennis")</code>.</li>
-<li><code>utterances.jsonl</code> read with Spark, written as parquet partitioned by year to S3.</li>
-<li>Sackmann CSVs (2012–2018) uploaded to S3.</li>
-<li>All joins, sentiment scoring and modelling run in Spark.</li>
+<li><strong>Flattens the nested <code>meta</code> field</strong> into ordinary columns (<code>score</code>, <code>author_flair_text</code>, <code>gilded</code>, <code>stickied</code>, <code>permalink</code>, <code>top_level_comment</code>, …).</li>
+<li><strong>Renames fields</strong> to clearer names: <code>root</code> becomes <code>thread_id</code>, and the author column is taken from <code>user</code> (this older corpus format) or <code>speaker</code> (newer ConvoKit format).</li>
+<li><strong>Adds time columns</strong>: the Unix <code>timestamp</code> becomes a UTC <code>created_utc</code> timestamp plus <code>date</code>, <code>year</code> and <code>month</code>.</li>
+<li><strong>Flags posts</strong>: an utterance whose <code>id</code> equals its <code>thread_id</code> is the post that opened the thread (<code>is_post</code>); everything else is a comment.</li>
+<li><strong>Writes parquet partitioned by year</strong> (<code>comments/year=2012/</code>, <code>year=2013/</code>, …). Parquet is columnar and compressed, so later jobs read only the columns they need, and a filter on <code>year</code> skips whole folders.</li>
+<li><strong>Writes a 1% random sample</strong> (<code>comments_sample/</code>, fixed seed 42) for developing code quickly. Each milestone’s final numbers come from one run on the full data.</li>
 </ol>
+<p><code>conversations.json</code> is a single JSON object keyed by thread ID rather than one object per line, so Spark cannot split it. It is small (96,033 threads), so it is read with Python’s <code>json</code> module, converted with pandas and saved as <code>threads/threads.parquet</code>. Nested fields such as <code>gildings</code> are stored as JSON text.</p>
+<p>The parquet folders are then copied to S3 with <code>aws s3 sync</code>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Main columns in <code>comments/</code></th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>id</code>, <code>thread_id</code>, <code>reply_to</code></td>
+<td>Comment ID, the thread it belongs to, and the comment it replies to</td>
+</tr>
+<tr class="even">
+<td><code>author</code>, <code>text</code></td>
+<td>Reddit username and comment text</td>
+</tr>
+<tr class="odd">
+<td><code>created_utc</code>, <code>date</code>, <code>year</code>, <code>month</code></td>
+<td>When it was posted (UTC)</td>
+</tr>
+<tr class="even">
+<td><code>score</code>, <code>gilded</code></td>
+<td>Net upvotes and awards</td>
+</tr>
+<tr class="odd">
+<td><code>author_flair_text</code></td>
+<td>The author’s flair, often a favourite player</td>
+</tr>
+<tr class="even">
+<td><code>is_post</code></td>
+<td><code>true</code> for the post that opened a thread</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="step-3-match-data-03_get_match_data.sh" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-match-data-03_get_match_data.sh">Step 3: Match data (<code>03_get_match_data.sh</code>)</h3>
+<p>The script clones the ATP and WTA repositories, keeps the tour-level singles match files for 2010–2018 plus the 2010s weekly rankings and the player lists, and uploads the CSVs to S3 unchanged. Each match row has the tournament (name, level, surface, start date), round, both players’ names, ranks and ages, the score, and the match length in minutes.</p>
+</section>
+<section id="step-4-cleaning-and-eda-04_eda.ipynb" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-cleaning-and-eda-04_eda.ipynb">Step 4: Cleaning and EDA (<code>04_eda.ipynb</code>)</h3>
+<p>The notebook reads the parquet data back into Spark and does all heavy work there; only small aggregated tables (at most a few thousand rows) are converted to pandas for plotting.</p>
+<p><strong>Cleaning</strong></p>
+<ul>
+<li>Keeps 2012–2018. The years before 2012 have too little activity (under 9,000 posts and comments in total).</li>
+<li>Flags posts and comments whose text is <code>[deleted]</code> or <code>[removed]</code> (about 5%). They count towards volume but are excluded from text analysis.</li>
+<li>Strips accents and lowercases text before any name matching, so “Čilić” and “Cilic” are the same word. Spark’s <code>translate()</code> maps each accented letter to its plain version.</li>
+</ul>
+<p><strong>Player mentions.</strong> Each player in <a href="https://github.com/Laurent2503/tennis-reddit-analysis/blob/main/code/common/players.py"><code>code/common/players.py</code></a> has a list of names and nicknames, combined into one case-insensitive regular expression with word boundaries. Spark tests every comment against all 25 expressions (<code>rlike</code>), keeps the names that matched in an array, and <code>explode</code>s it into one row per (comment, player). A comment that names Federer and Nadal therefore counts once for each.</p>
+<p><strong>Thread-to-match linking.</strong> This joins 13,261 candidate threads to 45,903 matches.</p>
+<ol type="1">
+<li>Threads are classified by title as <code>match</code>, <code>post-match</code>, <code>result</code> (titles with “vs”, “def”, “beats” or a score) or <code>other</code>; only the first three are candidates.</li>
+<li>In each title, nicknames are replaced by surnames (“Rafa” becomes “nadal”) and the title is split into words.</li>
+<li>A thread is linked to a match when <strong>both</strong> players’ surnames are words in the title and the thread was posted between 1 day before and 16 days after the tournament’s start date. Players who share a surname (Serena and Venus Williams) need the name to appear twice.</li>
+<li>If several matches fit, the one from the latest tournament is kept.</li>
+</ol>
+<p>Comparing every thread with every match would mean about 600 million pairs. Instead, each title is split into one row per word and joined to the matches on the <strong>winner’s surname</strong>, an ordinary equality join that Spark handles efficiently. The loser’s surname and the date window are then checked only on those candidate pairs.</p>
+<p>A hand check of 100 random linked result posts found more than 90% linked to the correct match.</p>
+<p><strong>Outputs.</strong> Two tables go back to S3 for milestone 2: <code>linked_threads</code> (one row per linked thread, with its match) and <code>match_attention</code> (one row per match, with the number of threads and total comments across them). Small CSVs and figures are written to this website’s folder and committed to GitHub.</p>
+</section>
+</section>
+<section id="storage-layout-on-s3" class="level2">
+<h2 class="anchored" data-anchor-id="storage-layout-on-s3">Storage layout on S3</h2>
+<pre><code>s3://&lt;bucket&gt;/
+├── parquet/
+│   ├── subreddit-tennis/
+│   │   ├── comments/year=2008/ … year=2018/   all posts and comments
+│   │   ├── comments_sample/                    1% sample for development
+│   │   └── threads/                            one row per thread
+│   ├── linked_threads/                         threads joined to matches
+│   └── match_attention/                        one row per match with a thread
+└── raw/
+    └── matches/                                ATP + WTA CSVs, 2010–2018</code></pre>
+</section>
+<section id="reproducing-the-pipeline" class="level2">
+<h2 class="anchored" data-anchor-id="reproducing-the-pipeline">Reproducing the pipeline</h2>
+<p>On an Ubuntu EC2 instance with an IAM role that can write to the bucket:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install <span class="at">-y</span> openjdk-17-jdk python3-venv</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-m</span> venv ~/venv <span class="kw">&amp;&amp;</span> <span class="bu">source</span> ~/venv/bin/activate</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="st">"pyspark==3.5.*"</span> convokit pandas pyarrow matplotlib jupyterlab</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">BUCKET</span><span class="op">=&lt;</span>bucket<span class="op">&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> code/eda/01_download_corpus.py</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> code/eda/02_convert_to_parquet.py subreddit-tennis</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ex">aws</span> s3 sync ~/data/parquet s3://<span class="va">$BUCKET</span>/parquet</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">bash</span> code/eda/03_get_match_data.sh</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="va">EDA_MODE</span><span class="op">=</span>full <span class="ex">jupyter</span> nbconvert <span class="at">--to</span> notebook <span class="at">--execute</span> <span class="at">--inplace</span> <span class="dt">\</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">--ExecutePreprocessor.timeout</span><span class="op">=</span>-1 code/eda/04_eda.ipynb</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Set <code>EDA_MODE=sample</code> to run the notebook on the 1% sample instead.</p>
 
 
 </section>

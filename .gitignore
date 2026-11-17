@@ -227,3 +227,4 @@ __marimo__/
 *.parquet
 *.zip
 .quarto/
+.DS_Store

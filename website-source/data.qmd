@@ -23,12 +23,170 @@ ConvoKit but are tiny (r/rogerfederer is 0.6 MB zipped; r/RafaelNadal and r/nova
 | Posts and comments, all years | 1,913,206 |
 | Threads | 96,033 |
 | Posts and comments, 2012–2018 | 1,904,293 |
-| ATP + WTA matches, 2011–2018 | 45,884 |
-| All data on S3 (parquet + match CSVs) | 297 MB |
+| ATP + WTA matches, 2011–2018 | 45,903 |
+| Raw data on S3 (parquet + match CSVs) | 297 MB |
 
-## Storage and processing
+## Compute environment
 
-1. Corpus downloaded on EC2 with `convokit.download("subreddit-tennis")`.
-2. `utterances.jsonl` read with Spark, written as parquet partitioned by year to S3.
-3. Sackmann CSVs (2012–2018) uploaded to S3.
-4. All joins, sentiment scoring and modelling run in Spark.
+| | |
+|---|---|
+| Machine | One EC2 instance in an AWS Academy Learner Lab: 2 vCPUs, 7.6 GB RAM, 96 GB disk, Ubuntu |
+| Storage | One S3 bucket. The instance reaches it through the lab's IAM role (`LabRole`), so no access keys are stored on the machine |
+| Spark | PySpark 3.5 in local mode: `local[2]` (one worker thread per core), 5 GB driver memory, 16 shuffle partitions, UTC session time zone |
+| Other tools | ConvoKit (download), pandas and PyArrow (small tables), matplotlib (figures), Jupyter `nbconvert` (runs the EDA notebook without a browser) |
+| Code | This GitHub repository, cloned on the instance. Jobs run inside `tmux`, so they survive a dropped SSH connection |
+
+Milestone 1 runs on this single machine. The data (1.9 million posts and comments) fits comfortably,
+and local mode uses the same Spark DataFrame code that runs on a cluster. The cluster setup for
+milestone 2 is documented on its own page.
+
+## Pipeline
+
+```{mermaid}
+flowchart TB
+  A["ConvoKit<br/>subreddit-tennis<br/>(zipped JSON)"] --> B["01 download<br/>EC2 disk"]
+  B --> C["02 convert<br/>Spark: JSON to parquet"]
+  C --> D[("S3<br/>comments / threads<br/>1% sample")]
+  E["Sackmann ATP + WTA<br/>match CSVs"] --> F["03 match data"]
+  F --> G[("S3<br/>raw/matches")]
+  D --> H["04 EDA notebook<br/>Spark"]
+  G --> H
+  H --> I[("S3<br/>linked_threads<br/>match_attention")]
+  H --> J["CSVs + figures<br/>for this website"]
+```
+
+Each box is one script in [`code/eda/`](https://github.com/Laurent2503/tennis-reddit-analysis/tree/main/code/eda).
+
+### Step 1: Download (`01_download_corpus.py`)
+
+`convokit.download()` fetches the r/tennis corpus (194 MB zipped) and unpacks it on the instance's
+disk. A ConvoKit corpus is a folder of JSON files:
+
+- `utterances.jsonl`: one line per post or comment (1.9 million lines). This is the main table.
+- `conversations.json`: one entry per thread, with the post title and comment count.
+- `users.json`, `corpus.json`, `index.json`: user and corpus metadata (not used).
+
+The script also tries the three Big 3 fan subreddits; they turned out too small to use (see above).
+
+### Step 2: Convert to parquet (`02_convert_to_parquet.py`)
+
+The corpus is not loaded into ConvoKit's own `Corpus` object, which holds everything in memory.
+Instead, Spark reads `utterances.jsonl` directly (`spark.read.json`, one JSON object per line),
+which works in parallel and does not depend on the machine's memory.
+
+The conversion:
+
+1. **Flattens the nested `meta` field** into ordinary columns (`score`, `author_flair_text`,
+   `gilded`, `stickied`, `permalink`, `top_level_comment`, ...).
+2. **Renames fields** to clearer names: `root` becomes `thread_id`, and the author column is taken
+   from `user` (this older corpus format) or `speaker` (newer ConvoKit format).
+3. **Adds time columns**: the Unix `timestamp` becomes a UTC `created_utc` timestamp plus `date`,
+   `year` and `month`.
+4. **Flags posts**: an utterance whose `id` equals its `thread_id` is the post that opened the thread
+   (`is_post`); everything else is a comment.
+5. **Writes parquet partitioned by year** (`comments/year=2012/`, `year=2013/`, ...). Parquet is
+   columnar and compressed, so later jobs read only the columns they need, and a filter on `year`
+   skips whole folders.
+6. **Writes a 1% random sample** (`comments_sample/`, fixed seed 42) for developing code quickly.
+   Each milestone's final numbers come from one run on the full data.
+
+`conversations.json` is a single JSON object keyed by thread ID rather than one object per line,
+so Spark cannot split it. It is small (96,033 threads), so it is read with Python's `json` module,
+converted with pandas and saved as `threads/threads.parquet`. Nested fields such as `gildings` are
+stored as JSON text.
+
+The parquet folders are then copied to S3 with `aws s3 sync`.
+
+| Main columns in `comments/` | Meaning |
+|---|---|
+| `id`, `thread_id`, `reply_to` | Comment ID, the thread it belongs to, and the comment it replies to |
+| `author`, `text` | Reddit username and comment text |
+| `created_utc`, `date`, `year`, `month` | When it was posted (UTC) |
+| `score`, `gilded` | Net upvotes and awards |
+| `author_flair_text` | The author's flair, often a favourite player |
+| `is_post` | `true` for the post that opened a thread |
+
+### Step 3: Match data (`03_get_match_data.sh`)
+
+The script clones the ATP and WTA repositories, keeps the tour-level singles match files for
+2010–2018 plus the 2010s weekly rankings and the player lists, and uploads the CSVs to S3 unchanged.
+Each match row has the tournament (name, level, surface, start date), round, both players' names,
+ranks and ages, the score, and the match length in minutes.
+
+### Step 4: Cleaning and EDA (`04_eda.ipynb`)
+
+The notebook reads the parquet data back into Spark and does all heavy work there; only small
+aggregated tables (at most a few thousand rows) are converted to pandas for plotting.
+
+**Cleaning**
+
+- Keeps 2012–2018. The years before 2012 have too little activity (under 9,000 posts and comments
+  in total).
+- Flags posts and comments whose text is `[deleted]` or `[removed]` (about 5%). They count towards
+  volume but are excluded from text analysis.
+- Strips accents and lowercases text before any name matching, so "Čilić" and "Cilic" are the same
+  word. Spark's `translate()` maps each accented letter to its plain version.
+
+**Player mentions.** Each player in
+[`code/common/players.py`](https://github.com/Laurent2503/tennis-reddit-analysis/blob/main/code/common/players.py)
+has a list of names and nicknames, combined into one case-insensitive regular expression with word
+boundaries. Spark tests every comment against all 25 expressions (`rlike`), keeps the names that
+matched in an array, and `explode`s it into one row per (comment, player). A comment that names
+Federer and Nadal therefore counts once for each.
+
+**Thread-to-match linking.** This joins 13,261 candidate threads to 45,903 matches.
+
+1. Threads are classified by title as `match`, `post-match`, `result` (titles with "vs", "def",
+   "beats" or a score) or `other`; only the first three are candidates.
+2. In each title, nicknames are replaced by surnames ("Rafa" becomes "nadal") and the title is split
+   into words.
+3. A thread is linked to a match when **both** players' surnames are words in the title and the
+   thread was posted between 1 day before and 16 days after the tournament's start date. Players
+   who share a surname (Serena and Venus Williams) need the name to appear twice.
+4. If several matches fit, the one from the latest tournament is kept.
+
+Comparing every thread with every match would mean about 600 million pairs. Instead, each title is
+split into one row per word and joined to the matches on the **winner's surname**, an ordinary
+equality join that Spark handles efficiently. The loser's surname and the date window are then
+checked only on those candidate pairs.
+
+A hand check of 100 random linked result posts found more than 90% linked to the correct match.
+
+**Outputs.** Two tables go back to S3 for milestone 2: `linked_threads` (one row per linked thread,
+with its match) and `match_attention` (one row per match, with the number of threads and total
+comments across them). Small CSVs and figures are written to this website's folder and committed
+to GitHub.
+
+## Storage layout on S3
+
+```
+s3://<bucket>/
+├── parquet/
+│   ├── subreddit-tennis/
+│   │   ├── comments/year=2008/ … year=2018/   all posts and comments
+│   │   ├── comments_sample/                    1% sample for development
+│   │   └── threads/                            one row per thread
+│   ├── linked_threads/                         threads joined to matches
+│   └── match_attention/                        one row per match with a thread
+└── raw/
+    └── matches/                                ATP + WTA CSVs, 2010–2018
+```
+
+## Reproducing the pipeline
+
+On an Ubuntu EC2 instance with an IAM role that can write to the bucket:
+
+```bash
+sudo apt install -y openjdk-17-jdk python3-venv
+python3 -m venv ~/venv && source ~/venv/bin/activate
+pip install "pyspark==3.5.*" convokit pandas pyarrow matplotlib jupyterlab
+export BUCKET=<bucket>
+python code/eda/01_download_corpus.py
+python code/eda/02_convert_to_parquet.py subreddit-tennis
+aws s3 sync ~/data/parquet s3://$BUCKET/parquet
+bash code/eda/03_get_match_data.sh
+EDA_MODE=full jupyter nbconvert --to notebook --execute --inplace \
+  --ExecutePreprocessor.timeout=-1 code/eda/04_eda.ipynb
+```
+
+Set `EDA_MODE=sample` to run the notebook on the 1% sample instead.

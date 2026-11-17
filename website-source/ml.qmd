@@ -1,0 +1,21 @@
+---
+title: "ML: What Drives Match Attention?"
+---
+
+## Features
+
+::: {.callout-note}
+TODO: ranking gap, round, Grand Slam flag, number of sets, upset flag, Big 3 flag.
+:::
+
+## Model
+
+::: {.callout-note}
+TODO: Spark MLlib regression of thread comment volume, evaluation metrics.
+:::
+
+## Feature importance
+
+::: {.callout-note}
+TODO: ranked drivers of attention.
+:::

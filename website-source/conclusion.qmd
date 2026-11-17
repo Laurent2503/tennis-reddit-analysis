@@ -1,0 +1,21 @@
+---
+title: "Conclusion"
+---
+
+## Findings
+
+::: {.callout-note}
+TODO
+:::
+
+## Takeaways for tournaments and broadcasters
+
+::: {.callout-note}
+TODO
+:::
+
+## Limitations
+
+- Match thread titles are inconsistent, so not every thread links to a match.
+- Sports slang can confuse general-purpose sentiment tools.
+- r/tennis likely covers men's tennis more than women's tennis.

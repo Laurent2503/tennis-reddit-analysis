@@ -1,0 +1,24 @@
+---
+title: "Data"
+---
+
+## Sources
+
+- **ConvoKit Reddit Corpus — `subreddit-tennis`**: posts and comments from r/tennis,
+  from the subreddit's start through October 2018.
+- **Jeff Sackmann `tennis_atp` and `tennis_wta`**: every tour-level match (date, tournament,
+  round, surface, rankings, score, duration) plus weekly rankings.
+
+## Size
+
+::: {.callout-note}
+TODO: fill in after conversion — number of posts, comments, unique authors,
+raw JSON size and parquet size on S3.
+:::
+
+## Storage and processing
+
+1. Corpus downloaded on EC2 with `convokit.download("subreddit-tennis")`.
+2. `utterances.jsonl` read with Spark, written as parquet partitioned by year to S3.
+3. Sackmann CSVs (2012–2018) uploaded to S3.
+4. All joins, sentiment scoring and modelling run in Spark.

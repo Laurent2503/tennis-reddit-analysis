@@ -1,0 +1,21 @@
+---
+title: "NLP: Player Sentiment"
+---
+
+## Player mention extraction
+
+::: {.callout-note}
+TODO: nickname dictionary and handling of ambiguous surnames.
+:::
+
+## Sentiment scoring
+
+::: {.callout-note}
+TODO: VADER in a pandas UDF, tennis-slang lexicon, hand-check of ~100 comments.
+:::
+
+## Big 3 sentiment timeline
+
+::: {.callout-note}
+TODO: weekly sentiment per player annotated with key results.
+:::

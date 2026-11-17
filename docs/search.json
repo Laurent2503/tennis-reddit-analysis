@@ -1,0 +1,170 @@
+[
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data",
+    "section": "",
+    "text": "ConvoKit Reddit Corpus — subreddit-tennis: posts and comments from r/tennis, from the subreddit’s start through October 2018.\nJeff Sackmann tennis_atp and tennis_wta: every tour-level match (date, tournament, round, surface, rankings, score, duration) plus weekly rankings."
+  },
+  {
+    "objectID": "data.html#sources",
+    "href": "data.html#sources",
+    "title": "Data",
+    "section": "",
+    "text": "ConvoKit Reddit Corpus — subreddit-tennis: posts and comments from r/tennis, from the subreddit’s start through October 2018.\nJeff Sackmann tennis_atp and tennis_wta: every tour-level match (date, tournament, round, surface, rankings, score, duration) plus weekly rankings."
+  },
+  {
+    "objectID": "data.html#size",
+    "href": "data.html#size",
+    "title": "Data",
+    "section": "Size",
+    "text": "Size\n\n\n\n\n\n\nNote\n\n\n\nTODO: fill in after conversion — number of posts, comments, unique authors, raw JSON size and parquet size on S3."
+  },
+  {
+    "objectID": "data.html#storage-and-processing",
+    "href": "data.html#storage-and-processing",
+    "title": "Data",
+    "section": "Storage and processing",
+    "text": "Storage and processing\n\nCorpus downloaded on EC2 with convokit.download(\"subreddit-tennis\").\nutterances.jsonl read with Spark, written as parquet partitioned by year to S3.\nSackmann CSVs (2012–2018) uploaded to S3.\nAll joins, sentiment scoring and modelling run in Spark."
+  },
+  {
+    "objectID": "conclusion.html",
+    "href": "conclusion.html",
+    "title": "Conclusion",
+    "section": "",
+    "text": "Note\n\n\n\nTODO"
+  },
+  {
+    "objectID": "conclusion.html#findings",
+    "href": "conclusion.html#findings",
+    "title": "Conclusion",
+    "section": "",
+    "text": "Note\n\n\n\nTODO"
+  },
+  {
+    "objectID": "conclusion.html#takeaways-for-tournaments-and-broadcasters",
+    "href": "conclusion.html#takeaways-for-tournaments-and-broadcasters",
+    "title": "Conclusion",
+    "section": "Takeaways for tournaments and broadcasters",
+    "text": "Takeaways for tournaments and broadcasters\n\n\n\n\n\n\nNote\n\n\n\nTODO"
+  },
+  {
+    "objectID": "conclusion.html#limitations",
+    "href": "conclusion.html#limitations",
+    "title": "Conclusion",
+    "section": "Limitations",
+    "text": "Limitations\n\nMatch thread titles are inconsistent, so not every thread links to a match.\nSports slang can confuse general-purpose sentiment tools.\nr/tennis likely covers men’s tennis more than women’s tennis."
+  },
+  {
+    "objectID": "nlp.html",
+    "href": "nlp.html",
+    "title": "NLP: Player Sentiment",
+    "section": "",
+    "text": "Note\n\n\n\nTODO: nickname dictionary and handling of ambiguous surnames."
+  },
+  {
+    "objectID": "nlp.html#player-mention-extraction",
+    "href": "nlp.html#player-mention-extraction",
+    "title": "NLP: Player Sentiment",
+    "section": "",
+    "text": "Note\n\n\n\nTODO: nickname dictionary and handling of ambiguous surnames."
+  },
+  {
+    "objectID": "nlp.html#sentiment-scoring",
+    "href": "nlp.html#sentiment-scoring",
+    "title": "NLP: Player Sentiment",
+    "section": "Sentiment scoring",
+    "text": "Sentiment scoring\n\n\n\n\n\n\nNote\n\n\n\nTODO: VADER in a pandas UDF, tennis-slang lexicon, hand-check of ~100 comments."
+  },
+  {
+    "objectID": "nlp.html#big-3-sentiment-timeline",
+    "href": "nlp.html#big-3-sentiment-timeline",
+    "title": "NLP: Player Sentiment",
+    "section": "Big 3 sentiment timeline",
+    "text": "Big 3 sentiment timeline\n\n\n\n\n\n\nNote\n\n\n\nTODO: weekly sentiment per player annotated with key results."
+  },
+  {
+    "objectID": "eda.html",
+    "href": "eda.html",
+    "title": "Exploratory Data Analysis",
+    "section": "",
+    "text": "Note\n\n\n\nTODO: monthly posts and comments, 2012–2018."
+  },
+  {
+    "objectID": "eda.html#comment-volume-over-time",
+    "href": "eda.html#comment-volume-over-time",
+    "title": "Exploratory Data Analysis",
+    "section": "",
+    "text": "Note\n\n\n\nTODO: monthly posts and comments, 2012–2018."
+  },
+  {
+    "objectID": "eda.html#mentions-per-player",
+    "href": "eda.html#mentions-per-player",
+    "title": "Exploratory Data Analysis",
+    "section": "Mentions per player",
+    "text": "Mentions per player\n\n\n\n\n\n\nNote\n\n\n\nTODO: mention counts using the player name/nickname dictionary."
+  },
+  {
+    "objectID": "eda.html#linking-match-threads-to-matches",
+    "href": "eda.html#linking-match-threads-to-matches",
+    "title": "Exploratory Data Analysis",
+    "section": "Linking match threads to matches",
+    "text": "Linking match threads to matches\n\n\n\n\n\n\nNote\n\n\n\nTODO: share of “Match Thread” posts linked to a Sackmann match within ±1 day."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "What Makes Tennis Fans Talk?",
+    "section": "",
+    "text": "What drives fan attention and sentiment in online tennis discussion: who is playing, how surprising the result is, or how big the moment is?\nThis project joins the ConvoKit Reddit corpus for r/tennis with Jeff Sackmann’s ATP and WTA match records, so fan discussion can be compared with what actually happened on court. All processing runs in Apache Spark on AWS."
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "What Makes Tennis Fans Talk?",
+    "section": "",
+    "text": "What drives fan attention and sentiment in online tennis discussion: who is playing, how surprising the result is, or how big the moment is?\nThis project joins the ConvoKit Reddit corpus for r/tennis with Jeff Sackmann’s ATP and WTA match records, so fan discussion can be compared with what actually happened on court. All processing runs in Apache Spark on AWS."
+  },
+  {
+    "objectID": "index.html#questions",
+    "href": "index.html#questions",
+    "title": "What Makes Tennis Fans Talk?",
+    "section": "Questions",
+    "text": "Questions\n\nWhat gets attention? How much of a match thread’s comment volume is explained by the match itself: ranking gap, round, Grand Slam vs. other events, number of sets, upsets, and whether a Big 3 player was involved?\nHow do fans feel about the Big 3, and does it follow results? Sentiment around Federer, Nadal and Djokovic during 2012–2018, including Federer’s 2017 comeback, Nadal’s 10th French Open and Djokovic’s 2017 slump and 2018 return.\n(Optional) Controversy: The 2018 US Open women’s final as a sentiment spike that match statistics do not explain."
+  },
+  {
+    "objectID": "index.html#site-map",
+    "href": "index.html#site-map",
+    "title": "What Makes Tennis Fans Talk?",
+    "section": "Site map",
+    "text": "Site map\n\n\n\nPage\nContents\n\n\n\n\nData\nSources, size, and how the data is stored and processed\n\n\nEDA\nComment volume over time, mentions per player, thread-to-match linking\n\n\nNLP\nPlayer mention extraction and VADER sentiment\n\n\nML\nSpark MLlib model of match-thread attention\n\n\nConclusion\nFindings and takeaways for schedulers and broadcasters"
+  },
+  {
+    "objectID": "ml.html",
+    "href": "ml.html",
+    "title": "ML: What Drives Match Attention?",
+    "section": "",
+    "text": "Note\n\n\n\nTODO: ranking gap, round, Grand Slam flag, number of sets, upset flag, Big 3 flag."
+  },
+  {
+    "objectID": "ml.html#features",
+    "href": "ml.html#features",
+    "title": "ML: What Drives Match Attention?",
+    "section": "",
+    "text": "Note\n\n\n\nTODO: ranking gap, round, Grand Slam flag, number of sets, upset flag, Big 3 flag."
+  },
+  {
+    "objectID": "ml.html#model",
+    "href": "ml.html#model",
+    "title": "ML: What Drives Match Attention?",
+    "section": "Model",
+    "text": "Model\n\n\n\n\n\n\nNote\n\n\n\nTODO: Spark MLlib regression of thread comment volume, evaluation metrics."
+  },
+  {
+    "objectID": "ml.html#feature-importance",
+    "href": "ml.html#feature-importance",
+    "title": "ML: What Drives Match Attention?",
+    "section": "Feature importance",
+    "text": "Feature importance\n\n\n\n\n\n\nNote\n\n\n\nTODO: ranked drivers of attention."
+  }
+]

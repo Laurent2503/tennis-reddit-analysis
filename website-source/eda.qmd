@@ -1,0 +1,21 @@
+---
+title: "Exploratory Data Analysis"
+---
+
+## Comment volume over time
+
+::: {.callout-note}
+TODO: monthly posts and comments, 2012–2018.
+:::
+
+## Mentions per player
+
+::: {.callout-note}
+TODO: mention counts using the player name/nickname dictionary.
+:::
+
+## Linking match threads to matches
+
+::: {.callout-note}
+TODO: share of "Match Thread" posts linked to a Sackmann match within ±1 day.
+:::

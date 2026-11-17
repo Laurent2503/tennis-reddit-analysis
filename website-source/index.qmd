@@ -1,0 +1,36 @@
+---
+title: "What Makes Tennis Fans Talk?"
+subtitle: "Fan attention and sentiment on r/tennis, joined with official match results"
+author: "Laurent Julia Calac"
+date: last-modified
+---
+
+## Overview
+
+What drives fan attention and sentiment in online tennis discussion: who is playing,
+how surprising the result is, or how big the moment is?
+
+This project joins the ConvoKit Reddit corpus for r/tennis with Jeff Sackmann's
+ATP and WTA match records, so fan discussion can be compared with what actually
+happened on court. All processing runs in Apache Spark on AWS.
+
+## Questions
+
+1. **What gets attention?** How much of a match thread's comment volume is explained by
+   the match itself: ranking gap, round, Grand Slam vs. other events, number of sets,
+   upsets, and whether a Big 3 player was involved?
+2. **How do fans feel about the Big 3, and does it follow results?** Sentiment around
+   Federer, Nadal and Djokovic during 2012–2018, including Federer's 2017 comeback,
+   Nadal's 10th French Open and Djokovic's 2017 slump and 2018 return.
+3. **(Optional) Controversy:** The 2018 US Open women's final as a sentiment spike that
+   match statistics do not explain.
+
+## Site map
+
+| Page | Contents |
+|---|---|
+| [Data](data.qmd) | Sources, size, and how the data is stored and processed |
+| [EDA](eda.qmd) | Comment volume over time, mentions per player, thread-to-match linking |
+| [NLP](nlp.qmd) | Player mention extraction and VADER sentiment |
+| [ML](ml.qmd) | Spark MLlib model of match-thread attention |
+| [Conclusion](conclusion.qmd) | Findings and takeaways for schedulers and broadcasters |

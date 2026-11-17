@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: ../docs
+
+website:
+  title: "What Makes Tennis Fans Talk?"
+  description: "DSAN 6000 final project: r/tennis discussion joined with ATP/WTA match results."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: data.qmd
+        text: Data
+      - href: eda.qmd
+        text: EDA
+      - href: nlp.qmd
+        text: NLP
+      - href: ml.qmd
+        text: ML
+      - href: conclusion.qmd
+        text: Conclusion
+    right:
+      - icon: github
+        href: https://github.com/Laurent2503/tennis-reddit-analysis
+  page-footer:
+    center: "Laurent Julia Calac · DSAN 6000 · Georgetown University"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    code-fold: true
+    fig-cap-location: bottom
+
+execute:
+  freeze: auto

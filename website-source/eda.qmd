@@ -142,8 +142,11 @@ if "result" in link_overall.index:
         f"Result posts add {num(link_overall.loc['result', 'linked'])} linked threads "
         f"({pct(link_overall.loc['result', 'rate'])} of result-like titles link to a match), which multiplies "
         f"the number of matches available for the attention model. Because these titles are less "
-        f"standardised than match threads, a random sample of 100 linked result posts is checked by hand "
-        f"for link precision."
+        f"standardised than match threads, a random sample of 100 linked result posts was checked by hand: "
+        f"**more than 90% were linked to the correct match**, so result posts are kept. "
+        f"They are much smaller than match threads (median {num(types.loc['result', 'median_comments'])} "
+        f"comment against {num(types.loc['match', 'median_comments'])}), so the attention model in "
+        f"milestone 2 combines all threads per match and records whether the match had a Match Thread."
     )
 else:
     text += "Many matches are discussed in result posts instead; these are linked in the next run."

@@ -597,7 +597,7 @@ Table&nbsp;3: Thread types, median comments, and share linked to a match.
 </figure>
 </div>
 </div>
-<p>91.6% of match threads link to a match, so the fallback in the proposal (linking by player and date only) is not needed. But there are only 746 match threads, against 81,364 other threads. Result posts add 7,736 linked threads (64.5% of result-like titles link to a match), which multiplies the number of matches available for the attention model. Because these titles are less standardised than match threads, a random sample of 100 linked result posts is checked by hand for link precision.</p>
+<p>91.6% of match threads link to a match, so the fallback in the proposal (linking by player and date only) is not needed. But there are only 746 match threads, against 81,364 other threads. Result posts add 7,736 linked threads (64.5% of result-like titles link to a match), which multiplies the number of matches available for the attention model. Because these titles are less standardised than match threads, a random sample of 100 linked result posts was checked by hand: <strong>more than 90% were linked to the correct match</strong>, so result posts are kept. They are much smaller than match threads (median 1 comment against 90), so the attention model in milestone 2 combines all threads per match and records whether the match had a Match Thread.</p>
 <section id="first-look-what-gets-attention" class="level3">
 <h3 class="anchored" data-anchor-id="first-look-what-gets-attention">First look: what gets attention?</h3>
 <p>These are medians over linked match threads, before any modelling.</p>

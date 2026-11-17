@@ -139,9 +139,11 @@ text = (
 )
 if "result" in link_overall.index:
     text += (
-        f"Result posts add {num(link_overall.loc['result', 'linked'])} linked threads. Most result-like titles "
-        f"do not name two players from the same tournament, so their link rate is low by design. "
-        f"A random sample of 100 linked result posts is checked by hand for link precision."
+        f"Result posts add {num(link_overall.loc['result', 'linked'])} linked threads "
+        f"({pct(link_overall.loc['result', 'rate'])} of result-like titles link to a match), which multiplies "
+        f"the number of matches available for the attention model. Because these titles are less "
+        f"standardised than match threads, a random sample of 100 linked result posts is checked by hand "
+        f"for link precision."
     )
 else:
     text += "Many matches are discussed in result posts instead; these are linked in the next run."

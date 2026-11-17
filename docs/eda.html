@@ -566,19 +566,26 @@ Table&nbsp;3: Thread types, median comments, and share linked to a match.
 <td>match</td>
 <td>746</td>
 <td>90</td>
-<td>668</td>
-<td>90%</td>
+<td>683</td>
+<td>92%</td>
 </tr>
 <tr class="even">
 <td>post-match</td>
 <td>530</td>
 <td>4</td>
-<td>336</td>
-<td>63%</td>
+<td>347</td>
+<td>65%</td>
 </tr>
 <tr class="odd">
+<td>result</td>
+<td>11,985</td>
+<td>1</td>
+<td>7,736</td>
+<td>65%</td>
+</tr>
+<tr class="even">
 <td>other</td>
-<td>93,349</td>
+<td>81,364</td>
 <td>3</td>
 <td></td>
 <td></td>
@@ -590,7 +597,7 @@ Table&nbsp;3: Thread types, median comments, and share linked to a match.
 </figure>
 </div>
 </div>
-<p>89.5% of match threads link to a match, so the fallback in the proposal (linking by player and date only) is not needed. But there are only 746 match threads, against 93,349 other threads. Many matches are discussed in result posts instead; these are linked in the next run.</p>
+<p>91.6% of match threads link to a match, so the fallback in the proposal (linking by player and date only) is not needed. But there are only 746 match threads, against 81,364 other threads. Result posts add 7,736 linked threads (64.5% of result-like titles link to a match), which multiplies the number of matches available for the attention model. Because these titles are less standardised than match threads, a random sample of 100 linked result posts is checked by hand for link precision.</p>
 <section id="first-look-what-gets-attention" class="level3">
 <h3 class="anchored" data-anchor-id="first-look-what-gets-attention">First look: what gets attention?</h3>
 <p>These are medians over linked match threads, before any modelling.</p>
@@ -626,16 +633,16 @@ Table&nbsp;4: Comments per linked match thread.
 <tr class="odd">
 <td>Event level</td>
 <td>Grand Slam</td>
-<td>366</td>
-<td>195</td>
-<td>680</td>
+<td>378</td>
+<td>205.5</td>
+<td>700</td>
 </tr>
 <tr class="even">
 <td>Event level</td>
 <td>Masters / Premier</td>
-<td>161</td>
+<td>164</td>
 <td>76</td>
-<td>229</td>
+<td>231</td>
 </tr>
 <tr class="odd">
 <td>Event level</td>
@@ -654,44 +661,44 @@ Table&nbsp;4: Comments per linked match thread.
 <tr class="odd">
 <td>Big 3 involved</td>
 <td>No</td>
-<td>309</td>
-<td>93</td>
-<td>316</td>
+<td>321</td>
+<td>98</td>
+<td>323</td>
 </tr>
 <tr class="even">
 <td>Big 3 involved</td>
 <td>Yes</td>
-<td>359</td>
-<td>120</td>
-<td>577</td>
+<td>362</td>
+<td>121.5</td>
+<td>601</td>
 </tr>
 <tr class="odd">
 <td>Upset (lower-ranked player won)</td>
 <td>No</td>
-<td>458</td>
-<td>89.5</td>
-<td>388</td>
+<td>469</td>
+<td>93</td>
+<td>404</td>
 </tr>
 <tr class="even">
 <td>Upset (lower-ranked player won)</td>
 <td>Yes</td>
-<td>210</td>
-<td>157</td>
-<td>605</td>
+<td>214</td>
+<td>162</td>
+<td>617</td>
 </tr>
 <tr class="odd">
 <td>Tour</td>
 <td>ATP</td>
-<td>516</td>
-<td>97.5</td>
-<td>507</td>
+<td>523</td>
+<td>98</td>
+<td>526</td>
 </tr>
 <tr class="even">
 <td>Tour</td>
 <td>WTA</td>
-<td>152</td>
-<td>126</td>
-<td>282</td>
+<td>160</td>
+<td>133</td>
+<td>290</td>
 </tr>
 </tbody>
 </table>

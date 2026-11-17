@@ -7,14 +7,24 @@ title: "Data"
 - **ConvoKit Reddit Corpus — `subreddit-tennis`**: posts and comments from r/tennis,
   from the subreddit's start through October 2018.
 - **Jeff Sackmann `tennis_atp` and `tennis_wta`**: every tour-level match (date, tournament,
-  round, surface, rankings, score, duration) plus weekly rankings.
+  round, surface, rankings, score, duration) plus weekly rankings, CC BY-NC-SA 4.0.
+  The original GitHub repositories are no longer public, so the files come from public forks of them
+  (see `code/eda/03_get_match_data.sh`).
+
+The proposal also planned to compare the Federer, Nadal and Djokovic fan subreddits. They exist in
+ConvoKit but are tiny (r/rogerfederer is 0.6 MB zipped; r/RafaelNadal and r/novakdjokovic are under
+10 KB), so all player analysis uses r/tennis.
 
 ## Size
 
-::: {.callout-note}
-TODO: fill in after conversion — number of posts, comments, unique authors,
-raw JSON size and parquet size on S3.
-:::
+| | |
+|---|---|
+| r/tennis corpus download | 194 MB (zipped JSON) |
+| Posts and comments, all years | 1,913,206 |
+| Threads | 96,033 |
+| Posts and comments, 2012–2018 | 1,904,293 |
+| ATP + WTA matches, 2011–2018 | 45,884 |
+| All data on S3 (parquet + match CSVs) | 297 MB |
 
 ## Storage and processing
 

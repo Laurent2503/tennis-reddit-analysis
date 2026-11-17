@@ -339,24 +339,40 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="sources">Sources</h2>
 <ul>
 <li><strong>ConvoKit Reddit Corpus — <code>subreddit-tennis</code></strong>: posts and comments from r/tennis, from the subreddit’s start through October 2018.</li>
-<li><strong>Jeff Sackmann <code>tennis_atp</code> and <code>tennis_wta</code></strong>: every tour-level match (date, tournament, round, surface, rankings, score, duration) plus weekly rankings.</li>
+<li><strong>Jeff Sackmann <code>tennis_atp</code> and <code>tennis_wta</code></strong>: every tour-level match (date, tournament, round, surface, rankings, score, duration) plus weekly rankings, CC BY-NC-SA 4.0. The original GitHub repositories are no longer public, so the files come from public forks of them (see <code>code/eda/03_get_match_data.sh</code>).</li>
 </ul>
+<p>The proposal also planned to compare the Federer, Nadal and Djokovic fan subreddits. They exist in ConvoKit but are tiny (r/rogerfederer is 0.6 MB zipped; r/RafaelNadal and r/novakdjokovic are under 10 KB), so all player analysis uses r/tennis.</p>
 </section>
 <section id="size" class="level2">
 <h2 class="anchored" data-anchor-id="size">Size</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>TODO: fill in after conversion — number of posts, comments, unique authors, raw JSON size and parquet size on S3.</p>
-</div>
-</div>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>r/tennis corpus download</td>
+<td>194 MB (zipped JSON)</td>
+</tr>
+<tr class="even">
+<td>Posts and comments, all years</td>
+<td>1,913,206</td>
+</tr>
+<tr class="odd">
+<td>Threads</td>
+<td>96,033</td>
+</tr>
+<tr class="even">
+<td>Posts and comments, 2012–2018</td>
+<td>1,904,293</td>
+</tr>
+<tr class="odd">
+<td>ATP + WTA matches, 2011–2018</td>
+<td>45,884</td>
+</tr>
+<tr class="even">
+<td>All data on S3 (parquet + match CSVs)</td>
+<td>297 MB</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="storage-and-processing" class="level2">
 <h2 class="anchored" data-anchor-id="storage-and-processing">Storage and processing</h2>

@@ -4,21 +4,21 @@
     "href": "data.html",
     "title": "Data",
     "section": "",
-    "text": "ConvoKit Reddit Corpus — subreddit-tennis: posts and comments from r/tennis, from the subreddit’s start through October 2018.\nJeff Sackmann tennis_atp and tennis_wta: every tour-level match (date, tournament, round, surface, rankings, score, duration) plus weekly rankings."
+    "text": "ConvoKit Reddit Corpus — subreddit-tennis: posts and comments from r/tennis, from the subreddit’s start through October 2018.\nJeff Sackmann tennis_atp and tennis_wta: every tour-level match (date, tournament, round, surface, rankings, score, duration) plus weekly rankings, CC BY-NC-SA 4.0. The original GitHub repositories are no longer public, so the files come from public forks of them (see code/eda/03_get_match_data.sh).\n\nThe proposal also planned to compare the Federer, Nadal and Djokovic fan subreddits. They exist in ConvoKit but are tiny (r/rogerfederer is 0.6 MB zipped; r/RafaelNadal and r/novakdjokovic are under 10 KB), so all player analysis uses r/tennis."
   },
   {
     "objectID": "data.html#sources",
     "href": "data.html#sources",
     "title": "Data",
     "section": "",
-    "text": "ConvoKit Reddit Corpus — subreddit-tennis: posts and comments from r/tennis, from the subreddit’s start through October 2018.\nJeff Sackmann tennis_atp and tennis_wta: every tour-level match (date, tournament, round, surface, rankings, score, duration) plus weekly rankings."
+    "text": "ConvoKit Reddit Corpus — subreddit-tennis: posts and comments from r/tennis, from the subreddit’s start through October 2018.\nJeff Sackmann tennis_atp and tennis_wta: every tour-level match (date, tournament, round, surface, rankings, score, duration) plus weekly rankings, CC BY-NC-SA 4.0. The original GitHub repositories are no longer public, so the files come from public forks of them (see code/eda/03_get_match_data.sh).\n\nThe proposal also planned to compare the Federer, Nadal and Djokovic fan subreddits. They exist in ConvoKit but are tiny (r/rogerfederer is 0.6 MB zipped; r/RafaelNadal and r/novakdjokovic are under 10 KB), so all player analysis uses r/tennis."
   },
   {
     "objectID": "data.html#size",
     "href": "data.html#size",
     "title": "Data",
     "section": "Size",
-    "text": "Size\n\n\n\n\n\n\nNote\n\n\n\nTODO: fill in after conversion — number of posts, comments, unique authors, raw JSON size and parquet size on S3."
+    "text": "Size\n\n\n\nr/tennis corpus download\n194 MB (zipped JSON)\n\n\nPosts and comments, all years\n1,913,206\n\n\nThreads\n96,033\n\n\nPosts and comments, 2012–2018\n1,904,293\n\n\nATP + WTA matches, 2011–2018\n45,884\n\n\nAll data on S3 (parquet + match CSVs)\n297 MB"
   },
   {
     "objectID": "data.html#storage-and-processing",
@@ -88,28 +88,35 @@
     "href": "eda.html",
     "title": "Exploratory Data Analysis",
     "section": "",
-    "text": "Note\n\n\n\nTODO: monthly posts and comments, 2012–2018."
+    "text": "All counts cover 2012–2018 and are computed in Spark on the full corpus (code: code/eda/04_eda.ipynb)."
   },
   {
-    "objectID": "eda.html#comment-volume-over-time",
-    "href": "eda.html#comment-volume-over-time",
+    "objectID": "eda.html#how-much-discussion-is-there",
+    "href": "eda.html#how-much-discussion-is-there",
     "title": "Exploratory Data Analysis",
-    "section": "",
-    "text": "Note\n\n\n\nTODO: monthly posts and comments, 2012–2018."
+    "section": "1. How much discussion is there?",
+    "text": "1. How much discussion is there?\nr/tennis has 1,904,293 posts and comments in the analysis window. Activity grows every year: there were 22 times more comments in 2018 than in 2012, and 2017–2018 alone account for 62.9% of all discussion. Because of this growth, the player analysis below uses shares of comments rather than raw counts, so a rising trend reflects fan interest and not a bigger subreddit.\n\n\n\n\nTable 1: Posts, comments and active authors per year.\n\n\n\n\n\n\nYear\nPosts\nComments\nAuthors\nDeleted / removed\n\n\n\n\n2012\n3,853\n27,842\n3,557\n7.1%\n\n\n2013\n7,249\n64,226\n5,901\n5.5%\n\n\n2014\n9,278\n100,792\n7,542\n4.6%\n\n\n2015\n13,597\n192,555\n11,742\n4.5%\n\n\n2016\n16,434\n270,201\n13,562\n5.3%\n\n\n2017\n21,260\n542,629\n19,554\n5.4%\n\n\n2018\n22,954\n611,423\n24,714\n5.8%\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Monthly posts and comments on r/tennis.\n\n\n\nAbout 5.4% of posts and comments were deleted or removed; they are excluded from the text analysis.\n\nThe busiest days are the biggest matches\nThe ten days with the most comments all fall during Grand Slams. The top two are the 2018 Wimbledon semi-final day (Anderson–Isner and Djokovic–Nadal, both over five hours) and the 2017 Australian Open final between Federer and Nadal. The 2018 US Open finals weekend (Osaka–Williams on September 8, Djokovic–Del Potro on September 9) is also near the top. Dates are in UTC, so evening matches in the Americas can show up on the next day.\n\n\n\n\nTable 2: The ten days with the most comments.\n\n\n\n\n\n\nDate (UTC)\nComments\n\n\n\n\n2018-07-13\n19,171\n\n\n2017-01-29\n18,901\n\n\n2018-09-09\n15,272\n\n\n2018-09-08\n12,173\n\n\n2018-09-05\n11,885\n\n\n2018-07-11\n11,728\n\n\n2018-01-28\n11,599\n\n\n2017-07-10\n11,424\n\n\n2018-07-14\n10,270\n\n\n2018-09-04\n8,989"
   },
   {
-    "objectID": "eda.html#mentions-per-player",
-    "href": "eda.html#mentions-per-player",
+    "objectID": "eda.html#who-do-fans-talk-about",
+    "href": "eda.html#who-do-fans-talk-about",
     "title": "Exploratory Data Analysis",
-    "section": "Mentions per player",
-    "text": "Mentions per player\n\n\n\n\n\n\nNote\n\n\n\nTODO: mention counts using the player name/nickname dictionary."
+    "section": "2. Who do fans talk about?",
+    "text": "2. Who do fans talk about?\nPlayer mentions are found with a dictionary of names and nicknames (code/common/players.py), matched as whole words without case or accents (“Fed” and “Rafa” count; “fed up” does not). 29.2% of comments mention at least one of the 25 listed players.\n\n\n\n\n\n\nFigure 2: Comments mentioning each player, 2012–2018.\n\n\n\nCoverage bias. 86.9% of player mentions are of men’s (ATP) players and only 13.1% of women’s (WTA) players. Serena Williams is the only woman in the top ten. The dictionary lists more men than women, which explains part of the gap, but even the most-discussed women are far behind the Big 3. This is reported as a finding and kept in mind when comparing ATP and WTA results.\n\nThe Big 3 over time\nFederer, Nadal and Djokovic dominate the conversation. Their monthly share of comments moves with their results: for example, Djokovic’s share falls through his 2017 elbow injury and rises again in mid-2018, when he returned to win Wimbledon. Milestone 2 adds sentiment to these mention counts.\n\n\n\n\n\n\nFigure 3: Big 3 mentions per 1,000 comments each month."
   },
   {
-    "objectID": "eda.html#linking-match-threads-to-matches",
-    "href": "eda.html#linking-match-threads-to-matches",
+    "objectID": "eda.html#linking-discussion-threads-to-real-matches",
+    "href": "eda.html#linking-discussion-threads-to-real-matches",
     "title": "Exploratory Data Analysis",
-    "section": "Linking match threads to matches",
-    "text": "Linking match threads to matches\n\n\n\n\n\n\nNote\n\n\n\nTODO: share of “Match Thread” posts linked to a Sackmann match within ±1 day."
+    "section": "3. Linking discussion threads to real matches",
+    "text": "3. Linking discussion threads to real matches\nr/tennis posts a dedicated Match Thread for big matches, and sometimes a Post-Match Thread. Threads are linked to the official match record (Jeff Sackmann’s ATP and WTA data) when:\n\nboth players’ surnames appear in the title (nicknames and accents are normalised first), and\nthe thread was posted between 1 day before and 16 days after the tournament’s start date.\n\nThe match data only records each tournament’s start date, not the day of each match, so the proposal’s one-day window was replaced by this tournament window.\n\n\n\n\nTable 3: Thread types, median comments, and share linked to a match.\n\n\n\n\n\n\nThread type\nThreads\nMedian comments\nLinked\nLink rate\n\n\n\n\nmatch\n746\n90\n668\n90%\n\n\npost-match\n530\n4\n336\n63%\n\n\nother\n93,349\n3\n\n\n\n\n\n\n\n\n\n\n89.5% of match threads link to a match, so the fallback in the proposal (linking by player and date only) is not needed. The catch is volume: there are only 746 match threads, against 93,349 other threads. Many matches are discussed in result posts and general threads instead. Milestone 2 will try to link those “other” threads that name two players to increase the sample for the attention model.\n\nFirst look: what gets attention?\nThese are medians over linked match threads, before any modelling.\n\n\n\n\n\n\nFigure 4: Median comments per match thread by event level and Big 3 involvement.\n\n\n\n\n\n\n\nTable 4: Comments per linked match thread.\n\n\n\n\n\n\nFeature\nGroup\nThreads\nMedian comments\nMean comments\n\n\n\n\nEvent level\nGrand Slam\n366\n195\n680\n\n\nEvent level\nMasters / Premier\n161\n76\n229\n\n\nEvent level\nOther\n75\n33\n143\n\n\nEvent level\nTour Finals\n66\n68.5\n124\n\n\nBig 3 involved\nNo\n309\n93\n316\n\n\nBig 3 involved\nYes\n359\n120\n577\n\n\nUpset (lower-ranked player won)\nNo\n458\n89.5\n388\n\n\nUpset (lower-ranked player won)\nYes\n210\n157\n605\n\n\nTour\nATP\n516\n97.5\n507\n\n\nTour\nWTA\n152\n126\n282\n\n\n\n\n\n\n\n\nThree early patterns, to be tested in the milestone 2 regression:\n\nThe event matters most. Grand Slam match threads get far more comments than Masters/Premier or smaller events.\nThe Big 3 add attention at every level. At each event level, threads with Federer, Nadal or Djokovic have a higher median than threads without them.\nUpsets draw more discussion. Threads where the lower-ranked player won have a higher median. This could partly reflect which matches get a thread at all, so it needs controls."
+  },
+  {
+    "objectID": "eda.html#next-steps-milestone-2",
+    "href": "eda.html#next-steps-milestone-2",
+    "title": "Exploratory Data Analysis",
+    "section": "Next steps (milestone 2)",
+    "text": "Next steps (milestone 2)\n\nLink “other” threads that name two players, to grow the attention dataset.\nScore sentiment for each player mention with VADER plus a tennis-slang lexicon.\nFit a Spark MLlib regression of thread comment volume on match features."
   },
   {
     "objectID": "index.html",

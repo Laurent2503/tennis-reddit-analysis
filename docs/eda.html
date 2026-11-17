@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -72,6 +72,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -306,9 +309,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#comment-volume-over-time" id="toc-comment-volume-over-time" class="nav-link active" data-scroll-target="#comment-volume-over-time">Comment volume over time</a></li>
-  <li><a href="#mentions-per-player" id="toc-mentions-per-player" class="nav-link" data-scroll-target="#mentions-per-player">Mentions per player</a></li>
-  <li><a href="#linking-match-threads-to-matches" id="toc-linking-match-threads-to-matches" class="nav-link" data-scroll-target="#linking-match-threads-to-matches">Linking match threads to matches</a></li>
+  <li><a href="#how-much-discussion-is-there" id="toc-how-much-discussion-is-there" class="nav-link active" data-scroll-target="#how-much-discussion-is-there">1. How much discussion is there?</a>
+  <ul class="collapse">
+  <li><a href="#the-busiest-days-are-the-biggest-matches" id="toc-the-busiest-days-are-the-biggest-matches" class="nav-link" data-scroll-target="#the-busiest-days-are-the-biggest-matches">The busiest days are the biggest matches</a></li>
+  </ul></li>
+  <li><a href="#who-do-fans-talk-about" id="toc-who-do-fans-talk-about" class="nav-link" data-scroll-target="#who-do-fans-talk-about">2. Who do fans talk about?</a>
+  <ul class="collapse">
+  <li><a href="#the-big-3-over-time" id="toc-the-big-3-over-time" class="nav-link" data-scroll-target="#the-big-3-over-time">The Big 3 over time</a></li>
+  </ul></li>
+  <li><a href="#linking-discussion-threads-to-real-matches" id="toc-linking-discussion-threads-to-real-matches" class="nav-link" data-scroll-target="#linking-discussion-threads-to-real-matches">3. Linking discussion threads to real matches</a>
+  <ul class="collapse">
+  <li><a href="#first-look-what-gets-attention" id="toc-first-look-what-gets-attention" class="nav-link" data-scroll-target="#first-look-what-gets-attention">First look: what gets attention?</a></li>
+  </ul></li>
+  <li><a href="#next-steps-milestone-2" id="toc-next-steps-milestone-2" class="nav-link" data-scroll-target="#next-steps-milestone-2">Next steps (milestone 2)</a></li>
   </ul>
 </nav>
     </div>
@@ -335,53 +348,373 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="comment-volume-over-time" class="level2">
-<h2 class="anchored" data-anchor-id="comment-volume-over-time">Comment volume over time</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>All counts cover <strong>2012–2018</strong> and are computed in Spark on the full corpus (code: <a href="https://github.com/Laurent2503/tennis-reddit-analysis/blob/main/code/eda/04_eda.ipynb"><code>code/eda/04_eda.ipynb</code></a>).</p>
+<section id="how-much-discussion-is-there" class="level2">
+<h2 class="anchored" data-anchor-id="how-much-discussion-is-there">1. How much discussion is there?</h2>
+<p>r/tennis has 1,904,293 posts and comments in the analysis window. Activity grows every year: there were 22 times more comments in 2018 than in 2012, and 2017–2018 alone account for 62.9% of all discussion. Because of this growth, the player analysis below uses <strong>shares of comments</strong> rather than raw counts, so a rising trend reflects fan interest and not a bigger subreddit.</p>
+<div class="cell" data-execution_count="2">
+<div id="tbl-volume" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="2">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-volume-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Posts, comments and active authors per year.
+</figcaption>
+<div aria-describedby="tbl-volume-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="2">
+<table class="dataframe table table-sm do-not-create-environment cell caption-top table-striped small">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Year</th>
+<th data-quarto-table-cell-role="th">Posts</th>
+<th data-quarto-table-cell-role="th">Comments</th>
+<th data-quarto-table-cell-role="th">Authors</th>
+<th data-quarto-table-cell-role="th">Deleted / removed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2012</td>
+<td>3,853</td>
+<td>27,842</td>
+<td>3,557</td>
+<td>7.1%</td>
+</tr>
+<tr class="even">
+<td>2013</td>
+<td>7,249</td>
+<td>64,226</td>
+<td>5,901</td>
+<td>5.5%</td>
+</tr>
+<tr class="odd">
+<td>2014</td>
+<td>9,278</td>
+<td>100,792</td>
+<td>7,542</td>
+<td>4.6%</td>
+</tr>
+<tr class="even">
+<td>2015</td>
+<td>13,597</td>
+<td>192,555</td>
+<td>11,742</td>
+<td>4.5%</td>
+</tr>
+<tr class="odd">
+<td>2016</td>
+<td>16,434</td>
+<td>270,201</td>
+<td>13,562</td>
+<td>5.3%</td>
+</tr>
+<tr class="even">
+<td>2017</td>
+<td>21,260</td>
+<td>542,629</td>
+<td>19,554</td>
+<td>5.4%</td>
+</tr>
+<tr class="odd">
+<td>2018</td>
+<td>22,954</td>
+<td>611,423</td>
+<td>24,714</td>
+<td>5.8%</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="callout-title-container flex-fill">
-Note
+</div>
+</figure>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>TODO: monthly posts and comments, 2012–2018.</p>
+<div id="fig-volume" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-volume-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/eda/volume_monthly.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-volume-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Monthly posts and comments on r/tennis.
+</figcaption>
+</figure>
+</div>
+<p>About 5.4% of posts and comments were deleted or removed; they are excluded from the text analysis.</p>
+<section id="the-busiest-days-are-the-biggest-matches" class="level3">
+<h3 class="anchored" data-anchor-id="the-busiest-days-are-the-biggest-matches">The busiest days are the biggest matches</h3>
+<p>The ten days with the most comments all fall during Grand Slams. The top two are the 2018 Wimbledon semi-final day (Anderson–Isner and Djokovic–Nadal, both over five hours) and the 2017 Australian Open final between Federer and Nadal. The 2018 US Open finals weekend (Osaka–Williams on September 8, Djokovic–Del Potro on September 9) is also near the top. Dates are in UTC, so evening matches in the Americas can show up on the next day.</p>
+<div class="cell" data-execution_count="3">
+<div id="tbl-top-days" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="3">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-top-days-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: The ten days with the most comments.
+</figcaption>
+<div aria-describedby="tbl-top-days-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="3">
+<table class="dataframe table table-sm do-not-create-environment cell caption-top table-striped small">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Date (UTC)</th>
+<th data-quarto-table-cell-role="th">Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2018-07-13</td>
+<td>19,171</td>
+</tr>
+<tr class="even">
+<td>2017-01-29</td>
+<td>18,901</td>
+</tr>
+<tr class="odd">
+<td>2018-09-09</td>
+<td>15,272</td>
+</tr>
+<tr class="even">
+<td>2018-09-08</td>
+<td>12,173</td>
+</tr>
+<tr class="odd">
+<td>2018-09-05</td>
+<td>11,885</td>
+</tr>
+<tr class="even">
+<td>2018-07-11</td>
+<td>11,728</td>
+</tr>
+<tr class="odd">
+<td>2018-01-28</td>
+<td>11,599</td>
+</tr>
+<tr class="even">
+<td>2017-07-10</td>
+<td>11,424</td>
+</tr>
+<tr class="odd">
+<td>2018-07-14</td>
+<td>10,270</td>
+</tr>
+<tr class="even">
+<td>2018-09-04</td>
+<td>8,989</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
 </div>
 </div>
 </section>
-<section id="mentions-per-player" class="level2">
-<h2 class="anchored" data-anchor-id="mentions-per-player">Mentions per player</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+</section>
+<section id="who-do-fans-talk-about" class="level2">
+<h2 class="anchored" data-anchor-id="who-do-fans-talk-about">2. Who do fans talk about?</h2>
+<p>Player mentions are found with a dictionary of names and nicknames (<a href="https://github.com/Laurent2503/tennis-reddit-analysis/blob/main/code/common/players.py"><code>code/common/players.py</code></a>), matched as whole words without case or accents (“Fed” and “Rafa” count; “fed up” does not). 29.2% of comments mention at least one of the 25 listed players.</p>
+<div id="fig-mentions" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mentions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/eda/mentions_by_player.png" class="img-fluid figure-img">
 </div>
-<div class="callout-title-container flex-fill">
-Note
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mentions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Comments mentioning each player, 2012–2018.
+</figcaption>
+</figure>
 </div>
+<p><strong>Coverage bias.</strong> 86.9% of player mentions are of men’s (ATP) players and only 13.1% of women’s (WTA) players. Serena Williams is the only woman in the top ten. The dictionary lists more men than women, which explains part of the gap, but even the most-discussed women are far behind the Big 3. This is reported as a finding and kept in mind when comparing ATP and WTA results.</p>
+<section id="the-big-3-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="the-big-3-over-time">The Big 3 over time</h3>
+<p>Federer, Nadal and Djokovic dominate the conversation. Their monthly share of comments moves with their results: for example, Djokovic’s share falls through his 2017 elbow injury and rises again in mid-2018, when he returned to win Wimbledon. Milestone 2 adds sentiment to these mention counts.</p>
+<div id="fig-big3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-big3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/eda/big3_monthly_share.png" class="img-fluid figure-img">
 </div>
-<div class="callout-body-container callout-body">
-<p>TODO: mention counts using the player name/nickname dictionary.</p>
-</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-big3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Big 3 mentions per 1,000 comments each month.
+</figcaption>
+</figure>
 </div>
 </section>
-<section id="linking-match-threads-to-matches" class="level2">
-<h2 class="anchored" data-anchor-id="linking-match-threads-to-matches">Linking match threads to matches</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+</section>
+<section id="linking-discussion-threads-to-real-matches" class="level2">
+<h2 class="anchored" data-anchor-id="linking-discussion-threads-to-real-matches">3. Linking discussion threads to real matches</h2>
+<p>r/tennis posts a dedicated <strong>Match Thread</strong> for big matches, and sometimes a <strong>Post-Match Thread</strong>. Threads are linked to the official match record (Jeff Sackmann’s ATP and WTA data) when:</p>
+<ul>
+<li>both players’ surnames appear in the title (nicknames and accents are normalised first), and</li>
+<li>the thread was posted between 1 day before and 16 days after the tournament’s start date.</li>
+</ul>
+<p>The match data only records each tournament’s start date, not the day of each match, so the proposal’s one-day window was replaced by this tournament window.</p>
+<div class="cell" data-execution_count="4">
+<div id="tbl-types" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="4">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-types-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: Thread types, median comments, and share linked to a match.
+</figcaption>
+<div aria-describedby="tbl-types-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="4">
+<table class="dataframe table table-sm do-not-create-environment cell caption-top table-striped small">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Thread type</th>
+<th data-quarto-table-cell-role="th">Threads</th>
+<th data-quarto-table-cell-role="th">Median comments</th>
+<th data-quarto-table-cell-role="th">Linked</th>
+<th data-quarto-table-cell-role="th">Link rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>match</td>
+<td>746</td>
+<td>90</td>
+<td>668</td>
+<td>90%</td>
+</tr>
+<tr class="even">
+<td>post-match</td>
+<td>530</td>
+<td>4</td>
+<td>336</td>
+<td>63%</td>
+</tr>
+<tr class="odd">
+<td>other</td>
+<td>93,349</td>
+<td>3</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="callout-title-container flex-fill">
-Note
+</div>
+</figure>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>TODO: share of “Match Thread” posts linked to a Sackmann match within ±1 day.</p>
+<p>89.5% of match threads link to a match, so the fallback in the proposal (linking by player and date only) is not needed. The catch is volume: there are only 746 match threads, against 93,349 other threads. Many matches are discussed in result posts and general threads instead. Milestone 2 will try to link those “other” threads that name two players to increase the sample for the attention model.</p>
+<section id="first-look-what-gets-attention" class="level3">
+<h3 class="anchored" data-anchor-id="first-look-what-gets-attention">First look: what gets attention?</h3>
+<p>These are medians over linked match threads, before any modelling.</p>
+<div id="fig-attention" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-attention-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/eda/attention_by_level_big3.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-attention-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Median comments per match thread by event level and Big 3 involvement.
+</figcaption>
+</figure>
+</div>
+<div class="cell" data-execution_count="5">
+<div id="tbl-attention" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="5">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-attention-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4: Comments per linked match thread.
+</figcaption>
+<div aria-describedby="tbl-attention-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="5">
+<table class="dataframe table table-sm do-not-create-environment cell caption-top table-striped small">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Feature</th>
+<th data-quarto-table-cell-role="th">Group</th>
+<th data-quarto-table-cell-role="th">Threads</th>
+<th data-quarto-table-cell-role="th">Median comments</th>
+<th data-quarto-table-cell-role="th">Mean comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Event level</td>
+<td>Grand Slam</td>
+<td>366</td>
+<td>195</td>
+<td>680</td>
+</tr>
+<tr class="even">
+<td>Event level</td>
+<td>Masters / Premier</td>
+<td>161</td>
+<td>76</td>
+<td>229</td>
+</tr>
+<tr class="odd">
+<td>Event level</td>
+<td>Other</td>
+<td>75</td>
+<td>33</td>
+<td>143</td>
+</tr>
+<tr class="even">
+<td>Event level</td>
+<td>Tour Finals</td>
+<td>66</td>
+<td>68.5</td>
+<td>124</td>
+</tr>
+<tr class="odd">
+<td>Big 3 involved</td>
+<td>No</td>
+<td>309</td>
+<td>93</td>
+<td>316</td>
+</tr>
+<tr class="even">
+<td>Big 3 involved</td>
+<td>Yes</td>
+<td>359</td>
+<td>120</td>
+<td>577</td>
+</tr>
+<tr class="odd">
+<td>Upset (lower-ranked player won)</td>
+<td>No</td>
+<td>458</td>
+<td>89.5</td>
+<td>388</td>
+</tr>
+<tr class="even">
+<td>Upset (lower-ranked player won)</td>
+<td>Yes</td>
+<td>210</td>
+<td>157</td>
+<td>605</td>
+</tr>
+<tr class="odd">
+<td>Tour</td>
+<td>ATP</td>
+<td>516</td>
+<td>97.5</td>
+<td>507</td>
+</tr>
+<tr class="even">
+<td>Tour</td>
+<td>WTA</td>
+<td>152</td>
+<td>126</td>
+<td>282</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
+</figure>
+</div>
+</div>
+<p>Three early patterns, to be tested in the milestone 2 regression:</p>
+<ul>
+<li><strong>The event matters most.</strong> Grand Slam match threads get far more comments than Masters/Premier or smaller events.</li>
+<li><strong>The Big 3 add attention at every level.</strong> At each event level, threads with Federer, Nadal or Djokovic have a higher median than threads without them.</li>
+<li><strong>Upsets draw more discussion.</strong> Threads where the lower-ranked player won have a higher median. This could partly reflect which matches get a thread at all, so it needs controls.</li>
+</ul>
+</section>
+</section>
+<section id="next-steps-milestone-2" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps-milestone-2">Next steps (milestone 2)</h2>
+<ol type="1">
+<li>Link “other” threads that name two players, to grow the attention dataset.</li>
+<li>Score sentiment for each player mention with VADER plus a tennis-slang lexicon.</li>
+<li>Fit a Spark MLlib regression of thread comment volume on match features.</li>
+</ol>
 
 
 </section>

@@ -537,7 +537,7 @@ Figure&nbsp;3: Big 3 mentions per 1,000 comments each month.
 </section>
 <section id="linking-discussion-threads-to-real-matches" class="level2">
 <h2 class="anchored" data-anchor-id="linking-discussion-threads-to-real-matches">3. Linking discussion threads to real matches</h2>
-<p>r/tennis posts a dedicated <strong>Match Thread</strong> for big matches, and sometimes a <strong>Post-Match Thread</strong>. Threads are linked to the official match record (Jeff Sackmann’s ATP and WTA data) when:</p>
+<p>r/tennis posts a dedicated <strong>Match Thread</strong> for big matches, and sometimes a <strong>Post-Match Thread</strong>. Match threads only exist for hyped matches, so <strong>result posts</strong> are linked as well: any other title that reads like a match or result (“vs”, “v”, “def”, “beats”, or a score such as “6-4”). Threads are linked to the official match record (Jeff Sackmann’s ATP and WTA data) when:</p>
 <ul>
 <li>both players’ surnames appear in the title (nicknames and accents are normalised first), and</li>
 <li>the thread was posted between 1 day before and 16 days after the tournament’s start date.</li>
@@ -590,7 +590,7 @@ Table&nbsp;3: Thread types, median comments, and share linked to a match.
 </figure>
 </div>
 </div>
-<p>89.5% of match threads link to a match, so the fallback in the proposal (linking by player and date only) is not needed. The catch is volume: there are only 746 match threads, against 93,349 other threads. Many matches are discussed in result posts and general threads instead. Milestone 2 will try to link those “other” threads that name two players to increase the sample for the attention model.</p>
+<p>89.5% of match threads link to a match, so the fallback in the proposal (linking by player and date only) is not needed. But there are only 746 match threads, against 93,349 other threads. Many matches are discussed in result posts instead; these are linked in the next run.</p>
 <section id="first-look-what-gets-attention" class="level3">
 <h3 class="anchored" data-anchor-id="first-look-what-gets-attention">First look: what gets attention?</h3>
 <p>These are medians over linked match threads, before any modelling.</p>
@@ -604,14 +604,14 @@ Figure&nbsp;4: Median comments per match thread by event level and Big 3 involve
 </figcaption>
 </figure>
 </div>
-<div class="cell" data-execution_count="5">
-<div id="tbl-attention" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="5">
+<div class="cell" data-execution_count="6">
+<div id="tbl-attention" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="6">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-attention-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;4: Comments per linked match thread.
 </figcaption>
 <div aria-describedby="tbl-attention-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="5">
+<div class="cell-output cell-output-display" data-execution_count="6">
 <table class="dataframe table table-sm do-not-create-environment cell caption-top table-striped small">
 <thead>
 <tr class="header">
@@ -711,7 +711,7 @@ Table&nbsp;4: Comments per linked match thread.
 <section id="next-steps-milestone-2" class="level2">
 <h2 class="anchored" data-anchor-id="next-steps-milestone-2">Next steps (milestone 2)</h2>
 <ol type="1">
-<li>Link “other” threads that name two players, to grow the attention dataset.</li>
+<li>Model attention per match (all linked threads combined), not only per match thread.</li>
 <li>Score sentiment for each player mention with VADER plus a tennis-slang lexicon.</li>
 <li>Fit a Spark MLlib regression of thread comment volume on match features.</li>
 </ol>

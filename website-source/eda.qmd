@@ -109,6 +109,8 @@ in mid-2018, when he returned to win Wimbledon. Milestone 2 adds sentiment to th
 ## 3. Linking discussion threads to real matches
 
 r/tennis posts a dedicated **Match Thread** for big matches, and sometimes a **Post-Match Thread**.
+Match threads only exist for hyped matches, so **result posts** are linked as well: any other title
+that reads like a match or result ("vs", "v", "def", "beats", or a score such as "6-4").
 Threads are linked to the official match record (Jeff Sackmann's ATP and WTA data) when:
 
 - both players' surnames appear in the title (nicknames and accents are normalised first), and
@@ -120,7 +122,7 @@ proposal's one-day window was replaced by this tournament window.
 ```{python}
 #| label: tbl-types
 #| tbl-cap: "Thread types, median comments, and share linked to a match."
-t = types.join(link_overall[["linked", "rate"]]).reindex(["match", "post-match", "other"])
+t = types.join(link_overall[["linked", "rate"]]).reindex([x for x in ["match", "post-match", "result", "other"] if x in types.index])
 t = t.reset_index()[["thread_type", "threads", "median_comments", "linked", "rate"]]
 t["rate"] = t.rate.map(lambda x: "" if pd.isna(x) else f"{x:.0%}")
 t["linked"] = t.linked.map(lambda x: "" if pd.isna(x) else f"{int(x):,}")
@@ -128,12 +130,23 @@ t.columns = ["Thread type", "Threads", "Median comments", "Linked", "Link rate"]
 show(t)
 ```
 
-`{python} pct(link_overall.loc["match", "rate"])` of match threads link to a match, so the fallback
-in the proposal (linking by player and date only) is not needed. The catch is volume: there are only
-`{python} num(types.loc["match", "threads"])` match threads, against
-`{python} num(types.loc["other", "threads"])` other threads. Many matches are discussed in result
-posts and general threads instead. Milestone 2 will try to link those "other" threads that name two
-players to increase the sample for the attention model.
+```{python}
+#| output: asis
+text = (
+    f"{pct(link_overall.loc['match', 'rate'])} of match threads link to a match, so the fallback in the "
+    f"proposal (linking by player and date only) is not needed. But there are only "
+    f"{num(types.loc['match', 'threads'])} match threads, against {num(types.loc['other', 'threads'])} other threads. "
+)
+if "result" in link_overall.index:
+    text += (
+        f"Result posts add {num(link_overall.loc['result', 'linked'])} linked threads. Most result-like titles "
+        f"do not name two players from the same tournament, so their link rate is low by design. "
+        f"A random sample of 100 linked result posts is checked by hand for link precision."
+    )
+else:
+    text += "Many matches are discussed in result posts instead; these are linked in the next run."
+print(text)
+```
 
 ### First look: what gets attention?
 
@@ -165,6 +178,6 @@ Three early patterns, to be tested in the milestone 2 regression:
 
 ## Next steps (milestone 2)
 
-1. Link "other" threads that name two players, to grow the attention dataset.
+1. Model attention per match (all linked threads combined), not only per match thread.
 2. Score sentiment for each player mention with VADER plus a tennis-slang lexicon.
 3. Fit a Spark MLlib regression of thread comment volume on match features.

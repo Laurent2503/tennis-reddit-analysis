@@ -1,0 +1,669 @@
+thread_id,tour,level,round,upset,big3,num_comments,winner_name,loser_name,tourney_name,tourney_start,winner_rank,loser_rank,score,best_of,minutes,surface
+11etkc,ATP,Masters / Premier,SF,True,True,1,Andy Murray,Roger Federer,Shanghai Masters,2012-10-07,3,1,6-4 6-4,3,98,Hard
+130th5,ATP,Tour Finals,SF,False,True,49,Roger Federer,Andy Murray,Tour Finals,2012-11-05,2,3,7-6(5) 6-2,3,94,Hard
+17d19y,ATP,Grand Slam,F,False,True,409,Novak Djokovic,Andy Murray,Australian Open,2013-01-14,1,3,6-7(2) 7-6(3) 6-3 6-2,5,220,Hard
+1abqbc,ATP,Masters / Premier,QF,True,True,66,Rafael Nadal,Roger Federer,Indian Wells Masters,2013-03-07,5,2,6-4 6-2,3,85,Hard
+1e4fdq,WTA,Masters / Premier,SF,False,False,2,Serena Williams,Sara Errani,Madrid,2013-05-06,1,7,7-5 6-2,3,,Clay
+1e6lut,ATP,Masters / Premier,F,False,True,18,Rafael Nadal,Stan Wawrinka,Madrid Masters,2013-05-05,5,15,6-2 6-4,3,72,Clay
+1el5c7,ATP,Masters / Premier,SF,False,True,16,Roger Federer,Benoit Paire,Rome Masters,2013-05-12,3,36,7-6(5) 6-4,3,88,Clay
+1k5p4s,ATP,Masters / Premier,F,False,True,45,Rafael Nadal,Milos Raonic,Canada Masters,2013-08-05,4,13,6-2 6-2,3,68,Hard
+1llvv2,ATP,Grand Slam,R16,True,True,49,Tommy Robredo,Roger Federer,US Open,2013-08-26,22,7,7-6(3) 6-3 6-4,5,144,Hard
+1lr54m,ATP,Grand Slam,QF,False,True,82,Rafael Nadal,Tommy Robredo,US Open,2013-08-26,2,22,6-0 6-2 6-2,5,100,Hard
+1pbf2s,WTA,Tour Finals,F,False,False,10,Serena Williams,Na Li,WTA Championships,2013-10-21,1,5,2-6 6-3 6-0,3,,Hard
+1qbpxw,ATP,Tour Finals,SF,False,True,22,Novak Djokovic,Stan Wawrinka,Tour Finals,2013-11-04,2,8,6-3 6-3,3,85,Hard
+1vqikw,ATP,Grand Slam,QF,True,False,79,Tomas Berdych,David Ferrer,Australian Open,2014-01-13,7,3,6-1 6-4 2-6 6-4,5,184,Hard
+1vto88,ATP,Grand Slam,QF,False,True,339,Rafael Nadal,Grigor Dimitrov,Australian Open,2014-01-13,1,22,3-6 7-6(3) 7-6(7) 6-2,5,217,Hard
+2k7n7d,ATP,Other,QF,True,True,0,Borna Coric,Rafael Nadal,Basel,2014-10-20,124,3,6-2 7-6(4),3,101,Hard
+2lscog,ATP,Tour Finals,RR,False,True,79,Roger Federer,Milos Raonic,Tour Finals,2014-11-09,2,8,6-1 7-6(0),3,89,Hard
+2lyr0w,ATP,Tour Finals,RR,False,True,73,Roger Federer,Kei Nishikori,Tour Finals,2014-11-09,2,5,6-3 6-2,3,69,Hard
+2u283v,ATP,Grand Slam,SF,False,False,551,Andy Murray,Tomas Berdych,Australian Open,2015-01-19,6,7,6-7(6) 6-0 6-3 7-5,5,206,Hard
+35egzh,WTA,Masters / Premier,F,False,False,20,Petra Kvitova,Svetlana Kuznetsova,Madrid,2015-05-04,4,29,6-1 6-2,3,,Clay
+3cbtbl,ATP,Grand Slam,R16,False,True,306,Novak Djokovic,Kevin Anderson,Wimbledon,2015-06-29,1,14,6-7(6) 6-7(6) 6-1 6-4 7-5,5,,Grass
+3cjg2b,ATP,Grand Slam,QF,False,True,235,Roger Federer,Gilles Simon,Wimbledon,2015-06-29,2,13,6-3 7-5 6-2,5,,Grass
+3uh3az,ATP,Other,RR,False,False,50,Andy Murray,Ruben Bemelmans,Davis Cup WG F: BEL vs GBR,2015-11-27,2,108,6-3 6-2 7-5,5,,Clay
+42pmc5,ATP,Grand Slam,QF,False,True,467,Roger Federer,Tomas Berdych,Australian Open,2016-01-18,3,6,7-6(4) 6-2 6-4,5,136,Hard
+4mcqq2,ATP,Grand Slam,SF,False,False,618,Andy Murray,Stan Wawrinka,Roland Garros,2016-05-23,2,4,6-4 6-2 4-6 6-2,5,155,Clay
+4qteaz,ATP,Grand Slam,R32,True,True,1303,Sam Querrey,Novak Djokovic,Wimbledon,2016-06-27,41,1,7-6(6) 6-1 3-6 7-6(5),5,176,Grass
+4rj173,ATP,Grand Slam,QF,False,False,881,Andy Murray,Jo-Wilfried Tsonga,Wimbledon,2016-06-27,2,12,7-6(10) 6-1 3-6 4-6 6-1,5,233,Grass
+57qhum,ATP,Masters / Premier,F,False,False,115,Andy Murray,Roberto Bautista Agut,Shanghai Masters,2016-10-10,2,19,7-6(1) 6-1,3,96,Hard
+5bf5wn,ATP,Masters / Premier,F,False,False,300,Andy Murray,John Isner,Paris Masters,2016-10-31,2,27,6-3 6-7(4) 6-4,3,137,Hard
+5q10le,ATP,Grand Slam,QF,True,False,283,Grigor Dimitrov,David Goffin,Australian Open,2017-01-16,15,11,6-3 6-2 6-4,5,132,Hard
+5q8ws9,ATP,Grand Slam,SF,True,True,3298,Roger Federer,Stan Wawrinka,Australian Open,2017-01-16,17,4,7-5 6-3 1-6 4-6 6-3,5,184,Hard
+6062cz,ATP,Masters / Premier,SF,False,True,47,Roger Federer,Jack Sock,Indian Wells Masters,2017-03-06,10,18,6-1 7-6(4),3,74,Hard
+6fs6v9,ATP,Grand Slam,QF,True,True,1117,Dominic Thiem,Novak Djokovic,Roland Garros,2017-05-29,7,2,7-6(5) 6-3 6-0,5,135,Clay
+6nlwz5,ATP,Grand Slam,F,False,True,3681,Roger Federer,Marin Cilic,Wimbledon,2017-07-03,5,6,6-3 6-1 6-4,5,101,Grass
+6za476,ATP,Grand Slam,F,False,True,2809,Rafael Nadal,Kevin Anderson,US Open,2017-08-28,1,32,6-3 6-3 6-4,5,147,Hard
+7ssf7s,WTA,Grand Slam,SF,False,False,327,Caroline Wozniacki,Elise Mertens,Australian Open,2018-01-15,2,37,6-3 7-6(2),3,97,Hard
+7y0on2,ATP,Other,QF,False,True,122,Roger Federer,Robin Haase,Rotterdam,2018-02-12,2,42,4-6 6-1 6-1,3,79,Hard
+9s2d18,WTA,Tour Finals,F,True,False,190,Elina Svitolina,Sloane Stephens,Singapore,2018-10-22,7,6,3-6 6-2 6-2,3,143,Hard
+xg6pd,ATP,Other,R32,False,True,12,Novak Djokovic,Andy Roddick,London Olympics,2012-07-25,2,22,6-2 6-1,3,54,Grass
+xicfh,ATP,Other,R16,False,False,7,Andy Murray,Marcos Baghdatis,London Olympics,2012-07-25,4,44,4-6 6-1 6-4,3,118,Grass
+xm5of,ATP,Other,SF,False,True,205,Roger Federer,Juan Martin del Potro,London Olympics,2012-07-25,1,9,3-6 7-6(5) 19-17,3,266,Grass
+12m0hy,ATP,Masters / Premier,F,False,False,16,David Ferrer,Jerzy Janowicz,Paris Masters,2012-10-29,5,69,6-4 6-3,3,88,Hard
+12o0ly,ATP,Tour Finals,RR,False,False,4,Andy Murray,Tomas Berdych,Tour Finals,2012-11-05,3,6,3-6 6-3 6-4,3,136,Hard
+176jkm,ATP,Grand Slam,SF,False,True,90,Novak Djokovic,David Ferrer,Australian Open,2013-01-14,1,5,6-2 6-2 6-1,5,89,Hard
+1b9tkm,ATP,Masters / Premier,SF,False,False,32,Andy Murray,Richard Gasquet,Miami Masters,2013-03-20,3,10,6-7(3) 6-1 6-2,3,119,Hard
+1fx9wx,WTA,Grand Slam,F,False,False,77,Serena Williams,Maria Sharapova,Roland Garros,2013-05-27,1,2,6-4 6-4,3,,Clay
+1py7ad,ATP,Tour Finals,RR,False,True,19,Rafael Nadal,David Ferrer,Tour Finals,2013-11-04,1,3,6-3 6-2,3,75,Hard
+1q8ue9,ATP,Tour Finals,RR,True,True,64,Roger Federer,Juan Martin del Potro,Tour Finals,2013-11-04,7,5,4-6 7-6(2) 7-5,3,147,Hard
+1vxgjt,ATP,Grand Slam,SF,True,False,215,Stan Wawrinka,Tomas Berdych,Australian Open,2014-01-13,8,7,6-3 6-7(1) 7-6(3) 7-6(4),5,211,Hard
+29ns8g,ATP,Grand Slam,QF,False,False,166,Milos Raonic,Nick Kyrgios,Wimbledon,2014-06-23,9,144,6-7(4) 6-2 6-4 7-6(4),5,144,Grass
+29w8vq,WTA,Grand Slam,F,False,False,193,Petra Kvitova,Eugenie Bouchard,Wimbledon,2014-06-23,6,13,6-3 6-0,3,,Grass
+2twzws,WTA,Grand Slam,QF,False,False,62,Serena Williams,Dominika Cibulkova,Australian Open,2015-01-19,1,10,6-2 6-2,3,,Hard
+2wp666,ATP,Other,SF,True,True,74,Fabio Fognini,Rafael Nadal,Rio de Janeiro,2015-02-16,28,3,1-6 6-2 7-5,3,138,Clay
+2x4ljb,ATP,Other,R16,False,True,23,Roger Federer,Fernando Verdasco,Dubai,2015-02-23,2,31,6-4 6-3,3,60,Hard
+31cyo1,ATP,Masters / Premier,SF,False,True,76,Novak Djokovic,John Isner,Miami Masters,2015-03-25,1,24,7-6(3) 6-2,3,91,Hard
+31j28e,ATP,Masters / Premier,F,False,True,417,Novak Djokovic,Andy Murray,Miami Masters,2015-03-25,1,4,7-6(3) 4-6 6-0,3,167,Hard
+3348nf,ATP,Masters / Premier,F,False,True,129,Novak Djokovic,Tomas Berdych,Monte Carlo Masters,2015-04-12,1,8,7-5 4-6 6-3,3,163,Clay
+35etoz,ATP,Masters / Premier,SF,False,False,70,Andy Murray,Kei Nishikori,Madrid Masters,2015-05-03,3,5,6-3 6-4,3,98,Clay
+36941u,WTA,Masters / Premier,F,False,False,26,Maria Sharapova,Carla Suarez Navarro,Rome,2015-05-11,3,10,4-6 7-5 6-1,3,,Clay
+38n97m,ATP,Grand Slam,SF,False,False,321,Stan Wawrinka,Jo-Wilfried Tsonga,Roland Garros,2015-05-24,9,15,6-3 6-7(1) 7-6(3) 6-4,5,226,Clay
+3ck3li,ATP,Grand Slam,QF,True,False,472,Richard Gasquet,Stan Wawrinka,Wimbledon,2015-06-29,20,4,6-4 4-6 3-6 6-4 11-9,5,,Grass
+3dt36p,ATP,Other,RR,True,False,16,Lleyton Hewitt,Aleksandr Nedovyesov,Davis Cup WG QF: AUS vs KAZ,2015-07-17,279,115,7-6(2) 6-2 6-3,5,,Grass
+3tgl6j,ATP,Tour Finals,RR,False,True,81,Novak Djokovic,Tomas Berdych,Tour Finals,2015-11-15,1,6,6-3 7-5,3,,Hard
+4s5b29,ATP,Grand Slam,F,False,False,1826,Andy Murray,Milos Raonic,Wimbledon,2016-06-27,2,7,6-4 7-6(3) 7-6(2),5,168,Grass
+4yuq9l,WTA,Masters / Premier,F,True,False,78,Karolina Pliskova,Angelique Kerber,Cincinnati,2016-08-15,17,2,6-3 6-1,3,62,Hard
+64b0me,ATP,Other,RR,False,False,16,Nick Kyrgios,Sam Querrey,Davis Cup WG QF: AUS vs USA,2017-04-07,16,25,7-6(4) 6-3 6-4,5,125,Hard
+6axlei,ATP,Masters / Premier,SF,True,True,1022,Rafael Nadal,Novak Djokovic,Madrid Masters,2017-05-08,5,2,6-2 6-4,3,98,Clay
+6azy81,ATP,Masters / Premier,SF,False,False,59,Dominic Thiem,Pablo Cuevas,Madrid Masters,2017-05-08,9,27,6-4 6-4,3,83,Clay
+6fs6ww,ATP,Grand Slam,QF,False,True,91,Rafael Nadal,Pablo Carreno Busta,Roland Garros,2017-05-29,4,21,6-2 2-0 RET,5,51,Clay
+6jdtyl,ATP,Other,F,False,True,18,Roger Federer,Alexander Zverev,Halle,2017-06-19,5,12,6-1 6-3,3,53,Grass
+6nmjrg,ATP,Grand Slam,F,False,True,3,Roger Federer,Marin Cilic,Wimbledon,2017-07-03,5,6,6-3 6-1 6-4,5,101,Grass
+6tfvow,WTA,Masters / Premier,F,False,False,112,Elina Svitolina,Caroline Wozniacki,Toronto,2017-08-07,5,6,6-4 6-0,3,77,Hard
+6y3zt6,ATP,Grand Slam,R16,False,True,1,Roger Federer,Philipp Kohlschreiber,US Open,2017-08-28,3,37,6-4 6-2 7-5,5,109,Hard
+6yj0i2,ATP,Grand Slam,QF,True,True,4390,Juan Martin del Potro,Roger Federer,US Open,2017-08-28,28,3,7-5 3-6 7-6(8) 6-4,5,170,Hard
+8xyo06,ATP,Grand Slam,QF,False,True,994,Novak Djokovic,Kei Nishikori,Wimbledon,2018-07-02,21,28,6-3 3-6 6-2 6-2,5,155,Grass
+9nsdgf,ATP,Masters / Premier,SF,False,True,15,Novak Djokovic,Alexander Zverev,Shanghai Masters,2018-10-08,3,5,6-2 6-1,3,60,Hard
+xk3bs,ATP,Other,QF,False,False,2,Andy Murray,Nicolas Almagro,London Olympics,2012-07-25,4,12,6-4 6-1,3,59,Grass
+zexz7,ATP,Grand Slam,QF,False,False,34,Andy Murray,Marin Cilic,US Open,2012-08-27,4,13,3-6 7-6(4) 6-2 6-0,5,180,Hard
+zf8l5,ATP,Grand Slam,QF,True,True,157,Tomas Berdych,Roger Federer,US Open,2012-08-27,7,1,7-6(1) 6-4 3-6 6-3,5,162,Hard
+127txq,ATP,Other,F,True,True,20,Juan Martin del Potro,Roger Federer,Basel,2012-10-22,8,1,6-4 6-7(5) 7-6(3),3,164,Hard
+173ogj,WTA,Grand Slam,QF,True,False,93,Sloane Stephens,Serena Williams,Australian Open,2013-01-14,25,3,3-6 7-5 6-4,3,,Hard
+173tuv,ATP,Grand Slam,QF,False,False,29,Andy Murray,Jeremy Chardy,Australian Open,2013-01-14,3,36,6-4 6-1 6-2,5,111,Hard
+17b3rn,WTA,Grand Slam,F,False,False,168,Victoria Azarenka,Na Li,Australian Open,2013-01-14,1,6,4-6 6-4 6-3,3,,Hard
+1bd0rb,ATP,Masters / Premier,F,False,False,134,Andy Murray,David Ferrer,Miami Masters,2013-03-20,3,5,2-6 6-4 7-6(1),3,165,Hard
+1e4xam,ATP,Masters / Premier,SF,True,False,30,Stan Wawrinka,Tomas Berdych,Madrid Masters,2013-05-05,15,6,6-3 4-6 6-4,3,115,Clay
+1ekten,ATP,Masters / Premier,SF,False,True,7,Rafael Nadal,Tomas Berdych,Rome Masters,2013-05-12,5,6,6-2 6-4,3,78,Clay
+1fva79,ATP,Grand Slam,SF,False,False,86,David Ferrer,Jo-Wilfried Tsonga,Roland Garros,2013-05-27,5,8,6-1 7-6(3) 6-2,5,124,Clay
+1hms2p,WTA,Grand Slam,SF,True,False,207,Sabine Lisicki,Agnieszka Radwanska,Wimbledon,2013-06-24,24,4,6-4 2-6 9-7,3,,Grass
+1hqw3i,WTA,Grand Slam,F,False,False,369,Marion Bartoli,Sabine Lisicki,Wimbledon,2013-06-24,15,24,6-1 6-4,3,,Grass
+1q9gx7,ATP,Tour Finals,RR,False,True,22,Novak Djokovic,Richard Gasquet,Tour Finals,2013-11-04,2,9,7-6(5) 4-6 6-3,3,129,Hard
+1vqypo,ATP,Grand Slam,QF,True,True,498,Stan Wawrinka,Novak Djokovic,Australian Open,2014-01-13,8,2,2-6 6-4 6-2 3-6 9-7,5,240,Hard
+20hyoe,ATP,Masters / Premier,SF,False,True,44,Roger Federer,Alexandr Dolgopolov,Indian Wells Masters,2014-03-06,8,31,6-3 6-1,3,62,Hard
+20kpog,ATP,Masters / Premier,F,False,True,131,Novak Djokovic,Roger Federer,Indian Wells Masters,2014-03-06,2,8,3-6 6-3 7-6(3),3,132,Hard
+2fewo2,ATP,Grand Slam,QF,False,True,319,Novak Djokovic,Andy Murray,US Open,2014-08-25,1,9,7-6(1) 6-7(1) 6-2 6-4,5,212,Hard
+2fnq7s,ATP,Grand Slam,SF,True,True,701,Marin Cilic,Roger Federer,US Open,2014-08-25,16,3,6-3 6-4 6-4,5,105,Hard
+2fnq9c,ATP,Grand Slam,SF,True,True,4,Marin Cilic,Roger Federer,US Open,2014-08-25,16,3,6-3 6-4 6-4,5,105,Hard
+38s6bb,ATP,Grand Slam,SF,False,True,388,Novak Djokovic,Andy Murray,Roland Garros,2015-05-24,1,3,6-3 6-3 5-7 5-7 6-1,5,249,Clay
+3i32m6,ATP,Masters / Premier,F,True,True,406,Roger Federer,Novak Djokovic,Cincinnati Masters,2015-08-16,3,1,7-6(1) 6-3,3,90,Hard
+3i3v1e,WTA,Masters / Premier,F,False,False,55,Serena Williams,Simona Halep,Cincinnati,2015-08-17,1,3,6-3 7-6(5),3,,Hard
+3obm9y,ATP,Other,F,False,True,111,Novak Djokovic,Rafael Nadal,Beijing,2015-10-05,1,8,6-2 6-2,3,91,Hard
+40b2r3,ATP,Other,F,False,False,18,Stan Wawrinka,Borna Coric,Chennai,2016-01-04,4,44,6-3 7-5,3,86,Hard
+4b3u6u,ATP,Masters / Premier,SF,False,True,537,Novak Djokovic,Rafael Nadal,Indian Wells Masters,2016-03-07,1,5,7-6(5) 6-2,3,118,Hard
+4j7pee,ATP,Masters / Premier,QF,False,False,2,Kei Nishikori,Dominic Thiem,Rome Masters,2016-05-09,6,15,6-3 7-5,3,99,Clay
+4mhxz7,WTA,Grand Slam,F,True,False,429,Garbine Muguruza,Serena Williams,Roland Garros,2016-05-23,4,1,7-5 6-4,3,103,Clay
+4xos49,ATP,Other,BR,True,True,544,Kei Nishikori,Rafael Nadal,Rio Olympics,2016-08-08,7,5,6-2 6-7(1) 6-3,3,169,Hard
+4xpmeq,ATP,Other,F,False,False,2442,Andy Murray,Juan Martin del Potro,Rio Olympics,2016-08-08,2,141,7-5 4-6 6-2 7-5,5,242,Hard
+51u6bi,WTA,Grand Slam,SF,True,False,754,Karolina Pliskova,Serena Williams,US Open,2016-08-29,11,1,6-2 7-6(5),3,85,Hard
+5dtnzj,ATP,Tour Finals,SF,False,True,256,Novak Djokovic,Kei Nishikori,Tour Finals,2016-11-14,2,5,6-1 6-1,3,66,Hard
+5dxvey,ATP,Tour Finals,F,False,True,1279,Andy Murray,Novak Djokovic,Tour Finals,2016-11-14,1,2,6-3 6-4,3,103,Hard
+5qfqsj,ATP,Grand Slam,SF,False,True,5066,Rafael Nadal,Grigor Dimitrov,Australian Open,2017-01-16,9,15,6-3 5-7 7-6(5) 6-7(4) 6-4,5,296,Hard
+62kdbt,ATP,Masters / Premier,SF,False,True,50,Roger Federer,Nick Kyrgios,Miami Masters,2017-03-20,6,16,7-6(9) 6-7(9) 7-6(5),3,190,Hard
+6xxpxb,ATP,Grand Slam,R16,False,False,1,Sam Querrey,Mischa Zverev,US Open,2017-08-28,21,27,6-2 6-2 6-1,5,76,Hard
+7sirqb,WTA,Grand Slam,QF,False,False,252,Angelique Kerber,Madison Keys,Australian Open,2018-01-15,16,20,6-1 6-2,3,51,Hard
+8q096u,ATP,Grand Slam,F,False,True,3600,Rafael Nadal,Dominic Thiem,Roland Garros,2018-05-28,1,8,6-4 6-3 6-2,5,162,Clay
+8yke2d,ATP,Grand Slam,SF,True,True,10829,Novak Djokovic,Rafael Nadal,Wimbledon,2018-07-02,21,1,6-4 3-6 7-6(9) 3-6 10-8,5,315,Grass
+xcaie,ATP,Other,R64,False,False,3,Andy Murray,Stan Wawrinka,London Olympics,2012-07-25,4,26,6-3 6-3,3,89,Grass
+xi6su,ATP,Other,R16,False,True,16,Novak Djokovic,Lleyton Hewitt,London Olympics,2012-07-25,2,158,4-6 7-5 6-1,3,116,Grass
+zm7lz,WTA,Grand Slam,F,True,False,77,Serena Williams,Victoria Azarenka,US Open,2012-08-27,4,1,6-2 2-6 7-5,3,,Hard
+11etqb,ATP,Masters / Premier,SF,True,True,35,Andy Murray,Roger Federer,Shanghai Masters,2012-10-07,3,1,6-4 6-4,3,98,Hard
+178wwt,ATP,Grand Slam,SF,True,True,530,Andy Murray,Roger Federer,Australian Open,2013-01-14,3,2,6-4 6-7(5) 6-3 6-7(2) 6-2,5,240,Hard
+1hp7g0,ATP,Grand Slam,SF,False,False,585,Andy Murray,Jerzy Janowicz,Wimbledon,2013-06-24,2,22,6-7(2) 6-4 6-4 6-3,5,172,Grass
+1lznoq,WTA,Grand Slam,F,False,False,306,Serena Williams,Victoria Azarenka,US Open,2013-08-26,1,2,7-5 6-7(6) 6-1,3,,Hard
+1pz0q4,ATP,Tour Finals,RR,False,True,82,Novak Djokovic,Roger Federer,Tour Finals,2013-11-04,2,7,6-4 6-7(2) 6-2,3,142,Hard
+1vx156,WTA,Grand Slam,SF,True,False,70,Dominika Cibulkova,Agnieszka Radwanska,Australian Open,2014-01-13,24,5,6-1 6-2,3,,Hard
+23fhdh,ATP,Masters / Premier,SF,False,False,21,Stan Wawrinka,David Ferrer,Monte Carlo Masters,2014-04-13,3,6,6-1 7-6(3),3,90,Clay
+23fmyk,ATP,Masters / Premier,SF,True,True,96,Roger Federer,Novak Djokovic,Monte Carlo Masters,2014-04-13,4,2,7-5 6-2,3,75,Clay
+27jn5i,WTA,Grand Slam,F,True,False,319,Maria Sharapova,Simona Halep,Roland Garros,2014-05-26,8,4,6-4 6-7(5) 6-4,3,,Clay
+2fn9n5,ATP,Grand Slam,SF,True,True,780,Kei Nishikori,Novak Djokovic,US Open,2014-08-25,11,1,6-4 1-6 7-6(4) 6-3,5,172,Hard
+2n5tkp,ATP,Other,RR,False,True,166,Roger Federer,Richard Gasquet,Davis Cup WG F: FRA vs SUI,2014-11-21,2,26,6-4 6-2 6-2,5,,Clay
+42f4i5,ATP,Grand Slam,R16,False,True,225,Novak Djokovic,Gilles Simon,Australian Open,2016-01-18,1,15,6-3 6-7(1) 6-4 4-6 6-3,5,272,Hard
+42p39d,WTA,Grand Slam,QF,False,False,400,Serena Williams,Maria Sharapova,Australian Open,2016-01-18,1,5,6-4 6-1,3,92,Hard
+42qiwz,ATP,Grand Slam,QF,False,True,407,Novak Djokovic,Kei Nishikori,Australian Open,2016-01-18,1,7,6-3 6-2 6-4,5,127,Hard
+42wgut,ATP,Grand Slam,QF,False,False,236,Milos Raonic,Gael Monfils,Australian Open,2016-01-18,14,25,6-3 3-6 6-3 6-4,5,137,Hard
+43ib3w,ATP,Grand Slam,F,False,True,2081,Novak Djokovic,Andy Murray,Australian Open,2016-01-18,1,2,6-1 7-5 7-6(3),5,173,Hard
+4b8910,WTA,Masters / Premier,F,True,False,203,Victoria Azarenka,Serena Williams,Indian Wells,2016-03-07,15,1,6-4 6-4,3,88,Hard
+4d68oc,ATP,Masters / Premier,F,False,True,507,Novak Djokovic,Kei Nishikori,Miami Masters,2016-03-21,1,6,6-3 6-3,3,86,Hard
+4f5wf2,ATP,Masters / Premier,F,False,True,530,Rafael Nadal,Gael Monfils,Monte Carlo Masters,2016-04-11,5,16,7-5 5-7 6-0,3,166,Clay
+4g8odd,ATP,Other,F,False,True,201,Rafael Nadal,Kei Nishikori,Barcelona,2016-04-18,5,6,6-4 7-5,3,124,Clay
+4ro5ik,WTA,Grand Slam,SF,False,False,179,Serena Williams,Elena Vesnina,Wimbledon,2016-06-27,1,50,6-2 6-0,3,48,Grass
+4xjt0b,ATP,Other,SF,True,True,895,Juan Martin del Potro,Rafael Nadal,Rio Olympics,2016-08-08,141,5,5-7 6-4 7-6(5),3,188,Hard
+5ovc2m,ATP,Grand Slam,R64,True,True,159,Denis Istomin,Novak Djokovic,Australian Open,2017-01-16,117,2,7-6(8) 5-7 2-6 7-6(5) 6-4,5,288,Hard
+5qf2qb,ATP,Grand Slam,SF,False,True,2,Rafael Nadal,Grigor Dimitrov,Australian Open,2017-01-16,9,15,6-3 5-7 7-6(5) 6-7(4) 6-4,5,296,Hard
+6aykg4,WTA,Masters / Premier,F,False,False,114,Simona Halep,Kristina Mladenovic,Madrid,2017-05-08,8,17,7-5 6-7(5) 6-2,3,164,Clay
+6g7f40,ATP,Grand Slam,SF,True,False,3824,Stan Wawrinka,Andy Murray,Roland Garros,2017-05-29,3,1,6-7(6) 6-3 5-7 7-6(3) 6-1,5,274,Clay
+6gl10e,ATP,Grand Slam,F,True,True,3116,Rafael Nadal,Stan Wawrinka,Roland Garros,2017-05-29,4,3,6-2 6-3 6-1,5,125,Clay
+6lvoa2,ATP,Grand Slam,R32,False,False,0,Andy Murray,Fabio Fognini,Wimbledon,2017-07-03,1,29,6-2 4-6 6-1 7-5,5,159,Grass
+6mus6u,ATP,Grand Slam,QF,True,True,530,Tomas Berdych,Novak Djokovic,Wimbledon,2017-07-03,15,4,7-6(2) 2-0 RET,5,63,Grass
+6uwq58,WTA,Masters / Premier,F,True,False,235,Garbine Muguruza,Simona Halep,Cincinnati,2017-08-14,6,2,6-1 6-0,3,56,Hard
+79fszj,WTA,Tour Finals,F,True,False,111,Caroline Wozniacki,Venus Williams,Singapore,2017-10-23,6,5,6-4 6-4,3,89,Hard
+8e21a3,ATP,Masters / Premier,F,False,True,633,Rafael Nadal,Kei Nishikori,Monte Carlo Masters,2018-04-16,1,36,6-3 6-2,3,93,Clay
+xe0w1,ATP,Other,R32,False,True,8,Roger Federer,Julien Benneteau,London Olympics,2012-07-25,1,32,6-2 6-2,3,58,Grass
+xpmmr,ATP,Other,BR,True,True,21,Juan Martin del Potro,Novak Djokovic,London Olympics,2012-07-25,9,2,7-5 6-4,3,,Grass
+yh6un,ATP,Masters / Premier,F,False,True,31,Roger Federer,Novak Djokovic,Cincinnati Masters,2012-08-12,1,2,6-0 7-6(7),3,80,Hard
+11gcya,ATP,Masters / Premier,F,False,True,97,Novak Djokovic,Andy Murray,Shanghai Masters,2012-10-07,2,3,5-7 7-6(11) 6-3,3,201,Hard
+161n8t,ATP,Other,F,False,False,13,Andy Murray,Grigor Dimitrov,Brisbane,2012-12-30,3,48,7-6(0) 6-4,3,91,Hard
+171242,ATP,Grand Slam,QF,False,False,95,David Ferrer,Nicolas Almagro,Australian Open,2013-01-14,5,11,4-6 4-6 7-5 7-6(4) 6-2,5,224,Hard
+1hk989,ATP,Grand Slam,QF,False,True,71,Novak Djokovic,Tomas Berdych,Wimbledon,2013-06-24,1,6,7-6(5) 6-4 6-3,5,135,Grass
+1k5h9y,WTA,Masters / Premier,F,False,False,5,Serena Williams,Sorana Cirstea,Toronto,2013-08-05,1,27,6-2 6-0,3,,Hard
+1lqa22,ATP,Grand Slam,QF,True,False,98,Richard Gasquet,David Ferrer,US Open,2013-08-26,9,4,6-3 6-1 4-6 2-6 6-3,5,203,Hard
+1vu78b,ATP,Grand Slam,QF,True,True,541,Roger Federer,Andy Murray,Australian Open,2014-01-13,6,4,6-3 6-4 6-7(6) 6-3,5,200,Hard
+20kfw1,WTA,Masters / Premier,F,True,False,15,Flavia Pennetta,Agnieszka Radwanska,Indian Wells,2014-03-03,21,3,6-2 6-1,3,,Hard
+29qmoi,WTA,Grand Slam,SF,True,False,235,Eugenie Bouchard,Simona Halep,Wimbledon,2014-06-23,13,3,7-6(5) 6-2,3,,Grass
+2d1bjn,ATP,Masters / Premier,F,False,True,0,Roger Federer,David Ferrer,Cincinnati Masters,2014-08-10,3,6,6-3 1-6 6-2,3,102,Hard
+2d5z1i,ATP,Masters / Premier,F,True,True,130,Jo-Wilfried Tsonga,Roger Federer,Canada Masters,2014-08-04,15,3,7-5 7-6(3),3,108,Hard
+2fquxf,WTA,Grand Slam,F,False,False,147,Serena Williams,Caroline Wozniacki,US Open,2014-08-25,1,11,6-3 6-3,3,,Hard
+2fuaim,ATP,Grand Slam,F,True,False,636,Marin Cilic,Kei Nishikori,US Open,2014-08-25,16,11,6-3 6-3 6-3,5,114,Hard
+2l2759,ATP,Masters / Premier,F,False,True,37,Novak Djokovic,Milos Raonic,Paris Masters,2014-10-27,1,10,6-2 6-3,3,83,Hard
+2m7lgz,ATP,Tour Finals,RR,False,True,260,Roger Federer,Andy Murray,Tour Finals,2014-11-09,2,6,6-0 6-1,3,56,Hard
+2mzquh,ATP,Other,RR,True,True,141,Gael Monfils,Roger Federer,Davis Cup WG F: FRA vs SUI,2014-11-21,19,2,6-1 6-4 6-3,5,,Clay
+2ue3pr,ATP,Grand Slam,F,False,True,1827,Novak Djokovic,Andy Murray,Australian Open,2015-01-19,1,6,7-6(5) 6-7(4) 6-3 6-0,5,219,Hard
+387vlq,ATP,Grand Slam,QF,True,True,350,Stan Wawrinka,Roger Federer,Roland Garros,2015-05-24,9,2,6-4 6-3 7-6(4),5,129,Clay
+3h7ke7,WTA,Masters / Premier,F,True,False,152,Belinda Bencic,Simona Halep,Toronto,2015-08-10,20,3,7-6(5) 6-7(4) 3-0 RET,3,,Hard
+3k6f4e,ATP,Grand Slam,QF,False,True,236,Novak Djokovic,Feliciano Lopez,US Open,2015-08-31,1,19,6-1 3-6 6-3 7-6(2),5,,Hard
+3kovkl,WTA,Grand Slam,F,False,False,163,Flavia Pennetta,Roberta Vinci,US Open,2015-08-31,26,43,7-6(4) 6-2,3,,Hard
+3t1omd,ATP,Tour Finals,RR,True,True,131,Rafael Nadal,Stan Wawrinka,Tour Finals,2015-11-15,5,4,6-3 6-2,3,,Hard
+3taair,ATP,Tour Finals,RR,True,True,178,Rafael Nadal,Andy Murray,Tour Finals,2015-11-15,5,2,6-4 6-1,3,,Hard
+3tfbi5,ATP,Tour Finals,RR,False,True,116,Roger Federer,Kei Nishikori,Tour Finals,2015-11-15,3,8,7-5 4-6 6-4,3,,Hard
+42ufa4,WTA,Grand Slam,QF,False,False,155,Angelique Kerber,Victoria Azarenka,Australian Open,2016-01-18,6,16,6-3 7-5,3,105,Hard
+43129b,WTA,Grand Slam,SF,False,False,200,Serena Williams,Agnieszka Radwanska,Australian Open,2016-01-18,1,4,6-0 6-4,3,64,Hard
+4f14sp,ATP,Masters / Premier,SF,True,True,496,Rafael Nadal,Andy Murray,Monte Carlo Masters,2016-04-11,5,2,2-6 6-4 6-2,3,163,Clay
+4ru8w8,ATP,Grand Slam,SF,True,True,2688,Milos Raonic,Roger Federer,Wimbledon,2016-06-27,7,3,6-3 6-7(3) 4-6 7-5 6-3,5,204,Grass
+51o4wz,WTA,Grand Slam,QF,False,False,482,Serena Williams,Simona Halep,US Open,2016-08-29,1,5,6-2 4-6 6-3,3,134,Hard
+52a9h5,ATP,Grand Slam,F,True,True,3105,Stan Wawrinka,Novak Djokovic,US Open,2016-08-29,3,1,6-7(1) 6-4 7-5 6-3,5,234,Hard
+5p6vo5,ATP,Grand Slam,R32,False,True,587,Rafael Nadal,Alexander Zverev,Australian Open,2017-01-16,9,24,4-6 6-3 6-7(5) 6-3 6-2,5,245,Hard
+5pfgpk,ATP,Grand Slam,R16,False,False,3,Stan Wawrinka,Andreas Seppi,Australian Open,2017-01-16,4,89,7-6(2) 7-6(4) 7-6(4),5,163,Hard
+5q0i7u,WTA,Grand Slam,QF,False,False,226,Serena Williams,Johanna Konta,Australian Open,2017-01-16,2,9,6-2 6-3,3,75,Hard
+5zh1za,ATP,Masters / Premier,R32,False,True,4,Novak Djokovic,Juan Martin del Potro,Indian Wells Masters,2017-03-06,2,35,7-5 4-6 6-1,3,137,Hard
+609zah,ATP,Masters / Premier,F,True,True,759,Roger Federer,Stan Wawrinka,Indian Wells Masters,2017-03-06,10,3,6-4 7-5,3,80,Hard
+6awvcy,WTA,Masters / Premier,F,False,False,9,Simona Halep,Kristina Mladenovic,Madrid,2017-05-08,8,17,7-5 6-7(5) 6-2,3,164,Clay
+6g96nj,ATP,Grand Slam,SF,False,True,1514,Rafael Nadal,Dominic Thiem,Roland Garros,2017-05-29,4,7,6-3 6-4 6-0,5,127,Clay
+6m1h5t,ATP,Grand Slam,R32,False,True,14,Novak Djokovic,Ernests Gulbis,Wimbledon,2017-07-03,4,589,6-4 6-1 7-6(2),5,131,Grass
+6nffgw,WTA,Grand Slam,F,True,False,1299,Garbine Muguruza,Venus Williams,Wimbledon,2017-07-03,15,11,7-5 6-0,3,,Grass
+6uxncv,ATP,Masters / Premier,F,False,False,522,Grigor Dimitrov,Nick Kyrgios,Cincinnati Masters,2017-08-14,11,23,6-3 7-5,3,85,Hard
+6y406h,ATP,Grand Slam,R16,False,True,6,Roger Federer,Philipp Kohlschreiber,US Open,2017-08-28,3,37,6-4 6-2 7-5,5,109,Hard
+6y8lax,ATP,Grand Slam,QF,False,False,399,Pablo Carreno Busta,Diego Schwartzman,US Open,2017-08-28,19,33,6-4 6-4 6-2,5,119,Hard
+6yroa4,WTA,Grand Slam,SF,False,False,552,Madison Keys,Coco Vandeweghe,US Open,2017-08-28,16,22,6-1 6-2,3,66,Hard
+720cj8,ATP,Other,RR,False,True,29,Rafael Nadal,Jack Sock,Laver Cup,2017-09-22,1,21,6-3 3-6 [11-9],3,,Hard
+7sjjfo,ATP,Grand Slam,QF,False,False,2227,Hyeon Chung,Tennys Sandgren,Australian Open,2018-01-15,58,97,6-4 7-6(5) 6-3,5,148,Hard
+8ks8s6,ATP,Masters / Premier,F,False,True,2038,Rafael Nadal,Alexander Zverev,Rome Masters,2018-05-14,2,3,6-1 1-6 6-3,3,129,Clay
+8p9r3o,WTA,Grand Slam,SF,False,False,356,Simona Halep,Garbine Muguruza,Roland Garros,2018-05-28,1,3,6-1 6-4,3,92,Clay
+9dbumf,ATP,Grand Slam,QF,False,True,2971,Novak Djokovic,John Millman,US Open,2018-08-27,6,55,6-3 6-4 6-4,5,169,Hard
+9dbunj,WTA,Grand Slam,QF,False,False,231,Madison Keys,Carla Suarez Navarro,US Open,2018-08-27,14,24,6-4 6-3,3,83,Hard
+um6dx,ATP,Grand Slam,QF,False,True,126,Novak Djokovic,Jo-Wilfried Tsonga,Roland Garros,2012-05-27,1,5,6-1 5-7 5-7 7-6(6) 6-1,5,249,Clay
+zd5kq,ATP,Grand Slam,R16,False,False,29,Juan Martin del Potro,Andy Roddick,US Open,2012-08-27,8,22,6-7(1) 7-6(4) 6-2 6-4,5,195,Hard
+11ggxb,ATP,Masters / Premier,SF,True,True,5,Andy Murray,Roger Federer,Shanghai Masters,2012-10-07,3,1,6-4 6-4,3,98,Hard
+16fi3q,ATP,Other,F,True,False,5,Bernard Tomic,Kevin Anderson,Sydney,2013-01-07,64,36,6-3 6-7(2) 6-3,3,115,Hard
+1e4lpr,ATP,Masters / Premier,SF,False,True,5,Rafael Nadal,Pablo Andujar,Madrid Masters,2013-05-05,5,113,6-0 6-4,3,77,Clay
+1lxmfe,ATP,Grand Slam,SF,False,True,125,Rafael Nadal,Richard Gasquet,US Open,2013-08-26,2,9,6-4 7-6(1) 6-2,5,141,Hard
+1p9bdd,ATP,Other,SF,False,True,16,Roger Federer,Vasek Pospisil,Basel,2013-10-21,6,40,6-3 6-7(3) 7-5,3,160,Hard
+1q6dos,ATP,Tour Finals,RR,True,False,24,Stan Wawrinka,David Ferrer,Tour Finals,2013-11-04,8,3,6-7(3) 6-4 6-1,3,139,Hard
+27gl3r,ATP,Grand Slam,SF,False,True,97,Novak Djokovic,Ernests Gulbis,Roland Garros,2014-05-26,2,17,6-3 6-3 3-6 6-3,5,154,Clay
+29tkq2,ATP,Grand Slam,SF,False,True,157,Novak Djokovic,Grigor Dimitrov,Wimbledon,2014-06-23,2,13,6-4 3-6 7-6(2) 7-6(7),5,182,Grass
+2ixsrn,ATP,Masters / Premier,SF,True,True,167,Roger Federer,Novak Djokovic,Shanghai Masters,2014-10-05,3,1,6-4 6-4,3,96,Hard
+2lzuvz,ATP,Tour Finals,RR,False,False,92,Andy Murray,Milos Raonic,Tour Finals,2014-11-09,6,8,6-3 7-5,3,92,Hard
+2ma9h4,ATP,Tour Finals,RR,False,True,52,Novak Djokovic,Tomas Berdych,Tour Finals,2014-11-09,1,7,6-2 6-2,3,69,Hard
+2u1ovw,WTA,Grand Slam,SF,False,False,201,Serena Williams,Madison Keys,Australian Open,2015-01-19,1,35,7-6(5) 6-2,3,,Hard
+2u6svj,ATP,Grand Slam,SF,False,True,181,Novak Djokovic,Stan Wawrinka,Australian Open,2015-01-19,1,4,7-6(1) 3-6 6-4 4-6 6-0,5,210,Hard
+3bzx36,ATP,Grand Slam,R32,False,True,67,Novak Djokovic,Bernard Tomic,Wimbledon,2015-06-29,1,26,6-3 6-3 6-3,5,,Grass
+3k4m68,ATP,Grand Slam,QF,False,False,190,Marin Cilic,Jo-Wilfried Tsonga,US Open,2015-08-31,9,18,6-4 6-4 3-6 6-7(3) 6-4,5,,Hard
+3kjqxq,WTA,Grand Slam,SF,True,False,112,Flavia Pennetta,Simona Halep,US Open,2015-08-31,26,2,6-1 6-3,3,,Hard
+3ktjab,ATP,Grand Slam,F,False,True,5169,Novak Djokovic,Roger Federer,US Open,2015-08-31,1,2,6-4 5-7 6-4 6-4,5,200,Hard
+3p3sso,ATP,Masters / Premier,SF,False,True,120,Novak Djokovic,Andy Murray,Shanghai Masters,2015-10-11,1,2,6-1 6-3,3,,Hard
+43d9y6,WTA,Grand Slam,F,True,False,1010,Angelique Kerber,Serena Williams,Australian Open,2016-01-18,6,1,6-4 3-6 6-4,3,128,Hard
+4cw62z,ATP,Masters / Premier,SF,False,True,256,Novak Djokovic,David Goffin,Miami Masters,2016-03-21,1,15,7-6(5) 6-4,3,125,Hard
+4rv9j0,ATP,Grand Slam,SF,False,False,312,Andy Murray,Tomas Berdych,Wimbledon,2016-06-27,2,9,6-3 6-3 6-3,5,117,Grass
+4yuq9u,ATP,Masters / Premier,F,True,False,324,Marin Cilic,Andy Murray,Cincinnati Masters,2016-08-15,14,2,6-4 7-5,3,94,Hard
+51igxv,ATP,Grand Slam,QF,False,True,544,Novak Djokovic,Jo-Wilfried Tsonga,US Open,2016-08-29,1,11,6-3 6-2 RET,5,83,Hard
+523ltb,WTA,Grand Slam,F,False,False,309,Angelique Kerber,Karolina Pliskova,US Open,2016-08-29,2,11,6-3 4-6 6-4,3,127,Hard
+5pf9wi,ATP,Grand Slam,R16,True,False,2,Mischa Zverev,Andy Murray,Australian Open,2017-01-16,50,1,7-5 5-7 6-2 6-4,5,213,Hard
+6mds0i,WTA,Grand Slam,R16,True,False,8,Garbine Muguruza,Angelique Kerber,Wimbledon,2017-07-03,15,1,4-6 6-4 6-4,3,138,Grass
+6mftni,ATP,Grand Slam,R16,True,True,8,Gilles Muller,Rafael Nadal,Wimbledon,2017-07-03,26,2,6-3 6-4 3-6 4-6 15-13,5,288,Grass
+6mfv7v,ATP,Grand Slam,R16,False,False,0,Milos Raonic,Alexander Zverev,Wimbledon,2017-07-03,7,12,4-6 7-5 4-6 7-5 6-1,5,203,Grass
+6n1jk5,WTA,Grand Slam,SF,True,False,1206,Venus Williams,Johanna Konta,Wimbledon,2017-07-03,11,7,6-4 6-2,3,77,Grass
+7sdzph,WTA,Grand Slam,QF,False,False,230,Caroline Wozniacki,Carla Suarez Navarro,Australian Open,2018-01-15,2,39,6-0 6-7(3) 6-2,3,131,Hard
+8pryb1,WTA,Grand Slam,F,False,False,2204,Simona Halep,Sloane Stephens,Roland Garros,2018-05-28,1,10,3-6 6-4 6-1,3,123,Clay
+8xynxz,ATP,Grand Slam,QF,True,True,4595,Kevin Anderson,Roger Federer,Wimbledon,2018-07-02,8,2,2-6 6-7(5) 7-5 6-4 13-11,5,254,Grass
+9d7umk,WTA,Grand Slam,QF,False,False,170,Naomi Osaka,Lesia Tsurenko,US Open,2018-08-27,19,36,6-1 6-1,3,57,Hard
+w4o5w,ATP,Grand Slam,SF,False,False,93,Andy Murray,Jo-Wilfried Tsonga,Wimbledon,2012-06-25,4,6,6-3 6-4 3-6 7-5,5,167,Grass
+yxqqy,ATP,Grand Slam,R128,False,True,0,Roger Federer,Donald Young,US Open,2012-08-27,1,81,6-3 6-2 6-4,5,94,Hard
+yxr3f,ATP,Grand Slam,R128,False,True,0,Roger Federer,Donald Young,US Open,2012-08-27,1,81,6-3 6-2 6-4,5,94,Hard
+z3t9m,ATP,Grand Slam,R64,False,True,6,Roger Federer,Bjorn Phau,US Open,2012-08-27,1,83,6-2 6-3 6-2,5,90,Hard
+zh9qk,ATP,Grand Slam,QF,False,True,56,Novak Djokovic,Juan Martin del Potro,US Open,2012-08-27,2,8,6-2 7-6(3) 6-4,5,186,Hard
+11etiw,ATP,Masters / Premier,SF,True,True,0,Andy Murray,Roger Federer,Shanghai Masters,2012-10-07,3,1,6-4 6-4,3,98,Hard
+12uubx,ATP,Tour Finals,RR,False,True,22,Roger Federer,David Ferrer,Tour Finals,2012-11-05,2,5,6-4 7-6(5),3,109,Hard
+1ahg71,ATP,Masters / Premier,F,False,True,63,Rafael Nadal,Juan Martin del Potro,Indian Wells Masters,2013-03-07,5,7,4-6 6-3 6-4,3,150,Hard
+1gz31j,ATP,Grand Slam,R128,True,True,266,Steve Darcis,Rafael Nadal,Wimbledon,2013-06-24,135,5,7-6(4) 7-6(8) 6-4,5,175,Grass
+1kmf9r,WTA,Masters / Premier,F,True,False,40,Victoria Azarenka,Serena Williams,Cincinnati,2013-08-12,2,1,2-6 6-2 7-6(6),3,,Hard
+1pr6r5,ATP,Masters / Premier,SF,True,True,50,David Ferrer,Rafael Nadal,Paris Masters,2013-10-28,3,1,6-3 7-5,3,98,Hard
+1pwaqh,ATP,Tour Finals,RR,False,False,34,Juan Martin del Potro,Richard Gasquet,Tour Finals,2013-11-04,5,9,6-7(4) 6-3 7-5,3,144,Hard
+1q0x2d,ATP,Tour Finals,RR,False,True,64,Rafael Nadal,Stan Wawrinka,Tour Finals,2013-11-04,1,8,7-6(5) 7-6(6),3,133,Hard
+1q3mxn,ATP,Tour Finals,RR,False,True,19,Roger Federer,Richard Gasquet,Tour Finals,2013-11-04,7,9,6-4 6-3,3,82,Hard
+1w3rij,WTA,Grand Slam,F,False,False,169,Na Li,Dominika Cibulkova,Australian Open,2014-01-13,4,24,7-6(3) 6-0,3,,Hard
+277clm,ATP,Grand Slam,QF,False,True,94,Novak Djokovic,Milos Raonic,Roland Garros,2014-05-26,2,9,7-5 7-6(5) 6-4,5,142,Clay
+277dzg,ATP,Grand Slam,QF,True,False,41,Ernests Gulbis,Tomas Berdych,Roland Garros,2014-05-26,17,6,6-3 6-2 6-4,5,119,Clay
+27aus2,ATP,Grand Slam,QF,False,False,255,Andy Murray,Gael Monfils,Roland Garros,2014-05-26,8,28,6-4 6-1 4-6 1-6 6-0,5,195,Clay
+27awz8,ATP,Grand Slam,QF,False,True,149,Rafael Nadal,David Ferrer,Roland Garros,2014-05-26,1,5,4-6 6-4 6-0 6-1,5,154,Clay
+27dmcr,WTA,Grand Slam,SF,False,False,124,Maria Sharapova,Eugenie Bouchard,Roland Garros,2014-05-26,8,16,4-6 7-5 6-2,3,,Clay
+29tyx5,ATP,Grand Slam,SF,False,True,262,Roger Federer,Milos Raonic,Wimbledon,2014-06-23,4,9,6-4 6-4 6-4,5,101,Grass
+2d1bos,ATP,Masters / Premier,F,False,True,10,Roger Federer,David Ferrer,Cincinnati Masters,2014-08-10,3,6,6-3 1-6 6-2,3,102,Hard
+2ixjgq,ATP,Masters / Premier,SF,True,False,6,Gilles Simon,Feliciano Lopez,Shanghai Masters,2014-10-05,29,21,6-2 7-6(1),3,80,Hard
+2m6i3t,ATP,Tour Finals,RR,False,False,81,Kei Nishikori,David Ferrer,Tour Finals,2014-11-09,5,10,4-6 6-4 6-1,3,117,Hard
+2mdmje,ATP,Tour Finals,SF,False,True,125,Novak Djokovic,Kei Nishikori,Tour Finals,2014-11-09,1,5,6-1 3-6 6-0,3,88,Hard
+2tdk0s,ATP,Grand Slam,R32,True,True,1,Andreas Seppi,Roger Federer,Australian Open,2015-01-19,46,2,6-4 7-6(5) 4-6 7-6(5),5,177,Hard
+2u6fev,ATP,Grand Slam,SF,False,True,922,Novak Djokovic,Stan Wawrinka,Australian Open,2015-01-19,1,4,7-6(1) 3-6 6-4 4-6 6-0,5,210,Hard
+2xdwgd,ATP,Other,QF,True,False,27,Nicolas Almagro,Tommy Robredo,Buenos Aires,2015-02-23,89,18,6-3 6-2,3,61,Clay
+365j1a,WTA,Masters / Premier,SF,True,False,11,Carla Suarez Navarro,Simona Halep,Rome,2015-05-11,10,2,2-6 6-3 7-5,3,,Clay
+3cjg3e,ATP,Grand Slam,QF,False,False,149,Andy Murray,Vasek Pospisil,Wimbledon,2015-06-29,3,56,6-4 7-5 6-4,5,,Grass
+3coeye,WTA,Grand Slam,SF,False,False,247,Serena Williams,Maria Sharapova,Wimbledon,2015-06-29,1,4,6-2 6-4,3,,Grass
+3kk5ct,WTA,Grand Slam,SF,True,False,575,Roberta Vinci,Serena Williams,US Open,2015-08-31,43,1,2-6 6-4 6-4,3,,Hard
+3oao3l,ATP,Other,F,False,False,14,Stan Wawrinka,Benoit Paire,Tokyo,2015-10-05,4,32,6-2 6-4,3,,Hard
+3r2p7a,ATP,Other,F,False,True,384,Roger Federer,Rafael Nadal,Basel,2015-10-26,3,7,6-3 5-7 6-3,3,123,Hard
+3sx681,ATP,Tour Finals,RR,False,True,98,Roger Federer,Tomas Berdych,Tour Finals,2015-11-15,3,6,6-4 6-2,3,,Hard
+3tonos,ATP,Tour Finals,SF,False,True,292,Novak Djokovic,Rafael Nadal,Tour Finals,2015-11-15,1,5,6-3 6-3,3,,Hard
+437vwk,ATP,Grand Slam,SF,False,False,1568,Andy Murray,Milos Raonic,Australian Open,2016-01-18,2,14,4-6 7-5 6-7(4) 6-4 6-2,5,243,Hard
+4b8yqt,ATP,Masters / Premier,F,False,True,380,Novak Djokovic,Milos Raonic,Indian Wells Masters,2016-03-07,1,14,6-2 6-0,3,77,Hard
+4cy31w,ATP,Masters / Premier,SF,False,False,196,Kei Nishikori,Nick Kyrgios,Miami Masters,2016-03-21,6,26,6-3 7-5,3,84,Hard
+4lgczh,ATP,Grand Slam,R32,True,False,10,Ernests Gulbis,Jo-Wilfried Tsonga,Roland Garros,2016-05-23,80,7,2-5 RET,5,40,Clay
+5pnk9u,ATP,Grand Slam,R16,True,True,119,Rafael Nadal,Gael Monfils,Australian Open,2017-01-16,9,6,6-3 6-3 4-6 6-4,5,175,Hard
+5ptgjy,WTA,Grand Slam,QF,True,False,165,Coco Vandeweghe,Garbine Muguruza,Australian Open,2017-01-16,35,7,6-4 6-0,3,83,Hard
+6b40uw,ATP,Masters / Premier,QF,True,True,816,Dominic Thiem,Rafael Nadal,Rome Masters,2017-05-15,7,4,6-4 6-3,3,111,Clay
+6y2ge7,WTA,Grand Slam,R16,False,False,1,Coco Vandeweghe,Lucie Safarova,US Open,2017-08-28,22,37,6-4 7-6(2),3,99,Hard
+6yha2i,ATP,Grand Slam,QF,False,True,1200,Rafael Nadal,Andrey Rublev,US Open,2017-08-28,1,53,6-1 6-2 6-2,5,96,Hard
+6yj0ie,WTA,Grand Slam,QF,False,False,197,Madison Keys,Kaia Kanepi,US Open,2017-08-28,16,418,6-3 6-3,3,68,Hard
+6yxtfb,ATP,Grand Slam,SF,False,True,3148,Rafael Nadal,Juan Martin del Potro,US Open,2017-08-28,1,28,4-6 6-0 6-3 6-2,5,150,Hard
+6z2vdc,WTA,Grand Slam,F,True,False,485,Sloane Stephens,Madison Keys,US Open,2017-08-28,83,16,6-3 6-0,3,61,Hard
+88rkia,ATP,Masters / Premier,F,True,False,927,John Isner,Alexander Zverev,Miami Masters,2018-03-19,17,5,6-7(4) 6-4 6-4,3,149,Hard
+8j3uzq,ATP,Masters / Premier,F,False,False,546,Alexander Zverev,Dominic Thiem,Madrid Masters,2018-05-07,3,7,6-4 6-4,3,78,Clay
+8paxio,WTA,Grand Slam,SF,False,False,151,Sloane Stephens,Madison Keys,Roland Garros,2018-05-28,10,13,6-4 6-4,3,77,Clay
+8pjues,ATP,Grand Slam,SF,False,True,1565,Rafael Nadal,Juan Martin del Potro,Roland Garros,2018-05-28,1,6,6-4 6-1 6-2,5,134,Clay
+yxr8e,ATP,Grand Slam,R128,False,True,0,Roger Federer,Donald Young,US Open,2012-08-27,1,81,6-3 6-2 6-4,5,94,Hard
+12vfrw,ATP,Tour Finals,RR,False,False,9,Juan Martin del Potro,Janko Tipsarevic,Tour Finals,2012-11-05,7,9,6-0 6-4,3,77,Hard
+17443d,ATP,Grand Slam,QF,False,True,128,Roger Federer,Jo-Wilfried Tsonga,Australian Open,2013-01-14,2,8,7-6(4) 4-6 7-6(4) 3-6 6-3,5,214,Hard
+1fik5l,WTA,Grand Slam,R16,False,False,4,Serena Williams,Roberta Vinci,Roland Garros,2013-05-27,1,15,6-1 6-3,3,,Clay
+1fq0h1,ATP,Grand Slam,QF,False,True,37,Novak Djokovic,Tommy Haas,Roland Garros,2013-05-27,1,14,6-3 7-6(5) 7-5,5,133,Clay
+1hkhpj,ATP,Grand Slam,QF,False,False,378,Andy Murray,Fernando Verdasco,Wimbledon,2013-06-24,2,54,4-6 3-6 6-1 6-4 7-5,5,207,Grass
+1lx4d6,ATP,Grand Slam,SF,False,True,373,Novak Djokovic,Stan Wawrinka,US Open,2013-08-26,1,10,2-6 7-6(4) 3-6 6-3 6-4,5,249,Hard
+1p7iu1,ATP,Other,QF,False,True,43,Roger Federer,Grigor Dimitrov,Basel,2013-10-21,6,22,6-3 7-6(2),3,92,Hard
+1pt3k0,ATP,Masters / Premier,F,False,True,48,Novak Djokovic,David Ferrer,Paris Masters,2013-10-28,2,3,7-5 7-5,3,112,Hard
+1qefa4,ATP,Tour Finals,F,True,True,150,Novak Djokovic,Rafael Nadal,Tour Finals,2013-11-04,2,1,6-3 6-4,3,96,Hard
+23i9r7,ATP,Masters / Premier,F,False,True,113,Stan Wawrinka,Roger Federer,Monte Carlo Masters,2014-04-13,3,4,4-6 7-6(5) 6-2,3,134,Clay
+27m5of,ATP,Grand Slam,F,False,True,704,Rafael Nadal,Novak Djokovic,Roland Garros,2014-05-26,1,2,3-6 7-5 6-2 6-4,5,211,Clay
+2dtlkb,ATP,Masters / Premier,F,False,True,205,Roger Federer,David Ferrer,Cincinnati Masters,2014-08-10,3,6,6-3 1-6 6-2,3,102,Hard
+2lrd5s,ATP,Tour Finals,RR,False,False,49,Kei Nishikori,Andy Murray,Tour Finals,2014-11-09,5,6,6-4 6-4,3,95,Hard
+2s1pj4,ATP,Other,F,False,True,128,Roger Federer,Milos Raonic,Brisbane,2015-01-04,2,8,6-4 6-7(2) 6-4,3,133,Hard
+2thzmf,ATP,Grand Slam,R32,False,True,7,Novak Djokovic,Fernando Verdasco,Australian Open,2015-01-19,1,33,7-6(8) 6-3 6-4,5,141,Hard
+2uadng,WTA,Grand Slam,F,False,False,456,Serena Williams,Maria Sharapova,Australian Open,2015-01-19,1,2,6-3 7-6(5),3,,Hard
+35hyw4,ATP,Masters / Premier,F,False,True,277,Andy Murray,Rafael Nadal,Madrid Masters,2015-05-03,3,4,6-3 6-2,3,89,Clay
+38odje,ATP,Grand Slam,SF,False,True,970,Novak Djokovic,Andy Murray,Roland Garros,2015-05-24,1,3,6-3 6-3 5-7 5-7 6-1,5,249,Clay
+3csde5,ATP,Grand Slam,SF,False,True,398,Novak Djokovic,Richard Gasquet,Wimbledon,2015-06-29,1,20,7-6(2) 6-4 6-4,5,,Grass
+3k9sle,WTA,Grand Slam,QF,False,False,231,Simona Halep,Victoria Azarenka,US Open,2015-08-31,2,20,6-3 4-6 6-4,3,,Hard
+3up9y0,ATP,Other,RR,False,False,165,Andy Murray,David Goffin,Davis Cup WG F: BEL vs GBR,2015-11-27,2,16,6-3 7-5 6-3,5,,Clay
+42vkt6,ATP,Grand Slam,QF,False,False,328,Andy Murray,David Ferrer,Australian Open,2016-01-18,2,8,6-3 6-7(5) 6-2 6-3,5,200,Hard
+431k36,WTA,Grand Slam,SF,False,False,40,Angelique Kerber,Johanna Konta,Australian Open,2016-01-18,6,47,7-5 6-2,3,82,Hard
+4d1lvg,WTA,Masters / Premier,F,False,False,76,Victoria Azarenka,Svetlana Kuznetsova,Miami,2016-03-21,8,19,6-3 6-2,3,77,Hard
+4mcdcp,WTA,Grand Slam,SF,False,False,8,Garbine Muguruza,Samantha Stosur,Roland Garros,2016-05-23,4,24,6-2 6-4,3,76,Clay
+4riuos,ATP,Grand Slam,QF,False,False,22,Tomas Berdych,Lucas Pouille,Wimbledon,2016-06-27,9,30,7-6(4) 6-3 6-2,5,114,Grass
+4rzvzw,WTA,Grand Slam,F,False,False,2,Serena Williams,Angelique Kerber,Wimbledon,2016-06-27,1,4,7-5 6-3,3,81,Grass
+5ds056,ATP,Tour Finals,SF,False,False,512,Andy Murray,Milos Raonic,Tour Finals,2016-11-14,1,4,5-7 7-6(5) 7-6(9),3,218,Hard
+5pu0hi,ATP,Grand Slam,QF,False,False,343,Stan Wawrinka,Jo-Wilfried Tsonga,Australian Open,2017-01-16,4,12,7-6(2) 6-4 6-3,5,134,Hard
+5q1rmp,ATP,Grand Slam,QF,True,True,1553,Rafael Nadal,Milos Raonic,Australian Open,2017-01-16,9,3,6-4 7-6(7) 6-4,5,164,Hard
+6n8foy,ATP,Grand Slam,SF,False,False,1808,Marin Cilic,Sam Querrey,Wimbledon,2017-07-03,6,28,6-7(6) 6-4 7-6(3) 7-5,5,176,Grass
+6xq5qe,ATP,Grand Slam,R32,False,True,204,Roger Federer,Feliciano Lopez,US Open,2017-08-28,3,35,6-3 6-3 7-5,5,106,Hard
+6yqje9,WTA,Grand Slam,SF,True,False,1039,Sloane Stephens,Venus Williams,US Open,2017-08-28,83,9,6-1 0-6 7-5,3,127,Hard
+8pj4d7,ATP,Grand Slam,SF,False,False,519,Dominic Thiem,Marco Cecchinato,Roland Garros,2018-05-28,8,72,7-5 7-6(10) 6-1,5,137,Clay
+8y07c1,ATP,Grand Slam,QF,False,True,2838,Rafael Nadal,Juan Martin del Potro,Wimbledon,2018-07-02,1,4,7-5 6-7(7) 4-6 6-4 6-4,5,288,Grass
+8yj0fw,ATP,Grand Slam,SF,False,False,10855,Kevin Anderson,John Isner,Wimbledon,2018-07-02,8,10,7-6(6) 6-7(5) 6-7(9) 6-4 26-24,5,396,Grass
+9ca043,ATP,Grand Slam,R32,False,False,10,Marin Cilic,Alex De Minaur,US Open,2018-08-27,7,45,4-6 3-6 6-3 6-4 7-5,5,240,Hard
+uo0nb,ATP,Grand Slam,QF,False,True,13,Rafael Nadal,Nicolas Almagro,Roland Garros,2012-05-27,2,13,7-6(4) 6-2 6-3,5,166,Clay
+xar8e,ATP,Other,R64,False,True,12,Roger Federer,Alejandro Falla,London Olympics,2012-07-25,1,51,6-3 5-7 6-3,3,107,Grass
+xg37v,ATP,Other,R32,False,False,5,Andy Murray,Jarkko Nieminen,London Olympics,2012-07-25,4,41,6-2 6-4,3,61,Grass
+xkd48,ATP,Other,QF,False,True,33,Roger Federer,John Isner,London Olympics,2012-07-25,1,11,6-4 7-6(5),3,85,Grass
+zexli,ATP,Grand Slam,R16,False,False,22,Juan Martin del Potro,Andy Roddick,US Open,2012-08-27,8,22,6-7(1) 7-6(4) 6-2 6-4,5,195,Hard
+16xawa,ATP,Grand Slam,R16,False,True,225,Novak Djokovic,Stan Wawrinka,Australian Open,2013-01-14,1,17,1-6 7-5 6-4 6-7(5) 12-10,5,302,Hard
+18p319,ATP,Other,F,False,True,2,Rafael Nadal,David Nalbandian,Sao Paulo,2013-02-11,5,93,6-2 6-3,3,78,Clay
+1hmo4n,WTA,Grand Slam,SF,False,False,39,Marion Bartoli,Kirsten Flipkens,Wimbledon,2013-06-24,15,20,6-1 6-2,3,,Grass
+1hstef,ATP,Grand Slam,F,True,True,1264,Andy Murray,Novak Djokovic,Wimbledon,2013-06-24,2,1,6-4 7-5 6-4,5,189,Grass
+1kioq0,ATP,Masters / Premier,QF,False,True,145,Rafael Nadal,Roger Federer,Cincinnati Masters,2013-08-11,3,5,5-7 6-4 6-3,3,134,Hard
+1lvagl,WTA,Grand Slam,SF,False,False,28,Victoria Azarenka,Flavia Pennetta,US Open,2013-08-26,2,83,6-4 6-2,3,,Hard
+1ntzbe,ATP,Other,F,False,True,40,Novak Djokovic,Rafael Nadal,Beijing,2013-09-30,1,2,6-3 6-4,3,87,Hard
+1oaam8,ATP,Masters / Premier,SF,True,True,37,Juan Martin del Potro,Rafael Nadal,Shanghai Masters,2013-10-07,5,1,6-2 6-4,3,106,Hard
+1pqy2p,ATP,Masters / Premier,SF,False,True,64,Novak Djokovic,Roger Federer,Paris Masters,2013-10-28,2,6,4-6 6-3 6-2,3,121,Hard
+1vq2xj,WTA,Grand Slam,QF,True,False,225,Eugenie Bouchard,Ana Ivanovic,Australian Open,2014-01-13,31,14,5-7 7-5 6-2,3,,Hard
+1w0vkx,ATP,Grand Slam,F,True,True,0,Stan Wawrinka,Rafael Nadal,Australian Open,2014-01-13,8,1,6-3 6-2 3-6 6-3,5,141,Hard
+20i57x,ATP,Masters / Premier,SF,False,True,72,Novak Djokovic,John Isner,Indian Wells Masters,2014-03-06,2,13,7-5 6-7(2) 6-1,3,144,Hard
+21rh51,ATP,Masters / Premier,F,True,True,75,Novak Djokovic,Rafael Nadal,Miami Masters,2014-03-19,2,1,6-3 6-3,3,84,Hard
+29nkkx,ATP,Grand Slam,QF,False,True,17,Novak Djokovic,Marin Cilic,Wimbledon,2014-06-23,2,29,6-1 3-6 6-7(4) 6-2 6-2,5,198,Grass
+2kds7u,ATP,Other,F,False,False,66,Andy Murray,Tommy Robredo,Valencia,2014-10-20,10,21,3-6 7-6(7) 7-6(8),3,200,Hard
+2tss23,ATP,Grand Slam,QF,True,True,755,Tomas Berdych,Rafael Nadal,Australian Open,2015-01-19,7,3,6-2 6-0 7-6(5),5,133,Hard
+2ttjr1,ATP,Grand Slam,QF,False,False,441,Andy Murray,Nick Kyrgios,Australian Open,2015-01-19,6,53,6-3 7-6(5) 6-3,5,125,Hard
+2u1b8q,WTA,Grand Slam,SF,False,False,45,Maria Sharapova,Kate Makarova,Australian Open,2015-01-19,2,11,6-3 6-2,3,,Hard
+2xcixr,ATP,Other,SF,False,True,66,Roger Federer,Borna Coric,Dubai,2015-02-23,2,84,6-2 6-1,3,56,Hard
+330k4a,ATP,Masters / Premier,SF,False,False,20,Tomas Berdych,Gael Monfils,Monte Carlo Masters,2015-04-12,8,18,6-1 6-4,3,68,Clay
+369inz,ATP,Masters / Premier,F,False,True,221,Novak Djokovic,Roger Federer,Rome Masters,2015-05-10,1,2,6-4 6-3,3,76,Clay
+3bw288,ATP,Grand Slam,R64,True,True,184,Dustin Brown,Rafael Nadal,Wimbledon,2015-06-29,102,10,7-5 3-6 6-4 6-4,5,,Grass
+3h8037,ATP,Masters / Premier,F,True,True,454,Andy Murray,Novak Djokovic,Canada Masters,2015-08-10,3,1,6-4 4-6 6-3,3,,Hard
+3k3uqj,WTA,Grand Slam,QF,True,False,29,Roberta Vinci,Kristina Mladenovic,US Open,2015-08-31,43,40,6-3 5-7 6-4,3,,Hard
+3r2fjv,WTA,Other,F,True,False,33,Agnieszka Radwanska,Petra Kvitova,WTA Finals,2015-10-25,6,5,6-2 4-6 6-3,3,,Hard
+3t0hwh,ATP,Tour Finals,RR,False,False,37,Andy Murray,David Ferrer,Tour Finals,2015-11-15,2,7,6-4 6-4,3,,Hard
+4m16fd,ATP,Grand Slam,QF,False,False,30,Stan Wawrinka,Albert Ramos,Roland Garros,2016-05-23,4,55,6-2 6-1 7-6(7),5,115,Clay
+4xkugo,WTA,Other,F,True,False,350,Monica Puig,Angelique Kerber,Olympics,2016-08-08,34,2,6-4 4-6 6-1 ,3,129,Hard
+5pe5ld,ATP,Grand Slam,R16,True,True,866,Roger Federer,Kei Nishikori,Australian Open,2017-01-16,17,5,6-7(4) 6-4 6-1 4-6 6-3,5,203,Hard
+5pnazn,ATP,Grand Slam,R16,False,False,0,Grigor Dimitrov,Denis Istomin,Australian Open,2017-01-16,15,117,2-6 7-6(2) 6-2 6-1,5,144,Hard
+6gevwf,WTA,Grand Slam,F,True,False,1322,Jelena Ostapenko,Simona Halep,Roland Garros,2017-05-29,47,4,4-6 6-4 6-3,3,119,Clay
+6mfteo,ATP,Grand Slam,R16,False,True,0,Roger Federer,Grigor Dimitrov,Wimbledon,2017-07-03,5,11,6-4 6-2 6-4,5,97,Grass
+6tgzo4,ATP,Masters / Premier,F,True,True,833,Alexander Zverev,Roger Federer,Canada Masters,2017-08-07,8,3,6-3 6-4,3,68,Hard
+7s4z04,ATP,Grand Slam,R16,True,True,9,Hyeon Chung,Novak Djokovic,Australian Open,2018-01-15,58,14,7-6(4) 7-5 7-6(3),5,201,Hard
+8kks0d,ATP,Masters / Premier,SF,False,True,1477,Rafael Nadal,Novak Djokovic,Rome Masters,2018-05-14,2,18,7-6(4) 6-3,3,116,Clay
+9dnw7u,WTA,Grand Slam,SF,True,False,525,Serena Williams,Anastasija Sevastova,US Open,2018-08-27,26,18,6-3 6-0,3,66,Hard
+9dxoj3,ATP,Grand Slam,SF,False,True,1453,Novak Djokovic,Kei Nishikori,US Open,2018-08-27,6,19,6-3 6-4 6-2,5,143,Hard
+9ef071,ATP,Grand Slam,F,True,True,5520,Novak Djokovic,Juan Martin del Potro,US Open,2018-08-27,6,3,6-3 7-6(4) 6-3,5,196,Hard
+uuk6h,ATP,Grand Slam,F,True,True,0,Rafael Nadal,Novak Djokovic,Roland Garros,2012-05-27,2,1,6-4 6-3 2-6 7-5,5,229,Clay
+xpoix,ATP,Other,F,True,True,289,Andy Murray,Roger Federer,London Olympics,2012-07-25,4,1,6-2 6-1 6-4,5,116,Grass
+z5ssy,ATP,Grand Slam,R64,False,False,19,Andy Roddick,Bernard Tomic,US Open,2012-08-27,22,43,6-3 6-4 6-0,5,87,Hard
+zk5ry,ATP,Grand Slam,SF,False,False,108,Andy Murray,Tomas Berdych,US Open,2012-08-27,4,7,5-7 6-2 6-1 7-6(7),5,238,Hard
+1adm7t,ATP,Masters / Premier,QF,True,False,42,Juan Martin del Potro,Andy Murray,Indian Wells Masters,2013-03-07,7,3,6-7(5) 6-3 6-1,3,153,Hard
+1emppq,ATP,Masters / Premier,F,True,True,150,Rafael Nadal,Roger Federer,Rome Masters,2013-05-12,5,3,6-1 6-3,3,69,Clay
+1fz9gb,ATP,Grand Slam,F,False,True,228,Rafael Nadal,David Ferrer,Roland Garros,2013-05-27,4,5,6-3 6-2 6-3,5,136,Clay
+1m24nf,ATP,Grand Slam,F,True,True,786,Rafael Nadal,Novak Djokovic,US Open,2013-08-26,2,1,6-2 3-6 6-4 6-1,5,201,Hard
+25agzg,ATP,Masters / Premier,F,False,True,131,Rafael Nadal,Kei Nishikori,Madrid Masters,2014-05-04,1,12,2-6 6-4 3-0 RET,3,103,Clay
+2dtchf,WTA,Masters / Premier,F,False,False,28,Serena Williams,Ana Ivanovic,Cincinnati,2014-08-11,1,11,6-4 6-1,3,,Hard
+2kz1uo,ATP,Masters / Premier,SF,True,False,21,Milos Raonic,Tomas Berdych,Paris Masters,2014-10-27,10,5,6-3 3-6 7-5,3,129,Hard
+2kzg53,ATP,Masters / Premier,SF,False,True,19,Novak Djokovic,Kei Nishikori,Paris Masters,2014-10-27,1,7,6-2 6-3,3,62,Hard
+2lvzjy,ATP,Tour Finals,RR,False,True,79,Novak Djokovic,Marin Cilic,Tour Finals,2014-11-09,1,9,6-1 6-1,3,57,Hard
+2m3p08,ATP,Tour Finals,RR,False,True,82,Novak Djokovic,Stan Wawrinka,Tour Finals,2014-11-09,1,4,6-3 6-0,3,65,Hard
+2n2vzi,ATP,Other,RR,False,True,215,Roger Federer,Richard Gasquet,Davis Cup WG F: FRA vs SUI,2014-11-21,2,26,6-4 6-2 6-2,5,,Clay
+38d5p6,ATP,Grand Slam,QF,False,True,1061,Novak Djokovic,Rafael Nadal,Roland Garros,2015-05-24,1,7,7-5 6-3 6-1,5,146,Clay
+3jjaig,ATP,Grand Slam,R64,False,False,65,Andy Murray,Adrian Mannarino,US Open,2015-08-31,3,35,5-7 4-6 6-1 6-3 6-1,5,,Hard
+3k8z9y,WTA,Grand Slam,QF,True,False,59,Flavia Pennetta,Petra Kvitova,US Open,2015-08-31,26,4,4-6 6-4 6-2,3,,Hard
+3tlf11,ATP,Tour Finals,RR,True,False,236,Stan Wawrinka,Andy Murray,Tour Finals,2015-11-15,4,2,7-6(4) 6-4,3,,Hard
+432a7f,ATP,Grand Slam,SF,False,True,2494,Novak Djokovic,Roger Federer,Australian Open,2016-01-18,1,3,6-1 6-2 3-6 6-3,5,139,Hard
+4iaqld,ATP,Masters / Premier,SF,False,True,388,Novak Djokovic,Kei Nishikori,Madrid Masters,2016-05-02,1,6,6-3 7-6(4),3,118,Clay
+4ieymk,ATP,Masters / Premier,F,True,True,709,Andy Murray,Novak Djokovic,Rome Masters,2016-05-09,3,1,6-3 6-3,3,95,Clay
+4j6arc,ATP,Masters / Premier,QF,False,True,1006,Novak Djokovic,Rafael Nadal,Rome Masters,2016-05-09,1,5,7-5 7-6(4),3,144,Clay
+4ri58m,ATP,Grand Slam,QF,False,False,76,Milos Raonic,Sam Querrey,Wimbledon,2016-06-27,7,41,6-4 7-5 5-7 6-4,5,151,Grass
+4vher5,ATP,Masters / Premier,F,False,True,218,Novak Djokovic,Kei Nishikori,Canada Masters,2016-07-25,1,6,6-3 7-5,3,82,Hard
+51yxxq,ATP,Grand Slam,SF,False,True,2125,Novak Djokovic,Gael Monfils,US Open,2016-08-29,1,12,6-3 6-2 3-6 6-2,5,152,Hard
+51zy1d,ATP,Grand Slam,SF,False,False,1061,Stan Wawrinka,Kei Nishikori,US Open,2016-08-29,3,7,4-6 7-5 6-4 6-2,5,187,Hard
+62sloz,WTA,Masters / Premier,F,False,False,77,Johanna Konta,Caroline Wozniacki,Miami,2017-03-20,11,14,6-4 6-3,3,95,Hard
+6g1pxn,WTA,Grand Slam,SF,True,False,485,Simona Halep,Karolina Pliskova,Roland Garros,2017-05-29,4,3,6-4 3-6 6-3,3,120,Clay
+6mnloq,WTA,Grand Slam,QF,True,False,26,Johanna Konta,Simona Halep,Wimbledon,2017-07-03,7,2,6-7(2) 7-6(5) 6-4,3,64,Grass
+6ycoa8,ATP,Grand Slam,QF,True,False,1138,Kevin Anderson,Sam Querrey,US Open,2017-08-28,32,21,7-6(5) 6-7(9) 6-3 7-6(7),5,206,Hard
+7sbky6,ATP,Grand Slam,QF,True,False,785,Kyle Edmund,Grigor Dimitrov,Australian Open,2018-01-15,49,3,6-4 3-6 6-3 6-4,5,169,Hard
+8y92q4,WTA,Grand Slam,SF,False,False,312,Angelique Kerber,Jelena Ostapenko,Wimbledon,2018-07-02,10,12,6-3 6-3,3,68,Grass
+98lovh,ATP,Masters / Premier,F,True,True,1914,Novak Djokovic,Roger Federer,Cincinnati Masters,2018-08-13,10,2,6-4 6-4,3,84,Hard
+9cxyjl,ATP,Grand Slam,QF,False,False,957,Juan Martin del Potro,John Isner,US Open,2018-08-27,3,11,6-7(5) 6-3 7-6(4) 6-2,5,211,Hard
+9e5jqi,WTA,Grand Slam,F,False,False,5186,Naomi Osaka,Serena Williams,US Open,2018-08-27,19,26,6-2 6-4,3,79,Hard
+um6ba,ATP,Grand Slam,QF,False,True,59,Roger Federer,Juan Martin del Potro,Roland Garros,2012-05-27,3,9,3-6 6-7(4) 6-2 6-0 6-3,5,194,Clay
+uo0pv,ATP,Grand Slam,QF,True,False,25,David Ferrer,Andy Murray,Roland Garros,2012-05-27,6,4,6-4 6-7(3) 6-3 6-2,5,225,Clay
+uvwlb,ATP,Grand Slam,F,True,True,61,Rafael Nadal,Novak Djokovic,Roland Garros,2012-05-27,2,1,6-4 6-3 2-6 7-5,5,229,Clay
+w4hly,ATP,Grand Slam,SF,True,True,176,Roger Federer,Novak Djokovic,Wimbledon,2012-06-25,3,1,6-3 3-6 6-4 6-3,5,139,Grass
+xo3tj,WTA,Other,F,True,False,32,Serena Williams,Maria Sharapova,Olympics,2012-07-30,4,3,6-0 6-1,3,,Grass
+12q92t,ATP,Tour Finals,RR,False,True,10,Roger Federer,Janko Tipsarevic,Tour Finals,2012-11-05,2,9,6-3 6-1,3,69,Hard
+12sojm,ATP,Tour Finals,RR,False,True,32,Novak Djokovic,Andy Murray,Tour Finals,2012-11-05,1,3,4-6 6-3 7-5,3,155,Hard
+130d16,ATP,Tour Finals,SF,False,True,19,Novak Djokovic,Juan Martin del Potro,Tour Finals,2012-11-05,1,7,4-6 6-3 6-2,3,132,Hard
+16ljoh,ATP,Grand Slam,R128,False,True,5,Roger Federer,Benoit Paire,Australian Open,2013-01-14,2,46,6-2 6-4 6-1,5,83,Hard
+1cqibu,ATP,Masters / Premier,SF,False,True,7,Rafael Nadal,Jo-Wilfried Tsonga,Monte Carlo Masters,2013-04-14,5,8,6-3 7-6(3),3,97,Clay
+1h4eiq,ATP,Grand Slam,R64,True,True,284,Sergiy Stakhovsky,Roger Federer,Wimbledon,2013-06-24,116,3,6-7(5) 7-6(5) 7-5 7-6(5),5,180,Grass
+1hk9og,ATP,Grand Slam,QF,True,False,44,Juan Martin del Potro,David Ferrer,Wimbledon,2013-06-24,8,4,6-2 6-4 7-6(5),5,136,Grass
+1kk3j9,ATP,Masters / Premier,SF,True,False,41,John Isner,Juan Martin del Potro,Cincinnati Masters,2013-08-11,22,7,6-7(5) 7-6(9) 6-3,3,168,Hard
+1kkfl0,ATP,Masters / Premier,SF,False,True,25,Rafael Nadal,Tomas Berdych,Cincinnati Masters,2013-08-11,3,6,7-5 7-6(4),3,126,Hard
+1looey,ATP,Grand Slam,R16,False,False,16,Andy Murray,Denis Istomin,US Open,2013-08-26,3,65,6-7(5) 6-1 6-4 6-4,5,187,Hard
+25v15g,ATP,Masters / Premier,F,True,True,103,Novak Djokovic,Rafael Nadal,Rome Masters,2014-05-11,2,1,4-6 6-3 6-3,3,139,Clay
+277083,WTA,Grand Slam,QF,True,False,56,Eugenie Bouchard,Carla Suarez Navarro,Roland Garros,2014-05-26,16,15,7-6(4) 2-6 7-5,3,,Clay
+2j06v3,ATP,Masters / Premier,F,False,True,100,Roger Federer,Gilles Simon,Shanghai Masters,2014-10-05,3,29,7-6(6) 7-6(2),3,113,Hard
+2kdscl,ATP,Other,F,False,False,2,Andy Murray,Tommy Robredo,Valencia,2014-10-20,10,21,3-6 7-6(7) 7-6(8),3,200,Hard
+2m2ma7,ATP,Tour Finals,RR,False,False,40,Tomas Berdych,Marin Cilic,Tour Finals,2014-11-09,7,9,6-3 6-1,3,75,Hard
+2mb9lp,ATP,Tour Finals,RR,False,False,40,Stan Wawrinka,Marin Cilic,Tour Finals,2014-11-09,4,9,6-3 4-6 6-3,3,106,Hard
+2rmprw,ATP,Other,R16,False,True,13,Novak Djokovic,Sergiy Stakhovsky,Doha,2015-01-05,1,57,6-2 6-1,3,61,Hard
+2xd5er,ATP,Other,SF,False,True,18,Novak Djokovic,Tomas Berdych,Dubai,2015-02-23,1,8,6-0 5-7 6-4,3,124,Hard
+2xkmfr,ATP,Other,F,False,True,40,Rafael Nadal,Juan Monaco,Buenos Aires,2015-02-23,4,60,6-4 6-1,3,87,Clay
+38sfo5,WTA,Grand Slam,F,False,False,213,Serena Williams,Lucie Safarova,Roland Garros,2015-05-25,1,13,6-3 6-7(2) 6-2,3,,Clay
+3d0de4,ATP,Grand Slam,F,False,True,3112,Novak Djokovic,Roger Federer,Wimbledon,2015-06-29,1,2,7-6(1) 6-7(10) 6-4 6-3,5,176,Grass
+3k0r0m,ATP,Grand Slam,R16,True,False,415,Kevin Anderson,Andy Murray,US Open,2015-08-31,14,3,7-6(5) 6-3 6-7(2) 7-6(0),5,,Hard
+3p7add,ATP,Masters / Premier,F,False,True,40,Novak Djokovic,Jo-Wilfried Tsonga,Shanghai Masters,2015-10-11,1,15,6-2 6-4,3,78,Hard
+3t5eys,ATP,Tour Finals,RR,True,False,43,Kei Nishikori,Tomas Berdych,Tour Finals,2015-11-15,8,6,7-5 3-6 6-3,3,,Hard
+3ttr5n,ATP,Tour Finals,F,False,True,448,Novak Djokovic,Roger Federer,Tour Finals,2015-11-15,1,3,6-3 6-4,3,80,Hard
+40b18j,ATP,Other,F,False,False,1,Stan Wawrinka,Borna Coric,Chennai,2016-01-04,4,44,6-3 7-5,3,86,Hard
+4mcddo,WTA,Grand Slam,SF,False,False,88,Serena Williams,Kiki Bertens,Roland Garros,2016-05-23,1,58,7-6(7) 6-4,3,98,Clay
+4rofxe,WTA,Grand Slam,F,False,False,128,Serena Williams,Angelique Kerber,Wimbledon,2016-06-27,1,4,7-5 6-3,3,81,Grass
+62zpzw,ATP,Masters / Premier,F,False,True,1572,Roger Federer,Rafael Nadal,Miami Masters,2017-03-20,6,7,6-3 6-4,3,94,Hard
+6g0r5g,WTA,Grand Slam,SF,True,False,423,Jelena Ostapenko,Timea Bacsinszky,Roland Garros,2017-05-29,47,31,7-6(4) 3-6 6-3,3,144,Clay
+6lw3pv,ATP,Grand Slam,R32,False,False,14,Andy Murray,Fabio Fognini,Wimbledon,2017-07-03,1,29,6-2 4-6 6-1 7-5,5,159,Grass
+76hlbe,ATP,Masters / Premier,F,True,True,1211,Roger Federer,Rafael Nadal,Shanghai Masters,2017-10-09,2,1,6-4 6-3,3,72,Hard
+8krva6,WTA,Masters / Premier,F,True,False,175,Elina Svitolina,Simona Halep,Rome,2018-05-14,4,1,6-0 6-4,3,67,Clay
+8y13i6,ATP,Grand Slam,QF,False,False,277,John Isner,Milos Raonic,Wimbledon,2018-07-02,10,32,6-7(5) 7-6(7) 6-4 6-3,5,162,Grass
+w6d6k,WTA,Grand Slam,F,True,False,61,Serena Williams,Agnieszka Radwanska,Wimbledon,2012-06-25,6,3,6-1 5-7 6-2,3,,Grass
+z74s7,ATP,Grand Slam,R32,False,True,7,Roger Federer,Fernando Verdasco,US Open,2012-08-27,1,26,6-3 6-4 6-4,5,122,Hard
+z7b3i,ATP,Grand Slam,R32,False,False,9,Milos Raonic,James Blake,US Open,2012-08-27,16,114,6-3 6-0 7-6(3),5,108,Hard
+zkk29,ATP,Grand Slam,SF,False,True,0,Novak Djokovic,David Ferrer,US Open,2012-08-27,2,5,2-6 6-1 6-4 6-2,5,152,Hard
+12xjio,ATP,Tour Finals,RR,False,False,5,Andy Murray,Jo-Wilfried Tsonga,Tour Finals,2012-11-05,3,8,6-2 7-6(3),3,96,Hard
+12z4xo,ATP,Tour Finals,RR,False,False,7,David Ferrer,Janko Tipsarevic,Tour Finals,2012-11-05,5,9,4-6 6-3 6-1,3,127,Hard
+1af887,ATP,Masters / Premier,SF,False,True,12,Rafael Nadal,Tomas Berdych,Indian Wells Masters,2013-03-07,5,6,6-4 7-5,3,104,Hard
+1afh2f,ATP,Masters / Premier,SF,True,True,60,Juan Martin del Potro,Novak Djokovic,Indian Wells Masters,2013-03-07,7,1,4-6 6-4 6-4,3,170,Hard
+1bb261,WTA,Masters / Premier,F,False,False,50,Serena Williams,Maria Sharapova,Miami,2013-03-18,1,2,4-6 6-3 6-0,3,,Hard
+1cqmh8,ATP,Masters / Premier,SF,False,True,4,Novak Djokovic,Fabio Fognini,Monte Carlo Masters,2013-04-14,1,32,6-2 6-1,3,52,Clay
+1d9tuj,ATP,Other,F,False,True,13,Rafael Nadal,Nicolas Almagro,Barcelona,2013-04-22,5,12,6-4 6-3,3,92,Clay
+1emknv,WTA,Masters / Premier,F,False,False,20,Serena Williams,Victoria Azarenka,Rome,2013-05-13,1,3,6-1 6-3,3,,Clay
+1vtaoq,WTA,Grand Slam,QF,True,False,108,Agnieszka Radwanska,Victoria Azarenka,Australian Open,2014-01-13,5,2,6-1 5-7 6-0,3,,Hard
+1vwq1j,WTA,Grand Slam,SF,False,False,93,Na Li,Eugenie Bouchard,Australian Open,2014-01-13,4,31,6-2 6-4,3,,Hard
+21o14v,WTA,Masters / Premier,F,False,False,7,Serena Williams,Na Li,Miami,2014-03-17,1,2,7-5 6-1,3,,Hard
+2959qb,ATP,Grand Slam,R64,False,True,49,Rafael Nadal,Lukas Rosol,Wimbledon,2014-06-23,1,52,4-6 7-6(6) 6-4 6-4,5,164,Grass
+2tlp8c,ATP,Grand Slam,R16,False,False,278,Andy Murray,Grigor Dimitrov,Australian Open,2015-01-19,6,11,6-4 6-7(5) 6-3 7-5,5,212,Hard
+2ued6m,ATP,Grand Slam,F,False,True,0,Novak Djokovic,Andy Murray,Australian Open,2015-01-19,1,6,7-6(5) 6-7(4) 6-3 6-0,5,219,Hard
+31bn5t,ATP,Masters / Premier,SF,False,False,76,Andy Murray,Tomas Berdych,Miami Masters,2015-03-25,4,9,6-4 6-4,3,102,Hard
+31fkei,WTA,Masters / Premier,F,False,False,26,Serena Williams,Carla Suarez Navarro,Miami,2015-03-23,1,12,6-2 6-0,3,,Hard
+38dc9i,ATP,Grand Slam,QF,False,False,121,Andy Murray,David Ferrer,Roland Garros,2015-05-24,3,8,7-6(4) 6-2 5-7 6-1,5,196,Clay
+3k00yn,ATP,Grand Slam,R16,False,False,9,Stan Wawrinka,Donald Young,US Open,2015-08-31,5,68,6-4 1-6 6-3 6-4,5,,Hard
+3kb263,ATP,Grand Slam,QF,False,False,102,Stan Wawrinka,Kevin Anderson,US Open,2015-08-31,5,14,6-4 6-4 6-0,5,,Hard
+41nlhr,ATP,Grand Slam,R128,True,True,172,Fernando Verdasco,Rafael Nadal,Australian Open,2016-01-18,45,5,7-6(6) 4-6 3-6 7-6(4) 6-2,5,281,Hard
+42jjdx,ATP,Grand Slam,R16,True,False,129,Milos Raonic,Stan Wawrinka,Australian Open,2016-01-18,14,4,6-4 6-3 5-7 4-6 6-3,5,224,Hard
+4jfm52,ATP,Masters / Premier,F,True,True,480,Andy Murray,Novak Djokovic,Rome Masters,2016-05-09,3,1,6-3 6-3,3,95,Clay
+4mn6h5,ATP,Grand Slam,F,False,True,2782,Novak Djokovic,Andy Murray,Roland Garros,2016-05-23,1,2,3-6 6-1 6-2 6-4,5,183,Clay
+4qg9sf,ATP,Grand Slam,R64,False,True,0,Roger Federer,Marcus Willis,Wimbledon,2016-06-27,3,772,6-0 6-3 6-4,5,84,Grass
+4vheo3,WTA,Masters / Premier,F,False,False,58,Simona Halep,Madison Keys,Montreal,2016-07-25,5,12,7-6(2) 6-3,3,75,Hard
+51mdzw,ATP,Grand Slam,QF,True,False,1597,Kei Nishikori,Andy Murray,US Open,2016-08-29,7,2,1-6 6-4 4-6 6-1 7-5,5,237,Hard
+5mklbu,ATP,Other,F,True,True,1212,Novak Djokovic,Andy Murray,Doha,2017-01-02,2,1,6-3 5-7 6-4,3,174,Hard
+5p35nh,ATP,Grand Slam,R32,True,True,125,Roger Federer,Tomas Berdych,Australian Open,2017-01-16,17,10,6-2 6-4 6-4,5,90,Hard
+5q8nsi,WTA,Grand Slam,SF,False,False,167,Serena Williams,Mirjana Lucic,Australian Open,2017-01-16,2,79,6-2 6-1,3,50,Hard
+6mtg4t,ATP,Grand Slam,QF,False,False,396,Marin Cilic,Gilles Muller,Wimbledon,2017-07-03,6,26,3-6 7-6(6) 7-5 5-7 6-1,5,209,Grass
+6ywu91,ATP,Grand Slam,SF,True,False,644,Kevin Anderson,Pablo Carreno Busta,US Open,2017-08-28,32,19,4-6 7-5 6-3 6-4,5,175,Hard
+7tbcan,WTA,Grand Slam,F,True,False,3109,Caroline Wozniacki,Simona Halep,Australian Open,2018-01-15,2,1,7-6(2) 3-6 6-4,3,169,Hard
+96pxew,WTA,Masters / Premier,F,False,False,480,Simona Halep,Sloane Stephens,Montreal,2018-08-06,1,3,7-6(6) 3-6 6-4,3,161,Hard
+96qsxv,ATP,Masters / Premier,F,False,True,853,Rafael Nadal,Stefanos Tsitsipas,Canada Masters,2018-08-06,1,27,6-2 7-6(4),3,101,Hard
+9av8la,ATP,Grand Slam,R128,False,True,0,Rafael Nadal,David Ferrer,US Open,2018-08-27,1,148,6-3 3-4 RET,5,83,Hard
+yxre7,ATP,Grand Slam,R128,False,True,29,Roger Federer,Donald Young,US Open,2012-08-27,1,81,6-3 6-2 6-4,5,94,Hard
+zo4ri,ATP,Grand Slam,F,True,True,619,Andy Murray,Novak Djokovic,US Open,2012-08-27,4,2,7-6(10) 7-5 2-6 3-6 6-2,5,294,Hard
+12yoig,ATP,Tour Finals,RR,True,True,6,Juan Martin del Potro,Roger Federer,Tour Finals,2012-11-05,7,2,7-6(3) 4-6 6-3,3,121,Hard
+132umq,ATP,Tour Finals,F,False,True,89,Novak Djokovic,Roger Federer,Tour Finals,2012-11-05,1,2,7-6(6) 7-5,3,135,Hard
+175ziy,WTA,Grand Slam,SF,True,False,40,Na Li,Maria Sharapova,Australian Open,2013-01-14,6,2,6-2 6-2,3,,Hard
+1hoqnk,ATP,Grand Slam,SF,False,True,456,Novak Djokovic,Juan Martin del Potro,Wimbledon,2013-06-24,1,8,7-5 4-6 7-6(2) 6-7(6) 6-3,5,283,Grass
+1lssuf,ATP,Grand Slam,QF,True,False,268,Stan Wawrinka,Andy Murray,US Open,2013-08-26,10,3,6-4 6-3 6-2,5,135,Hard
+1pbaa4,ATP,Masters / Premier,QF,True,True,32,Roger Federer,Juan Martin del Potro,Paris Masters,2013-10-28,6,5,6-3 4-6 6-3,3,104,Hard
+1pvifa,ATP,Tour Finals,RR,True,False,13,Stan Wawrinka,Tomas Berdych,Tour Finals,2013-11-04,8,6,6-3 6-7(0) 6-3,3,146,Hard
+1qb136,ATP,Tour Finals,SF,False,True,93,Rafael Nadal,Roger Federer,Tour Finals,2013-11-04,1,7,7-5 6-3,3,80,Hard
+1w0qch,ATP,Grand Slam,SF,False,True,1251,Rafael Nadal,Roger Federer,Australian Open,2014-01-13,1,6,7-6(4) 6-3 6-3,5,144,Hard
+1w6keb,ATP,Grand Slam,F,True,True,1846,Stan Wawrinka,Rafael Nadal,Australian Open,2014-01-13,8,1,6-3 6-2 3-6 6-3,5,141,Hard
+25a444,WTA,Masters / Premier,F,True,False,26,Maria Sharapova,Simona Halep,Madrid,2014-05-05,9,5,1-6 6-2 6-3,3,,Clay
+25uuhc,WTA,Masters / Premier,F,False,False,6,Serena Williams,Sara Errani,Rome,2014-05-12,1,11,6-3 6-0,3,,Clay
+27amgu,WTA,Grand Slam,QF,True,False,22,Andrea Petkovic,Sara Errani,Roland Garros,2014-05-26,27,11,6-2 6-2,3,,Clay
+27e2cb,WTA,Grand Slam,SF,False,False,23,Simona Halep,Andrea Petkovic,Roland Garros,2014-05-26,4,27,6-2 7-6(4),3,,Clay
+29n9k6,ATP,Grand Slam,QF,True,False,111,Grigor Dimitrov,Andy Murray,Wimbledon,2014-06-23,13,5,6-1 7-6(4) 6-2,5,121,Grass
+29qgbu,WTA,Grand Slam,SF,False,False,16,Petra Kvitova,Lucie Safarova,Wimbledon,2014-06-23,6,23,7-6(6) 6-1,3,,Grass
+2luw4i,ATP,Tour Finals,RR,False,False,54,Stan Wawrinka,Tomas Berdych,Tour Finals,2014-11-09,4,7,6-1 6-1,3,58,Hard
+2mh7hj,ATP,Tour Finals,F,False,True,121,Novak Djokovic,Roger Federer,Tour Finals,2014-11-09,1,2,W/O,3,,Hard
+2myyse,ATP,Other,RR,False,False,94,Stan Wawrinka,Jo-Wilfried Tsonga,Davis Cup WG F: FRA vs SUI,2014-11-21,4,12,6-1 3-6 6-3 6-2,5,,Clay
+2txb0a,ATP,Grand Slam,QF,False,False,356,Stan Wawrinka,Kei Nishikori,Australian Open,2015-01-19,4,5,6-3 6-4 7-6(6),5,124,Hard
+2vz1sq,ATP,Other,F,True,False,51,Stan Wawrinka,Tomas Berdych,Rotterdam,2015-02-09,8,7,4-6 6-3 6-4,3,118,Hard
+2zxuhu,ATP,Masters / Premier,F,False,True,447,Novak Djokovic,Roger Federer,Indian Wells Masters,2015-03-12,1,2,6-3 6-7(5) 6-2,3,138,Hard
+35e1ad,ATP,Masters / Premier,SF,False,True,47,Rafael Nadal,Tomas Berdych,Madrid Masters,2015-05-03,4,7,7-6(3) 6-1,3,104,Clay
+365tg2,ATP,Masters / Premier,SF,False,True,28,Novak Djokovic,David Ferrer,Rome Masters,2015-05-10,1,8,6-4 6-4,3,95,Clay
+366i7s,ATP,Masters / Premier,SF,False,True,114,Roger Federer,Stan Wawrinka,Rome Masters,2015-05-10,2,9,6-4 6-2,3,55,Clay
+387qxe,ATP,Grand Slam,QF,True,False,245,Jo-Wilfried Tsonga,Kei Nishikori,Roland Garros,2015-05-24,15,5,6-1 6-4 4-6 3-6 6-3,5,225,Clay
+3cnyzi,WTA,Grand Slam,SF,True,False,157,Garbine Muguruza,Agnieszka Radwanska,Wimbledon,2015-06-29,20,13,6-2 3-6 6-3,3,,Grass
+3kl6vb,ATP,Grand Slam,SF,False,True,496,Novak Djokovic,Marin Cilic,US Open,2015-08-31,1,9,6-0 6-1 6-2,5,,Hard
+3t6io6,ATP,Tour Finals,F,False,True,310,Novak Djokovic,Roger Federer,Tour Finals,2015-11-15,1,3,6-3 6-4,3,80,Hard
+3tbsct,ATP,Tour Finals,RR,False,False,75,Stan Wawrinka,David Ferrer,Tour Finals,2015-11-15,4,7,7-5 6-2,3,,Hard
+406by5,ATP,Other,F,False,True,224,Novak Djokovic,Rafael Nadal,Doha,2016-01-04,1,5,6-1 6-2,3,73,Hard
+42v4mt,WTA,Grand Slam,QF,False,False,101,Johanna Konta,Shuai Zhang,Australian Open,2016-01-18,47,133,6-4 6-1,3,83,Hard
+4mcn1v,ATP,Grand Slam,SF,False,True,369,Novak Djokovic,Dominic Thiem,Roland Garros,2016-05-23,1,15,6-2 6-1 6-4,5,108,Clay
+4xjel6,ATP,Other,SF,False,False,42,Andy Murray,Kei Nishikori,Rio Olympics,2016-08-08,2,7,6-1 6-4,3,80,Hard
+4xjelz,WTA,Other,BR,True,False,2,Petra Kvitova,Madison Keys,Olympics,2016-08-08,14,9,7-5 2-6 6-2,3,132,Hard
+5pursd,ATP,Grand Slam,QF,False,True,967,Roger Federer,Mischa Zverev,Australian Open,2017-01-16,17,50,6-1 7-5 6-2,5,92,Hard
+62hkda,ATP,Masters / Premier,QF,False,False,16,Nick Kyrgios,Alexander Zverev,Miami Masters,2017-03-20,16,20,6-4 6-7(9) 6-3,3,153,Hard
+671ojy,ATP,Masters / Premier,F,False,True,312,Rafael Nadal,Albert Ramos,Monte Carlo Masters,2017-04-17,7,24,6-1 6-3,3,76,Clay
+6cgfst,ATP,Masters / Premier,F,True,True,671,Alexander Zverev,Novak Djokovic,Rome Masters,2017-05-15,17,2,6-4 6-3,3,81,Clay
+6xa9b2,ATP,Grand Slam,R64,False,True,4,Roger Federer,Mikhail Youzhny,US Open,2017-08-28,3,101,6-1 6-7(3) 4-6 6-4 6-2,5,188,Hard
+8z1437,ATP,Grand Slam,F,True,True,2384,Novak Djokovic,Kevin Anderson,Wimbledon,2018-07-02,21,8,6-2 6-2 7-6(3),5,139,Grass
+9auw1h,ATP,Grand Slam,R128,False,True,7,Rafael Nadal,David Ferrer,US Open,2018-08-27,1,148,6-3 3-4 RET,5,83,Hard
+9bxthw,ATP,Grand Slam,R32,False,True,2,Rafael Nadal,Karen Khachanov,US Open,2018-08-27,1,26,5-7 7-5 7-6(7) 7-6(3),5,263,Hard
+9cx330,WTA,Grand Slam,QF,True,False,333,Anastasija Sevastova,Sloane Stephens,US Open,2018-08-27,18,3,6-2 6-3,3,84,Hard
+utqvp,ATP,Grand Slam,F,True,True,140,Rafael Nadal,Novak Djokovic,Roland Garros,2012-05-27,2,1,6-4 6-3 2-6 7-5,5,229,Clay
+xfzio,ATP,Other,R32,False,False,48,Jo-Wilfried Tsonga,Milos Raonic,London Olympics,2012-07-25,6,25,6-3 3-6 25-23,3,237,Grass
+xi18i,ATP,Other,R16,False,True,0,Roger Federer,Denis Istomin,London Olympics,2012-07-25,1,34,7-5 6-3,3,81,Grass
+xk7cw,ATP,Other,QF,False,True,5,Novak Djokovic,Jo-Wilfried Tsonga,London Olympics,2012-07-25,2,6,6-1 7-5,3,80,Grass
+112u1v,ATP,Other,F,True,False,25,Kei Nishikori,Milos Raonic,Tokyo,2012-10-01,17,15,7-6(5) 3-6 6-0,3,128,Hard
+12op07,ATP,Tour Finals,RR,False,True,6,Novak Djokovic,Jo-Wilfried Tsonga,Tour Finals,2012-11-05,1,8,7-6(4) 6-3,3,100,Hard
+12tcp8,ATP,Tour Finals,RR,False,False,4,Tomas Berdych,Jo-Wilfried Tsonga,Tour Finals,2012-11-05,6,8,7-5 3-6 6-1,3,112,Hard
+12wwcg,ATP,Tour Finals,RR,False,True,39,Novak Djokovic,Tomas Berdych,Tour Finals,2012-11-05,1,6,6-2 7-6(6),3,98,Hard
+171oyj,ATP,Grand Slam,QF,False,True,36,Novak Djokovic,Tomas Berdych,Australian Open,2013-01-14,1,6,6-1 4-6 6-1 6-4,5,151,Hard
+1767p7,WTA,Grand Slam,SF,False,False,64,Victoria Azarenka,Sloane Stephens,Australian Open,2013-01-14,1,25,6-1 6-4,3,,Hard
+1e6fw9,WTA,Masters / Premier,F,False,False,9,Serena Williams,Maria Sharapova,Madrid,2013-05-06,1,2,6-1 6-4,3,,Clay
+1fnhsq,ATP,Grand Slam,QF,True,True,147,Jo-Wilfried Tsonga,Roger Federer,Roland Garros,2013-05-27,8,3,7-5 6-3 6-3,5,111,Clay
+1fq0g7,ATP,Grand Slam,QF,False,True,35,Rafael Nadal,Stan Wawrinka,Roland Garros,2013-05-27,4,10,6-2 6-3 6-1,5,116,Clay
+1fscua,WTA,Grand Slam,SF,False,False,68,Maria Sharapova,Victoria Azarenka,Roland Garros,2013-05-27,2,3,6-1 2-6 6-4,3,,Clay
+1fuskb,ATP,Grand Slam,SF,True,True,445,Rafael Nadal,Novak Djokovic,Roland Garros,2013-05-27,4,1,6-4 3-6 6-1 6-7(3) 9-7,5,277,Clay
+1km0rq,ATP,Masters / Premier,F,False,True,63,Rafael Nadal,John Isner,Cincinnati Masters,2013-08-11,3,22,7-6(8) 7-6(3),3,115,Hard
+1oa43a,ATP,Masters / Premier,SF,False,True,9,Novak Djokovic,Jo-Wilfried Tsonga,Shanghai Masters,2013-10-07,2,9,6-2 7-5,3,94,Hard
+1q4h89,ATP,Tour Finals,RR,False,True,32,Novak Djokovic,Juan Martin del Potro,Tour Finals,2013-11-04,2,5,6-3 3-6 6-3,3,114,Hard
+1w0yfh,ATP,Grand Slam,F,True,True,6,Stan Wawrinka,Rafael Nadal,Australian Open,2014-01-13,8,1,6-3 6-2 3-6 6-3,5,141,Hard
+1w1url,ATP,Grand Slam,SF,False,True,2,Rafael Nadal,Roger Federer,Australian Open,2014-01-13,1,6,7-6(4) 6-3 6-3,5,144,Hard
+21mknt,ATP,Masters / Premier,SF,False,True,21,Rafael Nadal,Tomas Berdych,Miami Masters,2014-03-19,1,7,W/O,3,,Hard
+27707h,WTA,Grand Slam,QF,False,False,60,Maria Sharapova,Garbine Muguruza,Roland Garros,2014-05-26,8,35,1-6 7-5 6-1,3,,Clay
+27gwei,ATP,Grand Slam,SF,False,True,232,Rafael Nadal,Andy Murray,Roland Garros,2014-05-26,1,8,6-3 6-2 6-1,5,100,Clay
+29kv7v,ATP,Grand Slam,R16,True,True,93,Nick Kyrgios,Rafael Nadal,Wimbledon,2014-06-23,144,1,7-6(5) 5-7 7-6(5) 6-3,5,178,Grass
+2fnpru,ATP,Grand Slam,SF,True,True,8,Marin Cilic,Roger Federer,US Open,2014-08-25,16,3,6-3 6-4 6-4,5,105,Hard
+2kd8ox,ATP,Other,F,False,True,56,Roger Federer,David Goffin,Basel,2014-10-20,2,28,6-2 6-2,3,52,Hard
+2megqm,ATP,Tour Finals,SF,False,True,377,Roger Federer,Stan Wawrinka,Tour Finals,2014-11-09,2,4,4-6 7-5 7-6(6),3,168,Hard
+2txz5h,ATP,Grand Slam,QF,False,True,149,Novak Djokovic,Milos Raonic,Australian Open,2015-01-19,1,8,7-6(5) 6-4 6-2,5,120,Hard
+2xgqfd,ATP,Other,F,True,True,191,Roger Federer,Novak Djokovic,Dubai,2015-02-23,2,1,6-3 7-5,3,84,Hard
+2ztowh,ATP,Masters / Premier,SF,False,True,190,Novak Djokovic,Andy Murray,Indian Wells Masters,2015-03-12,1,4,6-2 6-3,3,88,Hard
+2zx8ld,WTA,Masters / Premier,F,False,False,133,Simona Halep,Jelena Jankovic,Indian Wells,2015-03-09,3,21,2-6 7-5 6-4,3,,Hard
+38with,ATP,Grand Slam,F,True,True,1399,Stan Wawrinka,Novak Djokovic,Roland Garros,2015-05-24,9,1,4-6 6-4 6-3 6-4,5,192,Clay
+3ck7y5,ATP,Grand Slam,QF,False,True,67,Novak Djokovic,Marin Cilic,Wimbledon,2015-06-29,1,9,6-4 6-4 6-4,5,,Grass
+3csw44,ATP,Grand Slam,SF,False,True,1373,Roger Federer,Andy Murray,Wimbledon,2015-06-29,2,3,7-5 7-5 6-4,5,,Grass
+3cwpr6,WTA,Grand Slam,F,False,False,443,Serena Williams,Garbine Muguruza,Wimbledon,2015-06-29,1,20,6-4 6-4,3,,Grass
+3kb9kl,ATP,Grand Slam,QF,False,True,233,Roger Federer,Richard Gasquet,US Open,2015-08-31,2,12,6-3 6-3 6-1,5,,Hard
+3kls90,ATP,Grand Slam,SF,False,True,553,Roger Federer,Stan Wawrinka,US Open,2015-08-31,2,5,6-4 6-3 6-1,5,,Hard
+3tk83p,ATP,Tour Finals,RR,False,True,117,Rafael Nadal,David Ferrer,Tour Finals,2015-11-15,5,7,6-7(2) 6-3 6-4,3,,Hard
+3tpsp3,ATP,Tour Finals,SF,False,True,219,Roger Federer,Stan Wawrinka,Tour Finals,2015-11-15,3,4,7-5 6-3,3,,Hard
+3ugc8h,ATP,Other,RR,False,False,112,David Goffin,Kyle Edmund,Davis Cup WG F: BEL vs GBR,2015-11-27,16,100,3-6 1-6 6-2 6-1 6-0,5,,Clay
+3uky4c,ATP,Other,RR,False,False,98,Andy Murray,David Goffin,Davis Cup WG F: BEL vs GBR,2015-11-27,2,16,6-3 7-5 6-3,5,,Clay
+4f20hx,ATP,Masters / Premier,SF,True,False,39,Gael Monfils,Jo-Wilfried Tsonga,Monte Carlo Masters,2016-04-11,16,9,6-1 6-3,3,69,Clay
+4i9c7m,ATP,Masters / Premier,SF,False,True,405,Andy Murray,Rafael Nadal,Madrid Masters,2016-05-02,2,5,7-5 6-4,3,131,Clay
+4m0vck,ATP,Grand Slam,QF,False,False,393,Andy Murray,Richard Gasquet,Roland Garros,2016-05-23,2,12,5-7 7-6(3) 6-0 6-2,5,203,Clay
+4rj717,ATP,Grand Slam,QF,False,True,9,Roger Federer,Marin Cilic,Wimbledon,2016-06-27,3,13,6-7(4) 4-6 6-3 7-6(9) 6-3,5,197,Grass
+51ovzw,ATP,Grand Slam,QF,False,False,1154,Stan Wawrinka,Juan Martin del Potro,US Open,2016-08-29,3,142,7-6(5) 4-6 6-3 6-2,5,192,Hard
+5pf562,ATP,Grand Slam,R16,True,False,424,Mischa Zverev,Andy Murray,Australian Open,2017-01-16,50,1,7-5 5-7 6-2 6-4,5,213,Hard
+5pwyw1,ATP,Grand Slam,QF,True,True,81,Rafael Nadal,Milos Raonic,Australian Open,2017-01-16,9,3,6-4 7-6(7) 6-4,5,164,Hard
+5q7qk1,WTA,Grand Slam,SF,False,False,583,Venus Williams,Coco Vandeweghe,Australian Open,2017-01-16,17,35,6-7(3) 6-2 6-3,3,145,Hard
+609za7,WTA,Masters / Premier,F,True,False,116,Elena Vesnina,Svetlana Kuznetsova,Indian Wells,2017-03-06,15,8,6-7(6) 7-5 6-4,3,181,Hard
+6ftmwk,ATP,Grand Slam,QF,False,False,1151,Andy Murray,Kei Nishikori,Roland Garros,2017-05-29,1,9,2-6 6-1 7-6(0) 6-1,5,159,Clay
+6mtg3z,ATP,Grand Slam,QF,True,False,1919,Sam Querrey,Andy Murray,Wimbledon,2017-07-03,28,1,3-6 6-4 6-7(4) 6-1 6-1,5,161,Grass
+6mtgiv,ATP,Grand Slam,QF,True,False,0,Sam Querrey,Andy Murray,Wimbledon,2017-07-03,28,1,3-6 6-4 6-7(4) 6-1 6-1,5,161,Grass
+6ww0tj,ATP,Grand Slam,R128,False,True,109,Roger Federer,Frances Tiafoe,US Open,2017-08-28,3,70,4-6 6-2 6-1 1-6 6-4,5,157,Hard
+6y9w9r,WTA,Grand Slam,QF,True,False,257,Sloane Stephens,Anastasija Sevastova,US Open,2017-08-28,83,17,6-3 3-6 7-6(4),3,148,Hard
+7slhce,ATP,Grand Slam,QF,False,True,2379,Roger Federer,Tomas Berdych,Australian Open,2018-01-15,2,20,7-6(1) 6-3 6-4,5,134,Hard
+8ysjol,WTA,Grand Slam,F,False,False,1448,Angelique Kerber,Serena Williams,Wimbledon,2018-07-02,10,181,6-3 6-3,3,65,Grass
+98low5,WTA,Masters / Premier,F,True,False,431,Kiki Bertens,Simona Halep,Cincinnati,2018-08-13,17,1,2-6 7-6(6) 6-2,3,125,Hard
+9dozz9,WTA,Grand Slam,SF,True,False,835,Naomi Osaka,Madison Keys,US Open,2018-08-27,19,14,6-2 6-4,3,86,Hard
+9dxoev,ATP,Grand Slam,SF,True,True,2551,Juan Martin del Potro,Rafael Nadal,US Open,2018-08-27,3,1,7-6(3) 6-2 RET,5,121,Hard
+w1cjt,ATP,Grand Slam,QF,False,False,0,Andy Murray,David Ferrer,Wimbledon,2012-06-25,4,5,6-7(5) 7-6(6) 6-4 7-6(4),5,232,Grass
+1b9cdi,ATP,Masters / Premier,SF,False,False,14,David Ferrer,Tommy Haas,Miami Masters,2013-03-20,5,18,4-6 6-2 6-3,3,122,Hard
+1fsqzw,WTA,Grand Slam,SF,False,False,64,Serena Williams,Sara Errani,Roland Garros,2013-05-27,1,5,6-0 6-1,3,,Clay
+1k48f1,ATP,Masters / Premier,SF,True,True,76,Rafael Nadal,Novak Djokovic,Canada Masters,2013-08-05,4,1,6-4 3-6 7-6(2),3,149,Hard
+1lm0ox,ATP,Grand Slam,R16,False,True,22,Rafael Nadal,Philipp Kohlschreiber,US Open,2013-08-26,2,25,6-7(4) 6-4 6-3 6-1,5,192,Hard
+1lvji4,WTA,Grand Slam,SF,False,False,51,Serena Williams,Na Li,US Open,2013-08-26,1,6,6-0 6-3,3,,Hard
+1q76m4,ATP,Tour Finals,RR,False,True,52,Rafael Nadal,Tomas Berdych,Tour Finals,2013-11-04,1,6,6-4 1-6 6-3,3,111,Hard
+27amg4,WTA,Grand Slam,QF,False,False,9,Simona Halep,Svetlana Kuznetsova,Roland Garros,2014-05-26,4,28,6-2 6-2,3,,Clay
+2d5p1l,WTA,Masters / Premier,F,False,False,14,Agnieszka Radwanska,Venus Williams,Montreal,2014-08-04,5,26,6-4 6-2,3,,Hard
+2s216z,ATP,Other,F,False,False,3,Stan Wawrinka,Aljaz Bedene,Chennai,2015-01-05,4,156,6-3 6-4,3,70,Hard
+2t5qvu,ATP,Grand Slam,R64,False,True,89,Rafael Nadal,Tim Smyczek,Australian Open,2015-01-19,3,112,6-2 3-6 6-7(2) 6-3 7-5,5,252,Hard
+2tseil,WTA,Grand Slam,QF,False,False,133,Maria Sharapova,Eugenie Bouchard,Australian Open,2015-01-19,2,7,6-3 6-2,3,,Hard
+2ztoja,ATP,Masters / Premier,SF,False,True,0,Novak Djokovic,Andy Murray,Indian Wells Masters,2015-03-12,1,4,6-2 6-3,3,88,Hard
+363nt0,ATP,Masters / Premier,QF,True,True,0,Stan Wawrinka,Rafael Nadal,Rome Masters,2015-05-10,9,7,7-6(7) 6-2,3,126,Clay
+4iabjr,WTA,Masters / Premier,F,False,False,51,Simona Halep,Dominika Cibulkova,Madrid,2016-05-02,7,38,6-2 6-4,3,80,Clay
+4jfm3x,WTA,Masters / Premier,F,False,False,36,Serena Williams,Madison Keys,Rome,2016-05-09,1,24,7-6(5) 6-3,3,84,Clay
+4s0533,WTA,Grand Slam,F,False,False,541,Serena Williams,Angelique Kerber,Wimbledon,2016-06-27,1,4,7-5 6-3,3,81,Grass
+51gglk,ATP,Grand Slam,QF,False,False,137,Gael Monfils,Lucas Pouille,US Open,2016-08-29,12,25,6-4 6-3 6-3,5,121,Hard
+51upix,WTA,Grand Slam,SF,False,False,450,Angelique Kerber,Caroline Wozniacki,US Open,2016-08-29,2,74,6-4 6-3,3,86,Hard
+5psr20,WTA,Grand Slam,QF,False,False,34,Venus Williams,Anastasia Pavlyuchenkova,Australian Open,2017-01-16,17,27,6-4 7-6(3),3,107,Hard
+5qsqke,ATP,Grand Slam,F,True,True,12993,Roger Federer,Rafael Nadal,Australian Open,2017-01-16,17,9,6-4 3-6 6-1 3-6 6-3,5,217,Hard
+6ev4wn,ATP,Grand Slam,R32,False,True,17,Novak Djokovic,Diego Schwartzman,Roland Garros,2017-05-29,2,41,5-7 6-3 3-6 6-1 6-1,5,198,Clay
+6luuq6,ATP,Grand Slam,R32,False,False,35,Andy Murray,Fabio Fognini,Wimbledon,2017-07-03,1,29,6-2 4-6 6-1 7-5,5,159,Grass
+6m2g0j,ATP,Grand Slam,R32,False,True,35,Roger Federer,Mischa Zverev,Wimbledon,2017-07-03,5,30,7-6(3) 6-4 6-4,5,109,Grass
+6n14wb,WTA,Grand Slam,SF,False,False,302,Garbine Muguruza,Magdalena Rybarikova,Wimbledon,2017-07-03,15,87,6-1 6-1,3,73,Grass
+6y3ygv,ATP,Grand Slam,R16,False,True,9,Roger Federer,Philipp Kohlschreiber,US Open,2017-08-28,3,37,6-4 6-2 7-5,5,109,Hard
+79ghc8,ATP,Other,F,False,True,1077,Roger Federer,Juan Martin del Potro,Basel,2017-10-23,2,19,6-7(5) 6-4 6-3,3,151,Hard
+7e1jk8,ATP,Tour Finals,F,False,False,742,Grigor Dimitrov,David Goffin,Tour Finals,2017-11-13,6,8,7-5 4-6 6-3,3,150,Hard
+7saub7,WTA,Grand Slam,QF,True,False,217,Elise Mertens,Elina Svitolina,Australian Open,2018-01-15,37,4,6-4 6-0,3,73,Hard
+7sd1gz,ATP,Grand Slam,QF,True,True,2,Marin Cilic,Rafael Nadal,Australian Open,2018-01-15,6,1,3-6 6-3 6-7(5) 6-2 2-0 RET,5,227,Hard
+7t31go,ATP,Grand Slam,SF,False,True,2224,Roger Federer,Hyeon Chung,Australian Open,2018-01-15,2,58,6-1 5-2 RET,5,62,Hard
+85bwfg,ATP,Masters / Premier,F,True,True,3112,Juan Martin del Potro,Roger Federer,Indian Wells Masters,2018-03-05,8,1,6-4 6-7(8) 7-6(2),3,162,Hard
+9d0ogr,ATP,Grand Slam,QF,False,True,7128,Rafael Nadal,Dominic Thiem,US Open,2018-08-27,1,9,0-6 6-4 7-5 6-7(4) 7-6(5),5,289,Hard
+9e97aq,ATP,Grand Slam,F,True,True,4,Novak Djokovic,Juan Martin del Potro,US Open,2018-08-27,6,3,6-3 7-6(4) 6-3,5,196,Hard
+w7ubb,ATP,Grand Slam,F,False,True,618,Roger Federer,Andy Murray,Wimbledon,2012-06-25,3,4,4-6 7-5 6-3 6-4,5,204,Grass
+xi2wf,ATP,Other,R16,False,True,13,Roger Federer,Denis Istomin,London Olympics,2012-07-25,1,34,7-5 6-3,3,81,Grass
+zadr9,WTA,Grand Slam,R16,False,False,3,Serena Williams,Andrea Hlavackova,US Open,2012-08-27,4,82,6-0 6-0,3,,Hard
+zb4r4,ATP,Grand Slam,R16,False,False,10,Andy Murray,Milos Raonic,US Open,2012-08-27,4,16,6-4 6-4 6-2,5,120,Hard
+zkk71,ATP,Grand Slam,SF,False,True,59,Novak Djokovic,David Ferrer,US Open,2012-08-27,2,5,2-6 6-1 6-4 6-2,5,152,Hard
+1addvl,ATP,Masters / Premier,QF,False,True,16,Novak Djokovic,Jo-Wilfried Tsonga,Indian Wells Masters,2013-03-07,1,8,6-3 6-1,3,55,Hard
+1cspop,ATP,Masters / Premier,F,False,True,78,Novak Djokovic,Rafael Nadal,Monte Carlo Masters,2013-04-14,1,5,6-2 7-6(1),3,112,Clay
+1k3pbh,ATP,Masters / Premier,SF,False,False,38,Milos Raonic,Vasek Pospisil,Canada Masters,2013-08-05,13,71,6-4 1-6 7-6(4),3,136,Hard
+1ltkcd,ATP,Grand Slam,QF,False,True,79,Novak Djokovic,Mikhail Youzhny,US Open,2013-08-26,1,24,6-3 6-2 3-6 6-0,5,154,Hard
+1ocfxl,ATP,Masters / Premier,F,False,True,51,Novak Djokovic,Juan Martin del Potro,Shanghai Masters,2013-10-07,2,5,6-1 3-6 7-6(3),3,152,Hard
+1q1q4r,ATP,Tour Finals,RR,True,False,11,Tomas Berdych,David Ferrer,Tour Finals,2013-11-04,6,3,6-4 6-4,3,84,Hard
+1ufzzl,ATP,Other,F,True,True,68,Lleyton Hewitt,Roger Federer,Brisbane,2013-12-29,60,6,6-1 4-6 6-3,3,127,Hard
+1vpupf,WTA,Grand Slam,QF,False,False,12,Na Li,Flavia Pennetta,Australian Open,2014-01-13,4,29,6-2 6-2,3,,Hard
+1w6kds,ATP,Grand Slam,F,True,True,0,Stan Wawrinka,Rafael Nadal,Australian Open,2014-01-13,8,1,6-3 6-2 3-6 6-3,5,141,Hard
+2875yu,ATP,Other,F,False,True,18,Roger Federer,Alejandro Falla,Halle,2014-06-09,4,69,7-6(2) 7-6(3),3,88,Grass
+29nk0q,ATP,Grand Slam,QF,True,True,108,Roger Federer,Stan Wawrinka,Wimbledon,2014-06-23,4,3,3-6 7-6(5) 6-4 6-4,5,153,Grass
+29yr0w,ATP,Grand Slam,F,False,True,1601,Novak Djokovic,Roger Federer,Wimbledon,2014-06-23,2,4,6-7(7) 6-4 7-6(4) 5-7 6-4,5,236,Grass
+2rqh21,ATP,Other,R16,False,True,66,Roger Federer,John Millman,Brisbane,2015-01-04,2,153,4-6 6-4 6-3,3,122,Hard
+2tdj9k,ATP,Grand Slam,R32,True,True,329,Andreas Seppi,Roger Federer,Australian Open,2015-01-19,46,2,6-4 7-6(5) 4-6 7-6(5),5,177,Hard
+2ts1nv,WTA,Grand Slam,QF,True,False,34,Kate Makarova,Simona Halep,Australian Open,2015-01-19,11,3,6-4 6-0,3,,Hard
+2twg86,WTA,Grand Slam,SF,False,False,32,Serena Williams,Madison Keys,Australian Open,2015-01-19,1,35,7-6(5) 6-2,3,,Hard
+2zu2b2,ATP,Masters / Premier,SF,False,True,166,Roger Federer,Milos Raonic,Indian Wells Masters,2015-03-12,2,6,7-5 6-4,3,86,Hard
+330uwr,ATP,Masters / Premier,SF,False,True,153,Novak Djokovic,Rafael Nadal,Monte Carlo Masters,2015-04-12,1,5,6-3 6-3,3,98,Clay
+3jpiuz,ATP,Grand Slam,R32,True,True,250,Fabio Fognini,Rafael Nadal,US Open,2015-08-31,32,8,3-6 4-6 6-4 6-3 6-4,5,,Hard
+3rztuw,ATP,Masters / Premier,F,False,True,157,Novak Djokovic,Andy Murray,Paris Masters,2015-11-02,1,3,6-2 6-4,3,93,Hard
+3sw5f9,ATP,Tour Finals,RR,False,True,122,Novak Djokovic,Kei Nishikori,Tour Finals,2015-11-15,1,8,6-1 6-1,3,,Hard
+40aetc,ATP,Other,F,True,True,68,Milos Raonic,Roger Federer,Brisbane,2016-01-04,14,3,6-4 6-4,3,87,Hard
+42ol5z,WTA,Grand Slam,QF,False,False,10,Agnieszka Radwanska,Carla Suarez Navarro,Australian Open,2016-01-18,4,11,6-1 6-3,3,82,Hard
+4b3u3e,ATP,Masters / Premier,SF,False,False,85,Milos Raonic,David Goffin,Indian Wells Masters,2016-03-07,14,18,6-3 3-6 6-3,3,120,Hard
+4r22fq,ATP,Grand Slam,R32,True,True,14,Sam Querrey,Novak Djokovic,Wimbledon,2016-06-27,41,1,7-6(6) 6-1 3-6 7-6(5),5,176,Grass
+4ri584,ATP,Grand Slam,QF,False,True,2239,Roger Federer,Marin Cilic,Wimbledon,2016-06-27,3,13,6-7(4) 4-6 6-3 7-6(9) 6-3,5,197,Grass
+5pg2i7,ATP,Grand Slam,R16,True,True,9,Roger Federer,Kei Nishikori,Australian Open,2017-01-16,17,5,6-7(4) 6-4 6-1 4-6 6-3,5,203,Hard
+5pzuc1,WTA,Grand Slam,QF,True,False,40,Mirjana Lucic,Karolina Pliskova,Australian Open,2017-01-16,79,5,6-4 3-6 6-4,3,107,Hard
+6cg0oz,WTA,Masters / Premier,F,True,False,144,Elina Svitolina,Simona Halep,Rome,2017-05-15,11,4,4-6 7-5 6-1,3,127,Clay
+6mtgdv,ATP,Grand Slam,QF,True,False,0,Sam Querrey,Andy Murray,Wimbledon,2017-07-03,28,1,3-6 6-4 6-7(4) 6-1 6-1,5,161,Grass
+6mugel,ATP,Grand Slam,QF,False,True,2581,Roger Federer,Milos Raonic,Wimbledon,2017-07-03,5,7,6-4 6-2 7-6(4),5,117,Grass
+6n9m6b,ATP,Grand Slam,SF,False,True,2992,Roger Federer,Tomas Berdych,Wimbledon,2017-07-03,5,15,7-6(4) 7-6(4) 6-4,5,138,Grass
+7stt8q,WTA,Grand Slam,SF,False,False,1626,Simona Halep,Angelique Kerber,Australian Open,2018-01-15,1,16,6-3 4-6 9-7,3,140,Hard
+85bwfq,WTA,Masters / Premier,F,True,False,325,Naomi Osaka,Daria Kasatkina,Indian Wells,2018-03-05,44,19,6-3 6-2,3,70,Hard
+88j8em,WTA,Masters / Premier,F,True,False,252,Sloane Stephens,Jelena Ostapenko,Miami,2018-03-19,12,5,7-6(5) 6-1,3,91,Hard
+8km6at,WTA,Masters / Premier,SF,False,False,108,Simona Halep,Maria Sharapova,Rome,2018-05-14,1,40,4-6 6-1 6-4,3,143,Clay
+w2raz,WTA,Grand Slam,SF,True,False,8,Serena Williams,Victoria Azarenka,Wimbledon,2012-06-25,6,2,6-3 7-6(6),3,,Grass
+xmn44,ATP,Other,SF,True,True,94,Andy Murray,Novak Djokovic,London Olympics,2012-07-25,4,2,7-5 7-5,3,120,Grass
+yxr60,ATP,Grand Slam,R128,False,True,0,Roger Federer,Donald Young,US Open,2012-08-27,1,81,6-3 6-2 6-4,5,94,Hard
+zlqtg,ATP,Grand Slam,SF,False,True,95,Novak Djokovic,David Ferrer,US Open,2012-08-27,2,5,2-6 6-1 6-4 6-2,5,152,Hard

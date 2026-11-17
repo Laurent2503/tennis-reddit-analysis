@@ -1,0 +1,15 @@
+year,thread_type,threads,linked,link_rate
+2012,match,84,76,0.905
+2013,match,111,108,0.973
+2014,match,113,101,0.894
+2015,match,136,125,0.919
+2016,match,99,91,0.919
+2017,match,130,106,0.815
+2018,match,73,61,0.836
+2012,post-match,7,3,0.429
+2013,post-match,18,4,0.222
+2014,post-match,23,7,0.304
+2015,post-match,92,64,0.696
+2016,post-match,164,119,0.726
+2017,post-match,161,106,0.658
+2018,post-match,65,33,0.508

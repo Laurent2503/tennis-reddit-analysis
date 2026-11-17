@@ -1,15 +1,25 @@
 {
   "mode": "full",
   "share_deleted": 0.05424952987801772,
-  "share_comments_mentioning_a_player": 0.2921832818245117,
+  "share_comments_mentioning_a_player": 0.2923170974121953,
   "mention_share_by_tour": {
     "ATP": 0.869,
     "WTA": 0.131
   },
   "link_rate": {
-    "match": 0.895,
-    "post-match": 0.634
+    "match": 0.916,
+    "post-match": 0.655,
+    "result": 0.645
   },
-  "linked_threads": 1004,
-  "n_matches": 45884
+  "linked_threads": 8766,
+  "matches_with_a_thread": {
+    "with match thread": 630,
+    "result posts only": 3641
+  },
+  "linked_threads_by_type": {
+    "match": 683,
+    "post-match": 347,
+    "result": 7736
+  },
+  "n_matches": 45903
 }
